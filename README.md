@@ -21,6 +21,8 @@ Directory names encode the principal analysis parameters and experimental settin
 For questions regarding the datasets, directory structure, parameter settings, or analysis procedures, please contact the authors.
 
 
+# Directories
+
 #100-300-300-700
 
  H=100, Ks=300 Kt=300 Tau=700 (R=5 Q=3)
