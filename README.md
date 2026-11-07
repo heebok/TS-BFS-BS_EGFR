@@ -26,7 +26,7 @@ For questions regarding the datasets, directory structure, parameter settings, o
 #100-300-300-700
 
  H=100, Ks=300 Kt=300 Tau=700 (R=5 Q=3)
- -experiments\ Normal- CBL-SRC, Normal-PTPN, Normal-Random, functional, physical, regulatory 
+ -Experiment_I, II\ Normal- CBL-SRC, Normal-PTPN, Normal-Random, functional, physical, regulatory, null_inputs(random 50 runs)
  -functional\ HEK293T, HELA, Normal, SHP2i, Washout 
  -physical\  HEK293T, HELA, Normal, SHP2i, Washout 
  -regulatory\  HEK293T, HELA, Normal, SHP2i, Washout 
