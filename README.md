@@ -1,4 +1,4 @@
-# TS-BFS-BS_EGFR_NPJ
+# TS-BFS-BS_EGFR
 
 Directory and File Naming Conventions
 
