@@ -1,0 +1,1524 @@
+*** Stage 4 Temporal-Aware Clean Results ***
+Generated: 2026-11-06 11:10:53
+Stage 4 version: 4.3-route-preserving-zero-edge-safe
+
+Stage 4 policy:
+  - Preserve biologically distinct alternative routes
+  - Do NOT truncate a path because a gene reappears in a later interval
+  - Temporal identity uses (gene, interval, role)
+  - Remove exact temporal duplicates only
+  - Preserve zero-edge source==target temporal continuations as anchor carry-forward
+  - Reject genuine within-segment PPI cycles and broken interval continuity
+  - No best-per-target or top-k post-processing pruning
+
+input_path_count: 300
+structurally_valid_before_dedup: 300
+rejected_path_count: 0
+exact_duplicate_removed_count: 0
+clean_path_count: 300
+unique_interval_aware_topologies: 300
+zero_edge_temporal_continuation_count: 224
+condition_pool_excluded_gene_count: 0
+interval_count: 3
+rejection_reason_count: 0
+
+*** Clean Temporal Path Results ***
+Path #1 [source #1]: EGFR -> CRK  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+
+Path #2 [source #2]: EGFR -> GAB1  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GAB1 | D_used=0 | target_role=unresolved | target_sites=GAB1@Y192, GAB1@Y371
+    10min-30min: GAB1 | D_used=0 | target_role=supporting | target_sites=GAB1@Y192, GAB1@Y374, GAB1@Y291, GAB1@Y371
+
+Path #3 [source #3]: EGFR -> GRB2  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+
+Path #4 [source #4]: EGFR -> HSP90AA1  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+
+Path #5 [source #5]: EGFR -> LYN  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> LYN | D_used=0 | target_role=supporting | target_sites=LYN@S2152
+    10min-30min: LYN | D_used=0 | target_role=supporting | target_sites=LYN@S2152
+
+Path #6 [source #6]: EGFR -> MUC1  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> MUC1 | D_used=0 | target_role=unresolved | target_sites=MUC1@673
+    10min-30min: MUC1 | D_used=0 | target_role=unresolved | target_sites=MUC1@673
+
+Path #7 [source #7]: EGFR -> PLCG1  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+
+Path #8 [source #8]: EGFR -> STAT3  | total_cost=0.001001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+
+Path #9 [source #15]: EGFR -> CRK -> CBL  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> CBL | D_used=0 | target_role=unresolved | target_sites=CBL@T541
+
+Path #10 [source #20]: EGFR -> GAB1 -> PTPN11  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GAB1 | D_used=0 | target_role=unresolved | target_sites=GAB1@Y192, GAB1@Y371
+    10min-30min: GAB1 -> PTPN11 | D_used=0 | target_role=unresolved | target_sites=PTPN11@Y762
+
+Path #11 [source #21]: EGFR -> GRB2 -> CBL  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> CBL | D_used=0 | target_role=unresolved | target_sites=CBL@T541
+
+Path #12 [source #22]: EGFR -> GRB2 -> GAB1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> GAB1 | D_used=0 | target_role=supporting | target_sites=GAB1@Y192, GAB1@Y374, GAB1@Y291, GAB1@Y371
+
+Path #13 [source #23]: EGFR -> GRB2 -> PLCG1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+
+Path #14 [source #24]: EGFR -> GRB2 -> PTPN11  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PTPN11 | D_used=0 | target_role=unresolved | target_sites=PTPN11@Y762
+
+Path #15 [source #25]: EGFR -> GRB2 -> SHC1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> SHC1 | D_used=0 | target_role=unresolved | target_sites=SHC1@Y96
+
+Path #16 [source #26]: EGFR -> GRB2 -> WASL  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL | D_used=0 | target_role=unresolved | target_sites=WASL@T333
+
+Path #17 [source #28]: EGFR -> LYN -> CBL  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> LYN | D_used=0 | target_role=supporting | target_sites=LYN@S2152
+    10min-30min: LYN -> CBL | D_used=0 | target_role=unresolved | target_sites=CBL@T541
+
+Path #18 [source #9]: EGFR -> CBL -> CRK  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+
+Path #19 [source #10]: EGFR -> CBL -> GRB2  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+
+Path #20 [source #11]: EGFR -> CBL -> LYN  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> LYN | D_used=1 | target_role=supporting | target_sites=LYN@S2152
+    10min-30min: LYN | D_used=0 | target_role=supporting | target_sites=LYN@S2152
+
+Path #21 [source #12]: EGFR -> CBL -> PLCG1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> PLCG1 | D_used=1 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+
+Path #22 [source #13]: EGFR -> CBL -> UBC  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC | D_used=0 | target_role=unresolved | target_sites=UBC@Y582
+
+Path #23 [source #14]: EGFR -> CBLB -> GRB2  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBLB -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+
+Path #24 [source #16]: EGFR -> CRKL -> CRK  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRKL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+
+Path #25 [source #17]: EGFR -> CRKL -> GAB1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRKL -> GAB1 | D_used=1 | target_role=unresolved | target_sites=GAB1@Y192, GAB1@Y371
+    10min-30min: GAB1 | D_used=0 | target_role=supporting | target_sites=GAB1@Y192, GAB1@Y374, GAB1@Y291, GAB1@Y371
+
+Path #26 [source #18]: EGFR -> EPS15 -> UBC  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC | D_used=0 | target_role=unresolved | target_sites=UBC@Y582
+
+Path #27 [source #19]: EGFR -> ERBB2 -> HSP90AA1  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+
+Path #28 [source #27]: EGFR -> HGS -> UBC  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC | D_used=0 | target_role=unresolved | target_sites=UBC@Y582
+
+Path #29 [source #29]: EGFR -> NCK1 -> WASL  | total_cost=0.002001
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL | D_used=0 | target_role=unresolved | target_sites=WASL@T333
+
+Path #30 [source #30]: EGFR -> SRC -> HSP90AA1  | total_cost=0.002001
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+
+Path #31 [source #31]: EGFR -> SRC -> STAT3  | total_cost=0.002001
+    0min-5min: EGFR -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131, STAT3@Y262
+    5min-10min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+
+Path #32 [source #37]: EGFR -> CRK -> ABL1 -> RIN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+
+Path #33 [source #38]: EGFR -> CRK -> CBL -> LYN  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> CBL -> LYN | D_used=1 | target_role=supporting | target_sites=LYN@S2152
+
+Path #34 [source #39]: EGFR -> CRK -> CBL -> SYK  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> CBL -> SYK | D_used=1 | target_role=unresolved | target_sites=SYK@Y641
+
+Path #35 [source #40]: EGFR -> CRK -> DOCK1 -> RAC1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> DOCK1 -> RAC1 | D_used=1 | target_role=unresolved | target_sites=RAC1@S1014
+
+Path #36 [source #41]: EGFR -> CRK -> PTK2 -> TLN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> PTK2 -> TLN1 | D_used=1 | target_role=unresolved | target_sites=TLN1@Y112
+
+Path #37 [source #42]: EGFR -> CRK -> PXN -> TLN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> PXN -> TLN1 | D_used=1 | target_role=unresolved | target_sites=TLN1@Y112
+
+Path #38 [source #43]: EGFR -> CRK -> SRC -> STAT3  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131
+
+Path #39 [source #45]: EGFR -> GRB2 -> ABL1 -> RIN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+
+Path #40 [source #46]: EGFR -> GRB2 -> BLNK -> SYK  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> BLNK -> SYK | D_used=1 | target_role=unresolved | target_sites=SYK@Y641
+
+Path #41 [source #47]: EGFR -> GRB2 -> CBL -> SYK  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> CBL -> SYK | D_used=1 | target_role=unresolved | target_sites=SYK@Y641
+
+Path #42 [source #48]: EGFR -> GRB2 -> PTK2 -> TLN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PTK2 -> TLN1 | D_used=1 | target_role=unresolved | target_sites=TLN1@Y112
+
+Path #43 [source #49]: EGFR -> GRB2 -> STAMBP -> STAM2  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> STAMBP -> STAM2 | D_used=1 | target_role=unresolved | target_sites=STAM2@T48, STAM2@256
+
+Path #44 [source #50]: EGFR -> HSP90AA1 -> MAPT -> APP  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> APP | D_used=1 | target_role=unresolved | target_sites=APP@Y141
+
+Path #45 [source #51]: EGFR -> HSP90AA1 -> MAPT -> CDK5  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> CDK5 | D_used=1 | target_role=unresolved | target_sites=CDK5@Y145
+
+Path #46 [source #52]: EGFR -> HSP90AA1 -> MAPT -> PIN1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> PIN1 | D_used=1 | target_role=unresolved | target_sites=PIN1@Y553
+
+Path #47 [source #53]: EGFR -> STAT3 -> CDKN1A -> CDK3  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> CDKN1A -> CDK3 | D_used=1 | target_role=supporting | target_sites=CDK3@Y221
+
+Path #48 [source #54]: EGFR -> STAT3 -> CDKN1A -> CDK5  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> CDKN1A -> CDK5 | D_used=1 | target_role=unresolved | target_sites=CDK5@Y145
+
+Path #49 [source #55]: EGFR -> STAT3 -> RELA -> CEBPB  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> RELA -> CEBPB | D_used=1 | target_role=unresolved | target_sites=CEBPB@Y216, CEBPB@Y132, CEBPB@Y289, CEBPB@Y524
+
+Path #50 [source #32]: EGFR -> CBL -> GRB2 -> PTPN11  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PTPN11 | D_used=0 | target_role=unresolved | target_sites=PTPN11@Y762
+
+Path #51 [source #33]: EGFR -> CBL -> GRB2 -> SHC1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> SHC1 | D_used=0 | target_role=unresolved | target_sites=SHC1@Y96
+
+Path #52 [source #34]: EGFR -> CBL -> GRB2 -> WASL  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL | D_used=0 | target_role=unresolved | target_sites=WASL@T333
+
+Path #53 [source #35]: EGFR -> CBL -> UBC -> STAM2  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> STAM2 | D_used=0 | target_role=unresolved | target_sites=STAM2@T48, STAM2@256
+
+Path #54 [source #36]: EGFR -> CBLB -> GRB2 -> SHC1  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBLB -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> SHC1 | D_used=0 | target_role=unresolved | target_sites=SHC1@Y96
+
+Path #55 [source #44]: EGFR -> EPS15 -> UBC -> STAM2  | total_cost=0.003002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> STAM2 | D_used=0 | target_role=unresolved | target_sites=STAM2@T48, STAM2@256
+
+Path #56 [source #56]: EGFR -> TNK2 -> CDC42 -> BAIAP2  | total_cost=0.003002
+    0min-5min: EGFR -> TNK2 | D_used=0 | target_role=unresolved | target_sites=TNK2@Y614
+    5min-10min: TNK2 -> CDC42 -> BAIAP2 | D_used=1 | target_role=unresolved | target_sites=BAIAP2@Y1114, BAIAP2@T1117
+    10min-30min: BAIAP2 | D_used=0 | target_role=unresolved | target_sites=BAIAP2@Y1526, BAIAP2@T1117
+
+Path #57 [source #57]: EGFR -> STAT5A -> PDHA1  | total_cost=0.003003
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 | D_used=0 | target_role=unresolved | target_sites=PDHA1@Y328
+
+Path #58 [source #58]: EGFR -> CBL -> CRK -> ABL1 -> RIN1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+
+Path #59 [source #59]: EGFR -> CBL -> CRK -> DOCK1 -> RAC1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> DOCK1 -> RAC1 | D_used=1 | target_role=unresolved | target_sites=RAC1@S1014
+
+Path #60 [source #60]: EGFR -> CBL -> UBC -> CYLD -> RIPK1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> CYLD -> RIPK1 | D_used=1 | target_role=unresolved | target_sites=RIPK1@Y1054
+
+Path #61 [source #61]: EGFR -> CBL -> UBC -> IKBKG -> RIPK1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> IKBKG -> RIPK1 | D_used=1 | target_role=unresolved | target_sites=RIPK1@Y1054
+
+Path #62 [source #62]: EGFR -> CBL -> UBC -> RPS27A -> RPS16  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> RPS27A -> RPS16 | D_used=1 | target_role=unresolved | target_sites=RPS16@Y184
+
+Path #63 [source #63]: EGFR -> CBL -> UBC -> TOM1 -> TOLLIP  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> TOM1 -> TOLLIP | D_used=1 | target_role=unresolved | target_sites=TOLLIP@Y2249
+
+Path #64 [source #64]: EGFR -> CBL -> UBC -> UBA52 -> RPS16  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> UBA52 -> RPS16 | D_used=1 | target_role=unresolved | target_sites=RPS16@Y184
+
+Path #65 [source #65]: EGFR -> CRKL -> CRK -> DOCK1 -> RAC1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRKL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> DOCK1 -> RAC1 | D_used=1 | target_role=unresolved | target_sites=RAC1@S1014
+
+Path #66 [source #66]: EGFR -> EPS15 -> UBC -> CYLD -> RIPK1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> CYLD -> RIPK1 | D_used=1 | target_role=unresolved | target_sites=RIPK1@Y1054
+
+Path #67 [source #67]: EGFR -> EPS15 -> UBC -> RPS27A -> RPS16  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> RPS27A -> RPS16 | D_used=1 | target_role=unresolved | target_sites=RPS16@Y184
+
+Path #68 [source #68]: EGFR -> EPS15 -> UBC -> TOM1 -> TOLLIP  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> TOM1 -> TOLLIP | D_used=1 | target_role=unresolved | target_sites=TOLLIP@Y2249
+
+Path #69 [source #69]: EGFR -> ERBB2 -> HSP90AA1 -> MAPT -> APP  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> APP | D_used=1 | target_role=unresolved | target_sites=APP@Y141
+
+Path #70 [source #70]: EGFR -> ERBB2 -> HSP90AA1 -> MAPT -> CDK5  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> CDK5 | D_used=1 | target_role=unresolved | target_sites=CDK5@Y145
+
+Path #71 [source #71]: EGFR -> ERBB2 -> HSP90AA1 -> MAPT -> PIN1  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> PIN1 | D_used=1 | target_role=unresolved | target_sites=PIN1@Y553
+
+Path #72 [source #74]: EGFR -> GRB2 -> WASL -> ACTR2 -> ACTR3  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> ACTR2 -> ACTR3 | D_used=1 | target_role=unresolved | target_sites=ACTR3@Y213
+
+Path #73 [source #75]: EGFR -> GRB2 -> WASL -> ARPC3 -> ACTR3  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> ARPC3 -> ACTR3 | D_used=1 | target_role=unresolved | target_sites=ACTR3@Y213
+
+Path #74 [source #76]: EGFR -> GRB2 -> WASL -> CDC42 -> BAIAP2  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> BAIAP2 | D_used=1 | target_role=unresolved | target_sites=BAIAP2@Y1526, BAIAP2@T1117
+
+Path #75 [source #77]: EGFR -> HGS -> UBC -> TOM1 -> TOLLIP  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> TOM1 -> TOLLIP | D_used=1 | target_role=unresolved | target_sites=TOLLIP@Y2249
+
+Path #76 [source #78]: EGFR -> NCK1 -> WASL -> ACTR2 -> ACTR3  | total_cost=0.004002
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> ACTR2 -> ACTR3 | D_used=1 | target_role=unresolved | target_sites=ACTR3@Y213
+
+Path #77 [source #85]: EGFR -> TNK2 -> CDC42 -> PAK2 -> ARHGEF6  | total_cost=0.004002
+    0min-5min: EGFR -> TNK2 | D_used=0 | target_role=unresolved | target_sites=TNK2@Y614
+    5min-10min: TNK2 -> CDC42 -> PAK2 | D_used=1 | target_role=unresolved | target_sites=PAK2@Y883
+    10min-30min: PAK2 -> ARHGEF6 | D_used=0 | target_role=unresolved | target_sites=ARHGEF6@Y329
+
+Path #78 [source #72]: EGFR -> GRB2 -> PTK2 -> TP53 -> MAPK3  | total_cost=0.004002
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 | D_used=0 | target_role=unresolved | target_sites=MAPK3@Y198, MAPK3@Y53
+
+Path #79 [source #73]: EGFR -> GRB2 -> TNK2 -> CDC42 -> BAIAP2  | total_cost=0.004002
+    0min-5min: EGFR -> GRB2 -> TNK2 | D_used=1 | target_role=unresolved | target_sites=TNK2@Y614
+    5min-10min: TNK2 -> CDC42 -> BAIAP2 | D_used=1 | target_role=unresolved | target_sites=BAIAP2@Y1114, BAIAP2@T1117
+    10min-30min: BAIAP2 | D_used=0 | target_role=unresolved | target_sites=BAIAP2@Y1526, BAIAP2@T1117
+
+Path #80 [source #79]: EGFR -> PIK3R1 -> PTK2 -> TP53 -> MAPK3  | total_cost=0.004002
+    0min-5min: EGFR -> PIK3R1 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 | D_used=0 | target_role=unresolved | target_sites=MAPK3@Y198, MAPK3@Y53
+
+Path #81 [source #80]: EGFR -> PTPN11 -> PTK2 -> TP53 -> MAPK3  | total_cost=0.004002
+    0min-5min: EGFR -> PTPN11 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 | D_used=0 | target_role=unresolved | target_sites=MAPK3@Y198, MAPK3@Y53
+
+Path #82 [source #81]: EGFR -> SRC -> HSP90AA1 -> MAPT -> APP  | total_cost=0.004002
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> APP | D_used=1 | target_role=unresolved | target_sites=APP@Y141
+
+Path #83 [source #82]: EGFR -> SRC -> HSP90AA1 -> MAPT -> PIN1  | total_cost=0.004002
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> MAPT -> PIN1 | D_used=1 | target_role=unresolved | target_sites=PIN1@Y553
+
+Path #84 [source #83]: EGFR -> SRC -> STAT3 -> CDKN1A -> CDK3  | total_cost=0.004002
+    0min-5min: EGFR -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131, STAT3@Y262
+    5min-10min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> CDKN1A -> CDK3 | D_used=1 | target_role=supporting | target_sites=CDK3@Y221
+
+Path #85 [source #84]: EGFR -> SRC -> STAT3 -> RELA -> CEBPB  | total_cost=0.004002
+    0min-5min: EGFR -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131, STAT3@Y262
+    5min-10min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> RELA -> CEBPB | D_used=1 | target_role=unresolved | target_sites=CEBPB@Y216, CEBPB@Y132, CEBPB@Y289, CEBPB@Y524
+
+Path #86 [source #86]: EGFR -> GRB2 -> KHDRBS1 -> HNRNPK  | total_cost=0.004003
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> KHDRBS1 -> HNRNPK | D_used=1 | target_role=unresolved | target_sites=HNRNPK@Y431, HNRNPK@Y470
+
+Path #87 [source #87]: EGFR -> PLCG1 -> KHDRBS1 -> HNRNPK  | total_cost=0.004003
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 -> KHDRBS1 -> HNRNPK | D_used=1 | target_role=unresolved | target_sites=HNRNPK@Y431, HNRNPK@Y470
+
+Path #88 [source #88]: EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2 -> ARHGEF6  | total_cost=0.005003
+    0min-5min: EGFR -> GRB2 -> TNK2 | D_used=1 | target_role=unresolved | target_sites=TNK2@Y614
+    5min-10min: TNK2 -> CDC42 -> PAK2 | D_used=1 | target_role=unresolved | target_sites=PAK2@Y883
+    10min-30min: PAK2 -> ARHGEF6 | D_used=0 | target_role=unresolved | target_sites=ARHGEF6@Y329
+
+Path #89 [source #89]: EGFR -> GRB2 -> WASL -> CDC42 -> PAK2 -> ARHGEF6  | total_cost=0.005003
+    0min-5min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=mixed | target_sites=WASL@Y313, WASL@Y334, WASL@T333, WASL@Y374
+    5min-10min: WASL -> CDC42 -> PAK2 | D_used=1 | target_role=unresolved | target_sites=PAK2@Y883
+    10min-30min: PAK2 -> ARHGEF6 | D_used=0 | target_role=unresolved | target_sites=ARHGEF6@Y329
+
+Path #90 [source #90]: EGFR -> HSP90AA1 -> SRC -> STAT3 -> CDKN1A -> CDK3  | total_cost=0.005003
+    0min-5min: EGFR -> HSP90AA1 -> SRC | D_used=1 | target_role=unresolved | target_sites=SRC@Y98
+    5min-10min: SRC -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> CDKN1A -> CDK3 | D_used=1 | target_role=supporting | target_sites=CDK3@Y221
+
+Path #91 [source #91]: EGFR -> HSP90AA1 -> SRC -> STAT3 -> RELA -> CEBPB  | total_cost=0.005003
+    0min-5min: EGFR -> HSP90AA1 -> SRC | D_used=1 | target_role=unresolved | target_sites=SRC@Y98
+    5min-10min: SRC -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> RELA -> CEBPB | D_used=1 | target_role=unresolved | target_sites=CEBPB@Y216, CEBPB@Y132, CEBPB@Y289, CEBPB@Y524
+
+Path #92 [source #92]: EGFR -> CBL -> GRB2 -> KHDRBS1 -> HNRNPK  | total_cost=0.005004
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> KHDRBS1 -> HNRNPK | D_used=1 | target_role=unresolved | target_sites=HNRNPK@Y431, HNRNPK@Y470
+
+Path #93 [source #93]: EGFR -> GRB2 -> KHDRBS1 -> DHX9  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> KHDRBS1 -> DHX9 | D_used=1 | target_role=unresolved | target_sites=DHX9@114
+
+Path #94 [source #94]: EGFR -> GRB2 -> WASL -> TRIP10  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL -> TRIP10 | D_used=1 | target_role=unresolved | target_sites=TRIP10@Y111
+
+Path #95 [source #95]: EGFR -> HSP90AA1 -> TP53 -> TRIM28  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276, TRIM28@Y279
+
+Path #96 [source #97]: EGFR -> PLCG1 -> KHDRBS1 -> DHX9  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 -> KHDRBS1 -> DHX9 | D_used=1 | target_role=unresolved | target_sites=DHX9@114
+
+Path #97 [source #98]: EGFR -> STAT3 -> JAK1 -> STAT6  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> JAK1 -> STAT6 | D_used=1 | target_role=unresolved | target_sites=STAT6@322
+
+Path #98 [source #99]: EGFR -> STAT3 -> STAT1 -> TYK2  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> STAT1 -> TYK2 | D_used=1 | target_role=unresolved | target_sites=TYK2@Y30
+
+Path #99 [source #96]: EGFR -> NCK1 -> WASL -> TRIP10  | total_cost=0.005006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> TRIP10 | D_used=0 | target_role=unresolved | target_sites=TRIP10@Y111
+
+Path #100 [source #100]: EGFR -> EPS15 -> UBC -> IKBKG -> TAB1 -> MAPK14 -> MAPKAPK3  | total_cost=0.006003
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> IKBKG -> TAB1 | D_used=1 | target_role=unresolved | target_sites=TAB1@S391
+    10min-30min: TAB1 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+
+Path #101 [source #101]: EGFR -> EPS15 -> UBC -> RPS27A -> RPL15 -> RACK1 -> LARP4B  | total_cost=0.006003
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RPS27A -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> RACK1 -> LARP4B | D_used=1 | target_role=unresolved | target_sites=LARP4B@Y101
+
+Path #102 [source #102]: EGFR -> EPS15 -> UBC -> TAB2 -> TAB1 -> MAPK14 -> MAPKAPK3  | total_cost=0.006003
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> TAB2 -> TAB1 | D_used=1 | target_role=unresolved | target_sites=TAB1@S391
+    10min-30min: TAB1 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+
+Path #103 [source #103]: EGFR -> EPS15 -> UBC -> TAB3 -> TAB1 -> MAPK14 -> MAPKAPK3  | total_cost=0.006003
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> TAB3 -> TAB1 | D_used=1 | target_role=unresolved | target_sites=TAB1@S391
+    10min-30min: TAB1 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+
+Path #104 [source #104]: EGFR -> EPS15 -> UBC -> UBA52 -> RPL15 -> RACK1 -> LARP4B  | total_cost=0.006003
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> UBA52 -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> RACK1 -> LARP4B | D_used=1 | target_role=unresolved | target_sites=LARP4B@Y101
+
+Path #105 [source #105]: EGFR -> HGS -> UBC -> RPS27A -> RPL15 -> RACK1 -> LARP4B  | total_cost=0.006003
+    0min-5min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RPS27A -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> RACK1 -> LARP4B | D_used=1 | target_role=unresolved | target_sites=LARP4B@Y101
+
+Path #106 [source #106]: EGFR -> CBL -> GRB2 -> KHDRBS1 -> DHX9  | total_cost=0.006006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> KHDRBS1 -> DHX9 | D_used=1 | target_role=unresolved | target_sites=DHX9@114
+
+Path #107 [source #107]: EGFR -> CBL -> GRB2 -> WASL -> TRIP10  | total_cost=0.006006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL -> TRIP10 | D_used=1 | target_role=unresolved | target_sites=TRIP10@Y111
+
+Path #108 [source #108]: EGFR -> ERBB2 -> HSP90AA1 -> TP53 -> TRIM28  | total_cost=0.006006
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276, TRIM28@Y279
+
+Path #109 [source #109]: EGFR -> GAB1 -> PTPN11 -> JAK1 -> STAT6  | total_cost=0.006006
+    0min-5min: EGFR -> GAB1 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> JAK1 -> STAT6 | D_used=1 | target_role=unresolved | target_sites=STAT6@322
+    10min-30min: STAT6 | D_used=0 | target_role=unresolved | target_sites=STAT6@322
+
+Path #110 [source #110]: EGFR -> GRB2 -> PTK2 -> TP53 -> TRIM28  | total_cost=0.006006
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276
+    10min-30min: TRIM28 | D_used=0 | target_role=unresolved | target_sites=TRIM28@Y276, TRIM28@Y279
+
+Path #111 [source #111]: EGFR -> GRB2 -> PTPN11 -> JAK1 -> STAT6  | total_cost=0.006006
+    0min-5min: EGFR -> GRB2 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> JAK1 -> STAT6 | D_used=1 | target_role=unresolved | target_sites=STAT6@322
+    10min-30min: STAT6 | D_used=0 | target_role=unresolved | target_sites=STAT6@322
+
+Path #112 [source #112]: EGFR -> SRC -> STAT3 -> STAT1 -> TYK2  | total_cost=0.006006
+    0min-5min: EGFR -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131, STAT3@Y262
+    5min-10min: STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> STAT1 -> TYK2 | D_used=1 | target_role=unresolved | target_sites=TYK2@Y30
+
+Path #113 [source #113]: EGFR -> GRB2 -> WASL -> FNBP1L  | total_cost=0.006009
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL -> FNBP1L | D_used=1 | target_role=unresolved | target_sites=FNBP1L@Y566
+
+Path #114 [source #114]: EGFR -> NCK1 -> WASL -> FNBP1L  | total_cost=0.006009
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> FNBP1L | D_used=0 | target_role=unresolved | target_sites=FNBP1L@Y566
+
+Path #115 [source #115]: EGFR -> SRC -> CTNNB1 -> MUC1  | total_cost=0.006009
+    0min-5min: EGFR -> SRC -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> MUC1 | D_used=0 | target_role=unresolved | target_sites=MUC1@673
+    10min-30min: MUC1 | D_used=0 | target_role=unresolved | target_sites=MUC1@673
+
+Path #116 [source #116]: EGFR -> STAT3 -> TYK2  | total_cost=0.006013
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT3 | D_used=0 | target_role=unresolved | target_sites=STAT3@Y131
+    10min-30min: STAT3 -> TYK2 | D_used=0 | target_role=unresolved | target_sites=TYK2@Y30
+
+Path #117 [source #117]: EGFR -> CBL -> GRB2 -> WASL -> FNBP1L  | total_cost=0.007010
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> WASL -> FNBP1L | D_used=1 | target_role=unresolved | target_sites=FNBP1L@Y566
+
+Path #118 [source #118]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6  | total_cost=0.007010
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 | D_used=0 | target_role=unresolved | target_sites=DDX6@S72
+
+Path #119 [source #119]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3  | total_cost=0.008011
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPA3 | D_used=1 | target_role=unresolved | target_sites=HNRNPA3@Y77, HNRNPA3@Y410
+    10min-30min: HNRNPA3 | D_used=0 | target_role=unresolved | target_sites=HNRNPA3@Y77
+
+Path #120 [source #120]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPAB  | total_cost=0.008011
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPAB | D_used=1 | target_role=unresolved | target_sites=HNRNPAB@Y6
+    10min-30min: HNRNPAB | D_used=0 | target_role=unresolved | target_sites=HNRNPAB@Y6
+
+Path #121 [source #121]: EGFR -> JUP -> DSG2 -> PKP2  | total_cost=0.008015
+    0min-5min: EGFR -> JUP -> DSG2 | D_used=1 | target_role=unresolved | target_sites=DSG2@Y321
+    5min-10min: DSG2 -> PKP2 | D_used=0 | target_role=unresolved | target_sites=PKP2@384
+    10min-30min: PKP2 | D_used=0 | target_role=unresolved | target_sites=PKP2@384
+
+Path #122 [source #122]: EGFR -> JUP -> PKP2  | total_cost=0.008017
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> JUP -> PKP2 | D_used=1 | target_role=unresolved | target_sites=PKP2@384
+    10min-30min: PKP2 | D_used=0 | target_role=unresolved | target_sites=PKP2@384
+
+Path #123 [source #123]: EGFR -> EPS15 -> UBC -> RPS27A -> RPL15 -> EEF1A1 -> GAPDH  | total_cost=0.009009
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RPS27A -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> EEF1A1 -> GAPDH | D_used=1 | target_role=unresolved | target_sites=GAPDH@Y65
+
+Path #124 [source #124]: EGFR -> EPS15 -> UBC -> UBA52 -> RPL15 -> EEF1A1 -> GAPDH  | total_cost=0.009009
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> UBA52 -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> EEF1A1 -> GAPDH | D_used=1 | target_role=unresolved | target_sites=GAPDH@Y65
+
+Path #125 [source #125]: EGFR -> HGS -> UBC -> RPS27A -> RPL15 -> EEF1A1 -> GAPDH  | total_cost=0.009009
+    0min-5min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RPS27A -> RPL15 | D_used=1 | target_role=unresolved | target_sites=RPL15@Y291
+    10min-30min: RPL15 -> EEF1A1 -> GAPDH | D_used=1 | target_role=unresolved | target_sites=GAPDH@Y65
+
+Path #126 [source #126]: EGFR -> GRB2 -> WASL -> ACTR2 -> ACTR3 -> ACTB -> CFL1  | total_cost=0.009011
+    0min-5min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=mixed | target_sites=WASL@Y313, WASL@Y334, WASL@T333, WASL@Y374
+    5min-10min: WASL -> ACTR2 -> ACTR3 | D_used=1 | target_role=unresolved | target_sites=ACTR3@S183
+    10min-30min: ACTR3 -> ACTB -> CFL1 | D_used=1 | target_role=unresolved | target_sites=CFL1@Y580
+
+Path #127 [source #127]: EGFR -> GRB2 -> WASL -> ARPC3 -> ACTR3 -> ACTB -> CFL1  | total_cost=0.009011
+    0min-5min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=mixed | target_sites=WASL@Y313, WASL@Y334, WASL@T333, WASL@Y374
+    5min-10min: WASL -> ARPC3 -> ACTR3 | D_used=1 | target_role=unresolved | target_sites=ACTR3@S183
+    10min-30min: ACTR3 -> ACTB -> CFL1 | D_used=1 | target_role=unresolved | target_sites=CFL1@Y580
+
+Path #128 [source #128]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6 -> ATXN2L -> G3BP2  | total_cost=0.009011
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> ATXN2L -> G3BP2 | D_used=1 | target_role=unresolved | target_sites=G3BP2@Y46
+
+Path #129 [source #129]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6 -> NUFIP2 -> G3BP2  | total_cost=0.009011
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> NUFIP2 -> G3BP2 | D_used=1 | target_role=unresolved | target_sites=G3BP2@Y46
+
+Path #130 [source #130]: EGFR -> GRB2 -> WASL -> ACTR3 -> ACTB -> CFL1  | total_cost=0.009012
+    0min-5min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=mixed | target_sites=WASL@Y313, WASL@Y334, WASL@T333, WASL@Y374
+    5min-10min: WASL -> ACTR3 | D_used=0 | target_role=unresolved | target_sites=ACTR3@S183
+    10min-30min: ACTR3 -> ACTB -> CFL1 | D_used=1 | target_role=unresolved | target_sites=CFL1@Y580
+
+Path #131 [source #131]: EGFR -> SRC -> CTNNB1 -> JUP -> PKP2  | total_cost=0.009014
+    0min-5min: EGFR -> SRC -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> JUP -> PKP2 | D_used=1 | target_role=unresolved | target_sites=PKP2@384
+    10min-30min: PKP2 | D_used=0 | target_role=unresolved | target_sites=PKP2@384
+
+Path #132 [source #132]: EGFR -> HSP90AA1 -> AGO2 -> DDX6  | total_cost=0.009026
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> AGO2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+
+Path #133 [source #133]: EGFR -> EPS15 -> EPN1 -> EPN3  | total_cost=0.009026
+    0min-5min: EGFR -> EPS15 -> EPN1 | D_used=1 | target_role=unresolved | target_sites=EPN1@270
+    5min-10min: EPN1 -> EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@S4642
+    10min-30min: EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@Y4611, EPN3@Y4668, EPN3@S4642
+
+Path #134 [source #134]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> HNRNPA1 -> HNRNPAB  | total_cost=0.010012
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPA3 | D_used=1 | target_role=unresolved | target_sites=HNRNPA3@Y77, HNRNPA3@Y410
+    10min-30min: HNRNPA3 -> HNRNPA1 -> HNRNPAB | D_used=1 | target_role=unresolved | target_sites=HNRNPAB@Y6
+
+Path #135 [source #135]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> HNRNPA2B1 -> HNRNPAB  | total_cost=0.010012
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPA3 | D_used=1 | target_role=unresolved | target_sites=HNRNPA3@Y77, HNRNPA3@Y410
+    10min-30min: HNRNPA3 -> HNRNPA2B1 -> HNRNPAB | D_used=1 | target_role=unresolved | target_sites=HNRNPAB@Y6
+
+Path #136 [source #136]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPAB -> HNRNPA1 -> HNRNPA3  | total_cost=0.010012
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPAB | D_used=1 | target_role=unresolved | target_sites=HNRNPAB@Y6
+    10min-30min: HNRNPAB -> HNRNPA1 -> HNRNPA3 | D_used=1 | target_role=unresolved | target_sites=HNRNPA3@Y77
+
+Path #137 [source #137]: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPAB -> HNRNPA2B1 -> HNRNPA3  | total_cost=0.010012
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPAB | D_used=1 | target_role=unresolved | target_sites=HNRNPAB@Y6
+    10min-30min: HNRNPAB -> HNRNPA2B1 -> HNRNPA3 | D_used=1 | target_role=unresolved | target_sites=HNRNPA3@Y77
+
+Path #138 [source #138]: EGFR -> ERBB2 -> HSP90AA1 -> AGO2 -> DDX6  | total_cost=0.010026
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> AGO2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+
+Path #139 [source #139]: EGFR -> GRB2 -> WASL -> CDC42 -> ARHGAP32  | total_cost=0.010026
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> ARHGAP32 | D_used=1 | target_role=unresolved | target_sites=ARHGAP32@915
+
+Path #140 [source #140]: EGFR -> NCK1 -> WASL -> CDC42 -> ARHGAP32  | total_cost=0.010026
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> ARHGAP32 | D_used=1 | target_role=unresolved | target_sites=ARHGAP32@915
+
+Path #141 [source #141]: EGFR -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X  | total_cost=0.011019
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+    10min-30min: DDX3X | D_used=0 | target_role=unresolved | target_sites=DDX3X@Y136
+
+Path #142 [source #142]: EGFR -> ERRFI1 -> GRB2 -> WASL -> CDC42 -> ARHGAP32  | total_cost=0.011027
+    0min-5min: EGFR -> ERRFI1 | D_used=0 | target_role=unresolved | target_sites=ERRFI1@Y697
+    5min-10min: ERRFI1 -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> ARHGAP32 | D_used=1 | target_role=unresolved | target_sites=ARHGAP32@915
+
+Path #143 [source #143]: EGFR -> VAV2 -> RHOA -> ARHGAP35  | total_cost=0.011042
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> VAV2 | D_used=0 | target_role=unresolved | target_sites=VAV2@Y715, VAV2@Y836, VAV2@Y5836, VAV2@Y5089
+    10min-30min: VAV2 -> RHOA -> ARHGAP35 | D_used=1 | target_role=unresolved | target_sites=ARHGAP35@Y275, ARHGAP35@Y956, ARHGAP35@S957
+
+Path #144 [source #145]: EGFR -> GRB2 -> PTK2 -> BCAR1 -> VCL -> CTNNB1 -> MUC1  | total_cost=0.012027
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> BCAR1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    10min-30min: VCL -> CTNNB1 -> MUC1 | D_used=1 | target_role=unresolved | target_sites=MUC1@673
+
+Path #145 [source #144]: EGFR -> SRC -> HSP90AA1 -> AGO2 -> DDX6 -> ATXN2L -> G3BP2  | total_cost=0.012027
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> AGO2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> ATXN2L -> G3BP2 | D_used=1 | target_role=unresolved | target_sites=G3BP2@Y46
+
+Path #146 [source #146]: EGFR -> VAV2 -> RHOA -> ROCK2  | total_cost=0.012043
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> VAV2 | D_used=0 | target_role=unresolved | target_sites=VAV2@Y715, VAV2@Y836, VAV2@Y5836, VAV2@Y5089
+    10min-30min: VAV2 -> RHOA -> ROCK2 | D_used=1 | target_role=unresolved | target_sites=ROCK2@Y164
+
+Path #147 [source #147]: EGFR -> CRK -> SRC -> ARHGAP35  | total_cost=0.012051
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> SRC -> ARHGAP35 | D_used=1 | target_role=unresolved | target_sites=ARHGAP35@Y275, ARHGAP35@Y956, ARHGAP35@S957
+
+Path #148 [source #148]: EGFR -> HSP90AA1 -> SRC -> ARHGAP35  | total_cost=0.012051
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> SRC -> ARHGAP35 | D_used=1 | target_role=unresolved | target_sites=ARHGAP35@Y275, ARHGAP35@Y956, ARHGAP35@S957
+
+Path #149 [source #149]: EGFR -> EPS15 -> EPN3  | total_cost=0.012061
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> EPN3 | D_used=1 | target_role=unresolved | target_sites=EPN3@S4642
+    10min-30min: EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@Y4611, EPN3@Y4668, EPN3@S4642
+
+Path #150 [source #150]: EGFR -> HGS -> EPS15 -> EPN3  | total_cost=0.013062
+    0min-5min: EGFR -> HGS -> EPS15 | D_used=1 | target_role=unresolved | target_sites=EPS15@Y321
+    5min-10min: EPS15 -> EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@S4642
+    10min-30min: EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@Y4611, EPN3@Y4668, EPN3@S4642
+
+Path #151 [source #151]: EGFR -> GRB2 -> PTK2 -> TP53 -> MAPK3 -> BCL2L11 -> DYNLL1  | total_cost=0.014043
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+
+Path #152 [source #152]: EGFR -> PIK3R1 -> PTK2 -> TP53 -> MAPK3 -> BCL2L11 -> DYNLL1  | total_cost=0.014043
+    0min-5min: EGFR -> PIK3R1 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+
+Path #153 [source #153]: EGFR -> PTPN11 -> PTK2 -> TP53 -> MAPK3 -> BCL2L11 -> DYNLL1  | total_cost=0.014043
+    0min-5min: EGFR -> PTPN11 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+
+Path #154 [source #154]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6 -> EIF4E -> DDX3X  | total_cost=0.015026
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+
+Path #155 [source #155]: EGFR -> SRC -> CTNNB1 -> CTNNA1 -> TJP1 -> KIRREL1  | total_cost=0.017042
+    0min-5min: EGFR -> SRC -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> CTNNA1 -> TJP1 | D_used=1 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> KIRREL1 | D_used=0 | target_role=unresolved | target_sites=KIRREL@Y523
+
+Path #156 [source #156]: EGFR -> SRC -> HSP90AA1 -> AGO2 -> DDX6 -> EIF4E -> DDX3X  | total_cost=0.018042
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> AGO2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+
+Path #157 [source #157]: EGFR -> ERRFI1 -> GRB2 -> ABL1 -> ABI1 -> EPS8L1  | total_cost=0.018101
+    0min-5min: EGFR -> ERRFI1 -> GRB2 | D_used=1 | target_role=mixed | target_sites=GRB2@Y759, GRB2@Y1245, GRB2@S763, GRB2@Y818, GRB2@Y1217
+    5min-10min: GRB2 -> ABL1 -> ABI1 | D_used=1 | target_role=unresolved | target_sites=ABI1@1229, ABI1@1496
+    10min-30min: ABI1 -> EPS8L1 | D_used=0 | target_role=unresolved | target_sites=EPS8L1@Y32
+
+Path #158 [source #158]: EGFR -> GAB1 -> CRKL -> ABL1 -> ABI1 -> EPS8L1  | total_cost=0.018101
+    0min-5min: EGFR -> GAB1 -> CRKL | D_used=1 | target_role=unresolved | target_sites=CRKL@447
+    5min-10min: CRKL -> ABL1 -> ABI1 | D_used=1 | target_role=unresolved | target_sites=ABI1@1229, ABI1@1496
+    10min-30min: ABI1 -> EPS8L1 | D_used=0 | target_role=unresolved | target_sites=EPS8L1@Y32
+
+Path #159 [source #159]: EGFR -> GAB1 -> GRB2 -> ABL1 -> ABI1 -> EPS8L1  | total_cost=0.018101
+    0min-5min: EGFR -> GAB1 -> GRB2 | D_used=1 | target_role=mixed | target_sites=GRB2@Y759, GRB2@Y1245, GRB2@S763, GRB2@Y818, GRB2@Y1217
+    5min-10min: GRB2 -> ABL1 -> ABI1 | D_used=1 | target_role=unresolved | target_sites=ABI1@1229, ABI1@1496
+    10min-30min: ABI1 -> EPS8L1 | D_used=0 | target_role=unresolved | target_sites=EPS8L1@Y32
+
+Path #160 [source #160]: EGFR -> HRAS -> AFDN -> TJP1 -> KIRREL1  | total_cost=0.019053
+    0min-5min: EGFR -> HRAS -> AFDN | D_used=1 | target_role=unresolved | target_sites=MLLT4@Y196, MLLT4@S203
+    5min-10min: AFDN -> TJP1 | D_used=0 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> KIRREL1 | D_used=0 | target_role=unresolved | target_sites=KIRREL@Y523
+
+Path #161 [source #161]: EGFR -> STAT3 -> SYK -> VAV2 -> RHOA -> ROCK2  | total_cost=0.019058
+    0min-5min: EGFR -> STAT3 -> SYK | D_used=1 | target_role=unresolved | target_sites=SYK@Y641
+    5min-10min: SYK -> VAV2 | D_used=0 | target_role=unresolved | target_sites=VAV2@Y715, VAV2@Y836, VAV2@Y5836, VAV2@Y5089
+    10min-30min: VAV2 -> RHOA -> ROCK2 | D_used=1 | target_role=unresolved | target_sites=ROCK2@Y164
+
+Path #162 [source #162]: EGFR -> PTPN11 -> MAPK3 -> MAPK14 -> MAPKAPK3 -> MAPKAPK2 -> ZFP36L1  | total_cost=0.019065
+    0min-5min: EGFR -> PTPN11 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y53, MAPK3@Y218
+    5min-10min: MAPK3 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+    10min-30min: MAPKAPK3 -> MAPKAPK2 -> ZFP36L1 | D_used=1 | target_role=unresolved | target_sites=ZFP36L1@S641
+
+Path #163 [source #163]: EGFR -> SRC -> STAT3 -> SYK -> VAV2 -> RHOA -> ROCK2  | total_cost=0.020058
+    0min-5min: EGFR -> SRC -> STAT3 | D_used=1 | target_role=unresolved | target_sites=STAT3@Y131, STAT3@Y262
+    5min-10min: STAT3 -> SYK -> VAV2 | D_used=1 | target_role=unresolved | target_sites=VAV2@Y715, VAV2@Y836, VAV2@Y5836, VAV2@Y5089
+    10min-30min: VAV2 -> RHOA -> ROCK2 | D_used=1 | target_role=unresolved | target_sites=ROCK2@Y164
+
+Path #164 [source #164]: EGFR -> STAT3 -> MAPK1 -> MAPK14 -> MAPKAPK3 -> MAPKAPK2 -> ZFP36L1  | total_cost=0.020070
+    0min-5min: EGFR -> STAT3 -> MAPK1 | D_used=1 | target_role=unresolved | target_sites=MAPK1@Y71
+    5min-10min: MAPK1 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+    10min-30min: MAPKAPK3 -> MAPKAPK2 -> ZFP36L1 | D_used=1 | target_role=unresolved | target_sites=ZFP36L1@S641
+
+Path #165 [source #165]: EGFR -> CTNNB1 -> VCL -> CTNNA1 -> TJP1 -> KIRREL1  | total_cost=0.021060
+    0min-5min: EGFR -> CTNNB1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    5min-10min: VCL -> CTNNA1 -> TJP1 | D_used=1 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> KIRREL1 | D_used=0 | target_role=unresolved | target_sites=KIRREL@Y523
+
+Path #166 [source #166]: EGFR -> PTPN11 -> MAPK1 -> MAPK14 -> MAPKAPK3 -> MAPKAPK2 -> ZFP36L1  | total_cost=0.021077
+    0min-5min: EGFR -> PTPN11 -> MAPK1 | D_used=1 | target_role=unresolved | target_sites=MAPK1@Y71
+    5min-10min: MAPK1 -> MAPK14 -> MAPKAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPKAPK3@Y585
+    10min-30min: MAPKAPK3 -> MAPKAPK2 -> ZFP36L1 | D_used=1 | target_role=unresolved | target_sites=ZFP36L1@S641
+
+Path #167 [source #167]: EGFR -> PDCD6IP -> SDCBP  | total_cost=0.021203
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PDCD6IP -> SDCBP | D_used=1 | target_role=unresolved | target_sites=SDCBP@Y453
+    10min-30min: SDCBP | D_used=0 | target_role=unresolved | target_sites=SDCBP@Y453
+
+Path #168 [source #168]: EGFR -> CTNNB1 -> GSK3A -> AKT1 -> MAPKAP1 -> RPTOR -> LAMTOR1  | total_cost=0.022149
+    0min-5min: EGFR -> CTNNB1 -> GSK3A | D_used=1 | target_role=unresolved | target_sites=GSK3A@Y319
+    5min-10min: GSK3A -> AKT1 -> MAPKAP1 | D_used=1 | target_role=unresolved | target_sites=MAPKAP1@Y17
+    10min-30min: MAPKAP1 -> RPTOR -> LAMTOR1 | D_used=1 | target_role=supporting | target_sites=LAMTOR1@Y140, LAMTOR1@Y68
+
+Path #169 [source #169]: EGFR -> EPS15 -> UBC -> MTOR -> MAPKAP1 -> RPTOR -> LAMTOR1  | total_cost=0.022149
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> MTOR -> MAPKAP1 | D_used=1 | target_role=unresolved | target_sites=MAPKAP1@Y17
+    10min-30min: MAPKAP1 -> RPTOR -> LAMTOR1 | D_used=1 | target_role=supporting | target_sites=LAMTOR1@Y140, LAMTOR1@Y68
+
+Path #170 [source #170]: EGFR -> HGS -> UBC -> MTOR -> MAPKAP1 -> RPTOR -> LAMTOR1  | total_cost=0.022149
+    0min-5min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> MTOR -> MAPKAP1 | D_used=1 | target_role=unresolved | target_sites=MAPKAP1@Y17
+    10min-30min: MAPKAP1 -> RPTOR -> LAMTOR1 | D_used=1 | target_role=supporting | target_sites=LAMTOR1@Y140, LAMTOR1@Y68
+
+Path #171 [source #173]: EGFR -> STAT5A -> PDHA1 -> DLAT -> ACLY  | total_cost=0.022167
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 -> DLAT -> ACLY | D_used=1 | target_role=unresolved | target_sites=ACLY@Y212
+
+Path #172 [source #171]: EGFR -> GAB1 -> PTPN11 -> STAT5A -> PDHA1  | total_cost=0.022167
+    0min-5min: EGFR -> GAB1 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 | D_used=0 | target_role=unresolved | target_sites=PDHA1@Y328
+
+Path #173 [source #172]: EGFR -> GRB2 -> PTPN11 -> STAT5A -> PDHA1  | total_cost=0.022167
+    0min-5min: EGFR -> GRB2 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 | D_used=0 | target_role=unresolved | target_sites=PDHA1@Y328
+
+Path #174 [source #174]: EGFR -> SRC -> CTNNB1 -> CDH8 -> ARVCF  | total_cost=0.023155
+    0min-5min: EGFR -> SRC -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> CDH8 -> ARVCF | D_used=1 | target_role=unresolved | target_sites=ARVCF@Y656
+    10min-30min: ARVCF | D_used=0 | target_role=unresolved | target_sites=ARVCF@Y1140
+
+Path #175 [source #175]: EGFR -> YWHAZ -> HDAC4 -> MEF2C -> MAPK7  | total_cost=0.023204
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> MEF2C -> MAPK7 | D_used=1 | target_role=unresolved | target_sites=MAPK7@Y203
+    10min-30min: MAPK7 | D_used=0 | target_role=unresolved | target_sites=MAPK7@Y203
+
+Path #176 [source #176]: EGFR -> SRC -> CTNNB1 -> CTNNA1 -> TJP1 -> CLDN3  | total_cost=0.024095
+    0min-5min: EGFR -> SRC -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> CTNNA1 -> TJP1 | D_used=1 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> CLDN3 | D_used=0 | target_role=unresolved | target_sites=CLDN3@673
+
+Path #177 [source #177]: EGFR -> PTEN -> DLG1 -> LIN7C -> MPP5 -> PATJ  | total_cost=0.026102
+    0min-5min: EGFR -> PTEN -> DLG1 | D_used=1 | target_role=unresolved | target_sites=DLG1@Y94
+    5min-10min: DLG1 -> LIN7C | D_used=0 | target_role=unresolved | target_sites=LIN7C@Y203
+    10min-30min: LIN7C -> MPP5 -> PATJ | D_used=1 | target_role=unresolved | target_sites=INADL@Y308
+
+Path #178 [source #178]: EGFR -> HRAS -> AFDN -> TJP1 -> CLDN3  | total_cost=0.026106
+    0min-5min: EGFR -> HRAS -> AFDN | D_used=1 | target_role=unresolved | target_sites=MLLT4@Y196, MLLT4@S203
+    5min-10min: AFDN -> TJP1 | D_used=0 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> CLDN3 | D_used=0 | target_role=unresolved | target_sites=CLDN3@673
+
+Path #179 [source #179]: EGFR -> YWHAZ -> HDAC4 -> MEF2A -> MAPK7  | total_cost=0.026249
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> MEF2A -> MAPK7 | D_used=1 | target_role=unresolved | target_sites=MAPK7@Y203
+    10min-30min: MAPK7 | D_used=0 | target_role=unresolved | target_sites=MAPK7@Y203
+
+Path #180 [source #180]: EGFR -> SRC -> CDCP1  | total_cost=0.026318
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> SRC -> CDCP1 | D_used=1 | target_role=unresolved | target_sites=CDCP1@Y333
+    10min-30min: CDCP1 | D_used=0 | target_role=unresolved | target_sites=CDCP1@Y333
+
+Path #181 [source #181]: EGFR -> PTEN -> DLG1 -> MPP2 -> LIN7C -> MPP5 -> PATJ  | total_cost=0.027102
+    0min-5min: EGFR -> PTEN -> DLG1 | D_used=1 | target_role=unresolved | target_sites=DLG1@Y94
+    5min-10min: DLG1 -> MPP2 -> LIN7C | D_used=1 | target_role=unresolved | target_sites=LIN7C@Y203
+    10min-30min: LIN7C -> MPP5 -> PATJ | D_used=1 | target_role=unresolved | target_sites=INADL@Y308
+
+Path #182 [source #182]: EGFR -> CRK -> SRC -> CDCP1  | total_cost=0.027319
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> SRC -> CDCP1 | D_used=1 | target_role=unresolved | target_sites=CDCP1@Y333
+
+Path #183 [source #183]: EGFR -> HSP90AA1 -> SRC -> CDCP1  | total_cost=0.027319
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> SRC -> CDCP1 | D_used=1 | target_role=unresolved | target_sites=CDCP1@Y333
+
+Path #184 [source #184]: EGFR -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X -> EIF3A -> EIF5B  | total_cost=0.028093
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+    10min-30min: DDX3X -> EIF3A -> EIF5B | D_used=1 | target_role=unresolved | target_sites=EIF5B@Y61
+
+Path #185 [source #185]: EGFR -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X -> EIF3B -> EIF5B  | total_cost=0.028093
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+    10min-30min: DDX3X -> EIF3B -> EIF5B | D_used=1 | target_role=unresolved | target_sites=EIF5B@Y61
+
+Path #186 [source #186]: EGFR -> PTEN -> DLG1 -> CASK -> LIN7C -> MPP5 -> PATJ  | total_cost=0.028104
+    0min-5min: EGFR -> PTEN -> DLG1 | D_used=1 | target_role=unresolved | target_sites=DLG1@Y94
+    5min-10min: DLG1 -> CASK -> LIN7C | D_used=1 | target_role=unresolved | target_sites=LIN7C@Y203
+    10min-30min: LIN7C -> MPP5 -> PATJ | D_used=1 | target_role=unresolved | target_sites=INADL@Y308
+
+Path #187 [source #187]: EGFR -> CTNNB1 -> VCL -> CTNNA1 -> TJP1 -> CLDN3  | total_cost=0.028113
+    0min-5min: EGFR -> CTNNB1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    5min-10min: VCL -> CTNNA1 -> TJP1 | D_used=1 | target_role=supporting | target_sites=TJP1@Y694
+    10min-30min: TJP1 -> CLDN3 | D_used=0 | target_role=unresolved | target_sites=CLDN3@673
+
+Path #188 [source #188]: EGFR -> PTPN11 -> MAPK3 -> BCL2L11 -> DYNLL1 -> AMOT -> AMOTL1  | total_cost=0.030120
+    0min-5min: EGFR -> PTPN11 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y53, MAPK3@Y218
+    5min-10min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+    10min-30min: DYNLL1 -> AMOT -> AMOTL1 | D_used=1 | target_role=unresolved | target_sites=AMOTL1@Y763
+
+Path #189 [source #189]: EGFR -> TUBA1A -> TUBA1C -> TUBA3D -> SLC25A6  | total_cost=0.030207
+    0min-5min: EGFR -> TUBA1A -> TUBA1C | D_used=1 | target_role=unresolved | target_sites=TUBA1C@317
+    5min-10min: TUBA1C -> TUBA3D -> SLC25A6 | D_used=1 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+    10min-30min: SLC25A6 | D_used=0 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+
+Path #190 [source #190]: EGFR -> GRB2 -> STAMBP -> CLINT1  | total_cost=0.032460
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> STAMBP -> CLINT1 | D_used=1 | target_role=unresolved | target_sites=CLINT1@Y89
+
+Path #191 [source #191]: EGFR -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X -> EIF3G -> EIF5B  | total_cost=0.033141
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> EIF4E -> DDX3X | D_used=1 | target_role=unresolved | target_sites=DDX3X@Y136
+    10min-30min: DDX3X -> EIF3G -> EIF5B | D_used=1 | target_role=unresolved | target_sites=EIF5B@Y61
+
+Path #192 [source #192]: EGFR -> PTPN11 -> MAPK3 -> BCL2L11 -> DYNLL1 -> AMOTL1  | total_cost=0.033200
+    0min-5min: EGFR -> PTPN11 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y53, MAPK3@Y218
+    5min-10min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+    10min-30min: DYNLL1 -> AMOTL1 | D_used=0 | target_role=unresolved | target_sites=AMOTL1@Y763
+
+Path #193 [source #193]: EGFR -> EPS15 -> EPN1 -> EPN3 -> CLTB -> CLINT1  | total_cost=0.033221
+    0min-5min: EGFR -> EPS15 -> EPN1 | D_used=1 | target_role=unresolved | target_sites=EPN1@270
+    5min-10min: EPN1 -> EPN3 | D_used=0 | target_role=unresolved | target_sites=EPN3@S4642
+    10min-30min: EPN3 -> CLTB -> CLINT1 | D_used=1 | target_role=unresolved | target_sites=CLINT1@Y89
+
+Path #194 [source #194]: EGFR -> CBL -> GRB2 -> STAMBP -> CLINT1  | total_cost=0.033461
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> STAMBP -> CLINT1 | D_used=1 | target_role=unresolved | target_sites=CLINT1@Y89
+
+Path #195 [source #195]: EGFR -> GAB1 -> PTPN11 -> MPZL1  | total_cost=0.033492
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GAB1 | D_used=0 | target_role=unresolved | target_sites=GAB1@Y192, GAB1@Y371
+    10min-30min: GAB1 -> PTPN11 -> MPZL1 | D_used=1 | target_role=unresolved | target_sites=MPZL1@Y520, MPZL1@802
+
+Path #196 [source #196]: EGFR -> GRB2 -> PTPN11 -> MPZL1  | total_cost=0.033492
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PTPN11 -> MPZL1 | D_used=1 | target_role=unresolved | target_sites=MPZL1@Y520, MPZL1@802
+
+Path #197 [source #197]: EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SNRPC  | total_cost=0.034221
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> NCBP1 -> SNRPC | D_used=1 | target_role=supporting | target_sites=SNRPC@Y849
+    10min-30min: SNRPC | D_used=0 | target_role=supporting | target_sites=SNRPC@Y849
+
+Path #198 [source #198]: EGFR -> TUBA1A -> TUBA1B -> TUBB -> SLC25A6  | total_cost=0.034363
+    0min-5min: EGFR -> TUBA1A -> TUBA1B | D_used=1 | target_role=unresolved | target_sites=TUBA1B@222
+    5min-10min: TUBA1B -> TUBB -> SLC25A6 | D_used=1 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+    10min-30min: SLC25A6 | D_used=0 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+
+Path #199 [source #199]: EGFR -> CBL -> GRB2 -> PTPN11 -> MPZL1  | total_cost=0.034492
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> PTPN11 -> MPZL1 | D_used=1 | target_role=unresolved | target_sites=MPZL1@Y520, MPZL1@802
+
+Path #200 [source #200]: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> RBM3 -> SNRPA -> SNRPC  | total_cost=0.035232
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> HNRNPK -> RBM3 | D_used=1 | target_role=unresolved | target_sites=RBM3@S282
+    10min-30min: RBM3 -> SNRPA -> SNRPC | D_used=1 | target_role=supporting | target_sites=SNRPC@Y849
+
+Path #201 [source #201]: EGFR -> TUBA1A -> TUBA1C -> TUBB -> SLC25A6  | total_cost=0.035365
+    0min-5min: EGFR -> TUBA1A -> TUBA1C | D_used=1 | target_role=unresolved | target_sites=TUBA1C@317
+    5min-10min: TUBA1C -> TUBB -> SLC25A6 | D_used=1 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+    10min-30min: SLC25A6 | D_used=0 | target_role=unresolved | target_sites=SLC25A6@128, SLC25A6@540
+
+Path #202 [source #202]: EGFR -> EPS15 -> ITSN2  | total_cost=0.036628
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> ITSN2 | D_used=1 | target_role=unresolved | target_sites=ITSN2@Y670
+    10min-30min: ITSN2 | D_used=0 | target_role=unresolved | target_sites=ITSN2@Y78
+
+Path #203 [source #203]: EGFR -> CBL -> UBC -> OTUB1 -> OTUD6B  | total_cost=0.037593
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> OTUB1 -> OTUD6B | D_used=1 | target_role=unresolved | target_sites=OTUD6B@S87
+
+Path #204 [source #204]: EGFR -> EPS15 -> UBC -> OTUB1 -> OTUD6B  | total_cost=0.037593
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> OTUB1 -> OTUD6B | D_used=1 | target_role=unresolved | target_sites=OTUD6B@S87
+
+Path #205 [source #205]: EGFR -> HGS -> UBC -> OTUB1 -> OTUD6B  | total_cost=0.037593
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HGS -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> OTUB1 -> OTUD6B | D_used=1 | target_role=unresolved | target_sites=OTUD6B@S87
+
+Path #206 [source #206]: EGFR -> HGS -> EPS15 -> ITSN2  | total_cost=0.037628
+    0min-5min: EGFR -> HGS -> EPS15 | D_used=1 | target_role=unresolved | target_sites=EPS15@Y321
+    5min-10min: EPS15 -> ITSN2 | D_used=0 | target_role=unresolved | target_sites=ITSN2@Y670
+    10min-30min: ITSN2 | D_used=0 | target_role=unresolved | target_sites=ITSN2@Y78
+
+Path #207 [source #207]: EGFR -> PTPN1 -> CTNNB1 -> CDH8 -> ARVCF  | total_cost=0.038330
+    0min-5min: EGFR -> PTPN1 -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> CDH8 -> ARVCF | D_used=1 | target_role=unresolved | target_sites=ARVCF@Y656
+    10min-30min: ARVCF | D_used=0 | target_role=unresolved | target_sites=ARVCF@Y1140
+
+Path #208 [source #208]: EGFR -> CBL -> UBC -> EPS15 -> ITSN2  | total_cost=0.038629
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> EPS15 -> ITSN2 | D_used=1 | target_role=unresolved | target_sites=ITSN2@Y78
+
+Path #209 [source #209]: EGFR -> CTNNB1 -> GSK3A -> AKT1 -> PFKFB2 -> PFKM -> ALDOA  | total_cost=0.039247
+    0min-5min: EGFR -> CTNNB1 -> GSK3A | D_used=1 | target_role=unresolved | target_sites=GSK3A@Y319
+    5min-10min: GSK3A -> AKT1 -> PFKFB2 | D_used=1 | target_role=unresolved | target_sites=PFKFB2@Y69
+    10min-30min: PFKFB2 -> PFKM -> ALDOA | D_used=1 | target_role=unresolved | target_sites=ALDOA@Y70, ALDOA@Y127
+
+Path #210 [source #210]: EGFR -> SRC -> HSP90AA1 -> AKT1 -> PFKFB2 -> PFKM -> ALDOA  | total_cost=0.039247
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> AKT1 -> PFKFB2 | D_used=1 | target_role=unresolved | target_sites=PFKFB2@Y69
+    10min-30min: PFKFB2 -> PFKM -> ALDOA | D_used=1 | target_role=unresolved | target_sites=ALDOA@Y70, ALDOA@Y127
+
+Path #211 [source #211]: EGFR -> EPS15 -> AGFG1 -> VAMP7 -> STX4  | total_cost=0.039330
+    0min-5min: EGFR -> EPS15 -> AGFG1 | D_used=1 | target_role=unresolved | target_sites=AGFG1@S386
+    5min-10min: AGFG1 -> VAMP7 -> STX4 | D_used=1 | target_role=unresolved | target_sites=STX4@Y443, STX4@Y420, STX4@Y315, STX4@Y368
+    10min-30min: STX4 | D_used=0 | target_role=unresolved | target_sites=STX4@Y443, STX4@Y315
+
+Path #212 [source #212]: EGFR -> GAB1 -> PTPN11 -> STAT5A -> PDHA1 -> DLAT -> ACLY  | total_cost=0.041331
+    0min-5min: EGFR -> GAB1 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 -> DLAT -> ACLY | D_used=1 | target_role=unresolved | target_sites=ACLY@Y212
+
+Path #213 [source #213]: EGFR -> GRB2 -> PTPN11 -> STAT5A -> PDHA1 -> DLAT -> ACLY  | total_cost=0.041331
+    0min-5min: EGFR -> GRB2 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 -> DLAT -> ACLY | D_used=1 | target_role=unresolved | target_sites=ACLY@Y212
+
+Path #214 [source #214]: EGFR -> PIK3R1 -> CTNNB1 -> CDH8 -> ARVCF  | total_cost=0.041393
+    0min-5min: EGFR -> PIK3R1 -> CTNNB1 | D_used=1 | target_role=supporting | target_sites=CTNNB1@Y771, CTNNB1@Y783, CTNNB1@Y1254, CTNNB1@Y977
+    5min-10min: CTNNB1 -> CDH8 -> ARVCF | D_used=1 | target_role=unresolved | target_sites=ARVCF@Y656
+    10min-30min: ARVCF | D_used=0 | target_role=unresolved | target_sites=ARVCF@Y1140
+
+Path #215 [source #215]: EGFR -> HSPA8 -> SRRT -> NCBP1 -> SNRPC  | total_cost=0.041407
+    0min-5min: EGFR -> HSPA8 -> SRRT | D_used=1 | target_role=unresolved | target_sites=SRRT@Y1118
+    5min-10min: SRRT -> NCBP1 -> SNRPC | D_used=1 | target_role=supporting | target_sites=SNRPC@Y849
+    10min-30min: SNRPC | D_used=0 | target_role=supporting | target_sites=SNRPC@Y849
+
+Path #216 [source #216]: EGFR -> GRB2 -> PTK2 -> TP53 -> MAPK3 -> RPS6KA3 -> MAPK7  | total_cost=0.041666
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 -> RPS6KA3 -> MAPK7 | D_used=1 | target_role=unresolved | target_sites=MAPK7@Y203
+
+Path #217 [source #217]: EGFR -> PTEN -> DLG1 -> LIN7C -> MPP5 -> AMOTL1  | total_cost=0.042247
+    0min-5min: EGFR -> PTEN -> DLG1 | D_used=1 | target_role=unresolved | target_sites=DLG1@Y94
+    5min-10min: DLG1 -> LIN7C | D_used=0 | target_role=unresolved | target_sites=LIN7C@Y203
+    10min-30min: LIN7C -> MPP5 -> AMOTL1 | D_used=1 | target_role=unresolved | target_sites=AMOTL1@Y763
+
+Path #218 [source #218]: EGFR -> STAT5A -> PDHA1 -> LDHA -> ALDOA  | total_cost=0.045554
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> STAT5A -> PDHA1 | D_used=1 | target_role=unresolved | target_sites=PDHA1@Y328
+    10min-30min: PDHA1 -> LDHA -> ALDOA | D_used=1 | target_role=unresolved | target_sites=ALDOA@Y70, ALDOA@Y127
+
+Path #219 [source #219]: EGFR -> GRB2 -> WASL -> CDC42 -> CDC42BPB  | total_cost=0.046953
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> CDC42BPB | D_used=1 | target_role=unresolved | target_sites=CDC42BPB@Y526
+
+Path #220 [source #220]: EGFR -> NCK1 -> WASL -> CDC42 -> CDC42BPB  | total_cost=0.046953
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> NCK1 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> CDC42BPB | D_used=1 | target_role=unresolved | target_sites=CDC42BPB@Y526
+
+Path #221 [source #221]: EGFR -> ERRFI1 -> GRB2 -> WASL -> CDC42 -> CDC42BPB  | total_cost=0.047954
+    0min-5min: EGFR -> ERRFI1 | D_used=0 | target_role=unresolved | target_sites=ERRFI1@Y697
+    5min-10min: ERRFI1 -> GRB2 -> WASL | D_used=1 | target_role=unresolved | target_sites=WASL@T333
+    10min-30min: WASL -> CDC42 -> CDC42BPB | D_used=1 | target_role=unresolved | target_sites=CDC42BPB@Y526
+
+Path #222 [source #222]: EGFR -> HSP90AA1 -> NOS3 -> ASS1  | total_cost=0.050141
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> NOS3 -> ASS1 | D_used=1 | target_role=unresolved | target_sites=ASS1@Y117
+
+Path #223 [source #223]: EGFR -> ERBB2 -> HSP90AA1 -> NOS3 -> ASS1  | total_cost=0.051142
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> ERBB2 -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> NOS3 -> ASS1 | D_used=1 | target_role=unresolved | target_sites=ASS1@Y117
+
+Path #224 [source #224]: EGFR -> SRC -> HSP90AA1 -> NOS3 -> ASS1  | total_cost=0.051142
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> NOS3 -> ASS1 | D_used=1 | target_role=unresolved | target_sites=ASS1@Y117
+
+Path #225 [source #225]: EGFR -> GRB2 -> MET -> PLXNB2  | total_cost=0.053294
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MET -> PLXNB2 | D_used=1 | target_role=unresolved | target_sites=PLXNB2@Y175
+
+Path #226 [source #226]: EGFR -> CBL -> GRB2 -> MET -> PLXNB2  | total_cost=0.054295
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MET -> PLXNB2 | D_used=1 | target_role=unresolved | target_sites=PLXNB2@Y175
+
+Path #227 [source #227]: EGFR -> CBLB -> GRB2 -> MET -> PLXNB2  | total_cost=0.054295
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBLB -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MET -> PLXNB2 | D_used=1 | target_role=unresolved | target_sites=PLXNB2@Y175
+
+Path #228 [source #228]: EGFR -> CAV1 -> CAVIN1 -> CAV3 -> SNTA1  | total_cost=0.056871
+    0min-5min: EGFR -> CAV1 -> CAVIN1 | D_used=1 | target_role=unresolved | target_sites=PTRF@Y373
+    5min-10min: CAVIN1 -> CAV3 -> SNTA1 | D_used=1 | target_role=unresolved | target_sites=SNTA1@Y17
+    10min-30min: SNTA1 | D_used=0 | target_role=unresolved | target_sites=SNTA1@Y17, SNTA1@Y186
+
+Path #229 [source #229]: EGFR -> CTNNB1 -> GSK3A -> AKT1 -> PFKFB2 -> FBP1 -> TKT  | total_cost=0.057494
+    0min-5min: EGFR -> CTNNB1 -> GSK3A | D_used=1 | target_role=unresolved | target_sites=GSK3A@Y319
+    5min-10min: GSK3A -> AKT1 -> PFKFB2 | D_used=1 | target_role=unresolved | target_sites=PFKFB2@Y69
+    10min-30min: PFKFB2 -> FBP1 -> TKT | D_used=1 | target_role=supporting | target_sites=TKT@Y1073
+
+Path #230 [source #230]: EGFR -> SRC -> HSP90AA1 -> AKT1 -> PFKFB2 -> FBP1 -> TKT  | total_cost=0.057494
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> AKT1 -> PFKFB2 | D_used=1 | target_role=unresolved | target_sites=PFKFB2@Y69
+    10min-30min: PFKFB2 -> FBP1 -> TKT | D_used=1 | target_role=supporting | target_sites=TKT@Y1073
+
+Path #231 [source #231]: EGFR -> CTNNB1 -> GSK3A -> AKT1 -> PFKFB2 -> PFKM -> TKT  | total_cost=0.057577
+    0min-5min: EGFR -> CTNNB1 -> GSK3A | D_used=1 | target_role=unresolved | target_sites=GSK3A@Y319
+    5min-10min: GSK3A -> AKT1 -> PFKFB2 | D_used=1 | target_role=unresolved | target_sites=PFKFB2@Y69
+    10min-30min: PFKFB2 -> PFKM -> TKT | D_used=1 | target_role=supporting | target_sites=TKT@Y1073
+
+Path #232 [source #232]: EGFR -> CRK -> BCAR1 -> TNS3  | total_cost=0.059630
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRK | D_used=0 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> BCAR1 -> TNS3 | D_used=1 | target_role=unresolved | target_sites=TNS3@Y207
+
+Path #233 [source #233]: EGFR -> CBL -> CRK -> BCAR1 -> TNS3  | total_cost=0.060631
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> BCAR1 -> TNS3 | D_used=1 | target_role=unresolved | target_sites=TNS3@Y207
+
+Path #234 [source #234]: EGFR -> CRKL -> CRK -> BCAR1 -> TNS3  | total_cost=0.060631
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CRKL -> CRK | D_used=1 | target_role=unresolved | target_sites=CRK@Y473
+    10min-30min: CRK -> BCAR1 -> TNS3 | D_used=1 | target_role=unresolved | target_sites=TNS3@Y207
+
+Path #235 [source #235]: EGFR -> GRB2 -> PTK2 -> BCAR1 -> VCL -> ACTN4 -> LMO7  | total_cost=0.063691
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> BCAR1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    10min-30min: VCL -> ACTN4 -> LMO7 | D_used=1 | target_role=unresolved | target_sites=LMO7@Y1168, LMO7@Y482
+
+Path #236 [source #236]: EGFR -> GRB2 -> PTK2 -> PXN -> VCL -> ACTN4 -> LMO7  | total_cost=0.063691
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> PXN -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    10min-30min: VCL -> ACTN4 -> LMO7 | D_used=1 | target_role=unresolved | target_sites=LMO7@Y1168, LMO7@Y482
+
+Path #237 [source #237]: EGFR -> GRB2 -> PTK2 -> TLN1 -> VCL -> ACTN4 -> LMO7  | total_cost=0.063691
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TLN1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    10min-30min: VCL -> ACTN4 -> LMO7 | D_used=1 | target_role=unresolved | target_sites=LMO7@Y1168, LMO7@Y482
+
+Path #238 [source #238]: EGFR -> PTK2 -> ITGB1 -> CD63 -> SDCBP  | total_cost=0.064984
+    0min-5min: EGFR -> PTK2 -> ITGB1 | D_used=1 | target_role=unresolved | target_sites=ITGB1@Y282
+    5min-10min: ITGB1 -> CD63 -> SDCBP | D_used=1 | target_role=unresolved | target_sites=SDCBP@Y453
+    10min-30min: SDCBP | D_used=0 | target_role=unresolved | target_sites=SDCBP@Y453
+
+Path #239 [source #239]: EGFR -> PRKCA -> PRKD2  | total_cost=0.065883
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PRKCA -> PRKD2 | D_used=1 | target_role=supporting | target_sites=PRKD2@T222
+    10min-30min: PRKD2 | D_used=0 | target_role=supporting | target_sites=PRKD2@T222
+
+Path #240 [source #240]: EGFR -> GAPDH -> PKM -> NME1 -> SET  | total_cost=0.066944
+    0min-5min: EGFR -> GAPDH -> PKM | D_used=1 | target_role=supporting | target_sites=PKM@Y204
+    5min-10min: PKM -> NME1 -> SET | D_used=1 | target_role=unresolved | target_sites=SET@Y333
+    10min-30min: SET | D_used=0 | target_role=unresolved | target_sites=SET@Y333
+
+Path #241 [source #241]: EGFR -> GRB2 -> MAP4K1 -> DBNL  | total_cost=0.067073
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GRB2 | D_used=0 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MAP4K1 -> DBNL | D_used=1 | target_role=unresolved | target_sites=DBNL@Y833
+
+Path #242 [source #242]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP54 -> NUP155  | total_cost=0.067094
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP54 -> NUP155 | D_used=1 | target_role=unresolved | target_sites=NUP155@Y1318
+
+Path #243 [source #243]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP88 -> NUP155  | total_cost=0.067094
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP88 -> NUP155 | D_used=1 | target_role=unresolved | target_sites=NUP155@Y1318
+
+Path #244 [source #244]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP35  | total_cost=0.067096
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP35 | D_used=0 | target_role=unresolved | target_sites=NUP35@Y81
+
+Path #245 [source #245]: EGFR -> GRB2 -> PTK2 -> TP53 -> TRIM28 -> PCNA -> XRCC1  | total_cost=0.067589
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276
+    10min-30min: TRIM28 -> PCNA -> XRCC1 | D_used=1 | target_role=mixed | target_sites=XRCC1@Y614, XRCC1@Y643, XRCC1@Y409
+
+Path #246 [source #246]: EGFR -> PIK3R1 -> PTK2 -> TP53 -> TRIM28 -> PCNA -> XRCC1  | total_cost=0.067589
+    0min-5min: EGFR -> PIK3R1 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276
+    10min-30min: TRIM28 -> PCNA -> XRCC1 | D_used=1 | target_role=mixed | target_sites=XRCC1@Y614, XRCC1@Y643, XRCC1@Y409
+
+Path #247 [source #247]: EGFR -> PTPN11 -> PTK2 -> TP53 -> TRIM28 -> PCNA -> XRCC1  | total_cost=0.067589
+    0min-5min: EGFR -> PTPN11 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276
+    10min-30min: TRIM28 -> PCNA -> XRCC1 | D_used=1 | target_role=mixed | target_sites=XRCC1@Y614, XRCC1@Y643, XRCC1@Y409
+
+Path #248 [source #248]: EGFR -> CBL -> GRB2 -> MAP4K1 -> DBNL  | total_cost=0.068073
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MAP4K1 -> DBNL | D_used=1 | target_role=unresolved | target_sites=DBNL@Y833
+
+Path #249 [source #249]: EGFR -> CBLB -> GRB2 -> MAP4K1 -> DBNL  | total_cost=0.068073
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBLB -> GRB2 | D_used=1 | target_role=unresolved | target_sites=GRB2@Y818
+    10min-30min: GRB2 -> MAP4K1 -> DBNL | D_used=1 | target_role=unresolved | target_sites=DBNL@Y833
+
+Path #250 [source #250]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP54 -> NUP35  | total_cost=0.068096
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP54 -> NUP35 | D_used=1 | target_role=unresolved | target_sites=NUP35@Y81
+
+Path #251 [source #251]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP214 -> NUP155  | total_cost=0.069100
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP214 -> NUP155 | D_used=1 | target_role=unresolved | target_sites=NUP155@Y1318
+
+Path #252 [source #252]: EGFR -> HSP90AA1 -> SRC -> RHOA -> RAP2C  | total_cost=0.069953
+    0min-5min: EGFR -> HSP90AA1 -> SRC | D_used=1 | target_role=unresolved | target_sites=SRC@Y98
+    5min-10min: SRC -> RHOA -> RAP2C | D_used=1 | target_role=unresolved | target_sites=RAP2C@Y961
+    10min-30min: RAP2C | D_used=0 | target_role=unresolved | target_sites=RAP2C@Y961
+
+Path #253 [source #253]: EGFR -> PIK3R1 -> SRC -> RHOA -> RAP2C  | total_cost=0.069953
+    0min-5min: EGFR -> PIK3R1 -> SRC | D_used=1 | target_role=unresolved | target_sites=SRC@Y98
+    5min-10min: SRC -> RHOA -> RAP2C | D_used=1 | target_role=unresolved | target_sites=RAP2C@Y961
+    10min-30min: RAP2C | D_used=0 | target_role=unresolved | target_sites=RAP2C@Y961
+
+Path #254 [source #254]: EGFR -> PTK2 -> SRC -> RHOA -> RAP2C  | total_cost=0.069953
+    0min-5min: EGFR -> PTK2 -> SRC | D_used=1 | target_role=unresolved | target_sites=SRC@Y98
+    5min-10min: SRC -> RHOA -> RAP2C | D_used=1 | target_role=unresolved | target_sites=RAP2C@Y961
+    10min-30min: RAP2C | D_used=0 | target_role=unresolved | target_sites=RAP2C@Y961
+
+Path #255 [source #255]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6 -> UPF1 -> PNN  | total_cost=0.069991
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> UPF1 -> PNN | D_used=1 | target_role=unresolved | target_sites=PNN@Y1146
+
+Path #256 [source #256]: EGFR -> SRC -> HSP90AA1 -> NOS3 -> ASS1 -> ADSS2 -> ATIC  | total_cost=0.070245
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> NOS3 -> ASS1 | D_used=1 | target_role=unresolved | target_sites=ASS1@Y117
+    10min-30min: ASS1 -> ADSS2 -> ATIC | D_used=1 | target_role=unresolved | target_sites=ATIC@Y115
+
+Path #257 [source #257]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP88 -> NUP35  | total_cost=0.071110
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP88 -> NUP35 | D_used=1 | target_role=unresolved | target_sites=NUP35@Y81
+
+Path #258 [source #258]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP88 -> NUP188  | total_cost=0.072116
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP88 -> NUP188 | D_used=1 | target_role=unresolved | target_sites=NUP188@Y318
+
+Path #259 [source #259]: EGFR -> GRB2 -> ANXA2 -> AHNAK2  | total_cost=0.072530
+    0min-5min: EGFR -> GRB2 -> ANXA2 | D_used=1 | target_role=unresolved | target_sites=ANXA2@Y897
+    5min-10min: ANXA2 -> AHNAK2 | D_used=0 | target_role=unresolved | target_sites=AHNAK2@Y1067
+    10min-30min: AHNAK2 | D_used=0 | target_role=unresolved | target_sites=AHNAK2@Y1067
+
+Path #260 [source #260]: EGFR -> SRC -> HSP90AA1 -> AGO2 -> DDX6 -> UPF1 -> PNN  | total_cost=0.073007
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> AGO2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> UPF1 -> PNN | D_used=1 | target_role=unresolved | target_sites=PNN@Y1146
+
+Path #261 [source #261]: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP62 -> NUP214 -> NUP188  | total_cost=0.074133
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> RANBP2 -> NUP62 | D_used=1 | target_role=unresolved | target_sites=NUP62@Y527
+    10min-30min: NUP62 -> NUP214 -> NUP188 | D_used=1 | target_role=unresolved | target_sites=NUP188@Y318
+
+Path #262 [source #262]: EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SNRPC -> LUC7L2 -> THRAP3  | total_cost=0.074678
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> NCBP1 -> SNRPC | D_used=1 | target_role=supporting | target_sites=SNRPC@Y849
+    10min-30min: SNRPC -> LUC7L2 -> THRAP3 | D_used=1 | target_role=unresolved | target_sites=THRAP3@Y301
+
+Path #263 [source #263]: EGFR -> EPS15 -> AGFG1 -> RAB1A -> STX5 -> STX4  | total_cost=0.074714
+    0min-5min: EGFR -> EPS15 -> AGFG1 | D_used=1 | target_role=unresolved | target_sites=AGFG1@S386
+    5min-10min: AGFG1 -> RAB1A | D_used=0 | target_role=unresolved | target_sites=RAB1A@S207
+    10min-30min: RAB1A -> STX5 -> STX4 | D_used=1 | target_role=unresolved | target_sites=STX4@Y443, STX4@Y315
+
+Path #264 [source #264]: EGFR -> HSPA8 -> PABPC1 -> TNRC6A -> DDX6 -> UPF1 -> PNN  | total_cost=0.075008
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> TNRC6A -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> UPF1 -> PNN | D_used=1 | target_role=unresolved | target_sites=PNN@Y1146
+
+Path #265 [source #265]: EGFR -> HGS -> EPS15 -> AGFG1 -> RAB1A -> STX5 -> STX4  | total_cost=0.075714
+    0min-5min: EGFR -> HGS -> EPS15 | D_used=1 | target_role=unresolved | target_sites=EPS15@Y321
+    5min-10min: EPS15 -> AGFG1 -> RAB1A | D_used=1 | target_role=unresolved | target_sites=RAB1A@S207
+    10min-30min: RAB1A -> STX5 -> STX4 | D_used=1 | target_role=unresolved | target_sites=STX4@Y443, STX4@Y315
+
+Path #266 [source #266]: EGFR -> YWHAZ -> HDAC4 -> MEF2C -> MAPK7 -> PRKCZ -> WWC1  | total_cost=0.075944
+    0min-5min: EGFR -> YWHAZ -> HDAC4 | D_used=1 | target_role=unresolved | target_sites=HDAC4@Y105
+    5min-10min: HDAC4 -> MEF2C -> MAPK7 | D_used=1 | target_role=unresolved | target_sites=MAPK7@Y203
+    10min-30min: MAPK7 -> PRKCZ -> WWC1 | D_used=1 | target_role=unresolved | target_sites=WWC1@Y453
+
+Path #267 [source #267]: EGFR -> ABL1 -> RIN1 -> RAB5A -> GDI2 -> GDI1 -> RAB35  | total_cost=0.076438
+    0min-5min: EGFR -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+    5min-10min: RIN1 -> RAB5A -> GDI2 | D_used=1 | target_role=unresolved | target_sites=GDI2@Y166
+    10min-30min: GDI2 -> GDI1 -> RAB35 | D_used=1 | target_role=unresolved | target_sites=RAB35@Y312
+
+Path #268 [source #268]: EGFR -> JUP -> DSG2 -> CD46  | total_cost=0.077509
+    0min-5min: EGFR -> JUP -> DSG2 | D_used=1 | target_role=unresolved | target_sites=DSG2@Y321
+    5min-10min: DSG2 -> CD46 | D_used=0 | target_role=unresolved | target_sites=CD46@938
+    10min-30min: CD46 | D_used=0 | target_role=unresolved | target_sites=CD46@905, CD46@937, CD46@938
+
+Path #269 [source #269]: EGFR -> CTNNB1 -> IQGAP1 -> ACTB -> CFL1 -> ACTC1 -> PLS3  | total_cost=0.084738
+    0min-5min: EGFR -> CTNNB1 -> IQGAP1 | D_used=1 | target_role=unresolved | target_sites=IQGAP1@Y181
+    5min-10min: IQGAP1 -> ACTB -> CFL1 | D_used=1 | target_role=unresolved | target_sites=CFL1@Y580
+    10min-30min: CFL1 -> ACTC1 -> PLS3 | D_used=1 | target_role=unresolved | target_sites=PLS3@Y513
+
+Path #270 [source #270]: EGFR -> PDCD6IP -> SDCBP -> AIMP2 -> FUBP1  | total_cost=0.089217
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PDCD6IP -> SDCBP | D_used=1 | target_role=unresolved | target_sites=SDCBP@Y453
+    10min-30min: SDCBP -> AIMP2 -> FUBP1 | D_used=1 | target_role=unresolved | target_sites=FUBP1@Y23
+
+Path #271 [source #271]: EGFR -> UBC -> OTUD4  | total_cost=0.091063
+    0min-5min: EGFR -> UBC -> OTUD4 | D_used=1 | target_role=unresolved | target_sites=OTUD4@S856, OTUD4@Y366
+    5min-10min: OTUD4 | D_used=0 | target_role=unresolved | target_sites=OTUD4@S856
+    10min-30min: OTUD4 | D_used=0 | target_role=unresolved | target_sites=OTUD4@Y366
+
+Path #272 [source #272]: EGFR -> GAB1 -> SLTM  | total_cost=0.093116
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> GAB1 | D_used=0 | target_role=unresolved | target_sites=GAB1@Y192, GAB1@Y371
+    10min-30min: GAB1 -> SLTM | D_used=0 | target_role=unresolved | target_sites=SLTM@417
+
+Path #273 [source #273]: EGFR -> GRB2 -> PTK2 -> TP53 -> MAPK3 -> CASP3 -> ANXA5  | total_cost=0.098093
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y198
+    10min-30min: MAPK3 -> CASP3 -> ANXA5 | D_used=1 | target_role=unresolved | target_sites=ANXA5@Y176
+
+Path #274 [source #274]: EGFR -> PLCG1 -> PTEN -> FRK  | total_cost=0.099700
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 -> PTEN -> FRK | D_used=1 | target_role=unresolved | target_sites=FRK@Y344
+
+Path #275 [source #275]: EGFR -> CTNNB1 -> VCL -> ACTN1 -> PDLIM1 -> MYO1C -> MYO1D  | total_cost=0.111361
+    0min-5min: EGFR -> CTNNB1 -> VCL | D_used=1 | target_role=unresolved | target_sites=VCL@Y284
+    5min-10min: VCL -> ACTN1 -> PDLIM1 | D_used=1 | target_role=unresolved | target_sites=PDLIM1@Y137
+    10min-30min: PDLIM1 -> MYO1C -> MYO1D | D_used=1 | target_role=unresolved | target_sites=MYO1D@Y435
+
+Path #276 [source #276]: EGFR -> YWHAZ -> CDK16  | total_cost=0.111932
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> YWHAZ -> CDK16 | D_used=1 | target_role=unresolved | target_sites=CDK16@Y341, CDK16@Y359
+    10min-30min: CDK16 | D_used=0 | target_role=unresolved | target_sites=CDK16@Y359
+
+Path #277 [source #277]: EGFR -> ERRFI1 -> GRB2 -> ABL1 -> ABI1 -> ARF1 -> IQSEC1  | total_cost=0.114815
+    0min-5min: EGFR -> ERRFI1 -> GRB2 | D_used=1 | target_role=mixed | target_sites=GRB2@Y759, GRB2@Y1245, GRB2@S763, GRB2@Y818, GRB2@Y1217
+    5min-10min: GRB2 -> ABL1 -> ABI1 | D_used=1 | target_role=unresolved | target_sites=ABI1@1229, ABI1@1496
+    10min-30min: ABI1 -> ARF1 -> IQSEC1 | D_used=1 | target_role=unresolved | target_sites=IQSEC1@Y21
+
+Path #278 [source #278]: EGFR -> LYN -> CSK -> PRAG1  | total_cost=0.122682
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> LYN | D_used=0 | target_role=supporting | target_sites=LYN@S2152
+    10min-30min: LYN -> CSK -> PRAG1 | D_used=1 | target_role=unresolved | target_sites=SGK223@Y103
+
+Path #279 [source #279]: EGFR -> YWHAZ -> CDK16 -> CCNYL1  | total_cost=0.130096
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> YWHAZ -> CDK16 | D_used=1 | target_role=unresolved | target_sites=CDK16@Y341, CDK16@Y359
+    10min-30min: CDK16 -> CCNYL1 | D_used=0 | target_role=unresolved | target_sites=CCNYL1@S962
+
+Path #280 [source #280]: EGFR -> UBC -> CCDC50  | total_cost=0.156713
+    0min-5min: EGFR -> UBC -> CCDC50 | D_used=1 | target_role=unresolved | target_sites=CCDC50@Y406, CCDC50@Y586, CCDC50@Y535
+    5min-10min: CCDC50 | D_used=0 | target_role=unresolved | target_sites=CCDC50@Y328
+    10min-30min: CCDC50 | D_used=0 | target_role=unresolved | target_sites=CCDC50@Y328
+
+Path #281 [source #281]: EGFR -> EPS15 -> UBC -> RABGEF1 -> MON1A -> RMC1  | total_cost=0.168183
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RABGEF1 | D_used=0 | target_role=unresolved | target_sites=RABGEF1@Y486
+    10min-30min: RABGEF1 -> MON1A -> RMC1 | D_used=1 | target_role=unresolved | target_sites=C18orf8@Y660
+
+Path #282 [source #282]: EGFR -> EPS15 -> UBC -> TOM1 -> TOLLIP -> IRAK1 -> SIGIRR  | total_cost=0.169877
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> TOM1 -> TOLLIP | D_used=1 | target_role=unresolved | target_sites=TOLLIP@Y2249
+    10min-30min: TOLLIP -> IRAK1 -> SIGIRR | D_used=1 | target_role=unresolved | target_sites=SIGIRR@Y73
+
+Path #283 [source #283]: EGFR -> PLCG1 -> EPB41L2 -> SPTBN2  | total_cost=0.174440
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> PLCG1 | D_used=0 | target_role=unresolved | target_sites=PLCG1@Y453
+    10min-30min: PLCG1 -> EPB41L2 -> SPTBN2 | D_used=1 | target_role=unresolved | target_sites=SPTBN2@Y430
+
+Path #284 [source #284]: EGFR -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6 -> XRN1 -> HBS1L  | total_cost=0.175712
+    0min-5min: EGFR -> HSPA8 -> PABPC1 | D_used=1 | target_role=unresolved | target_sites=PABPC1@Y132
+    5min-10min: PABPC1 -> ATXN2 -> DDX6 | D_used=1 | target_role=unresolved | target_sites=DDX6@S72
+    10min-30min: DDX6 -> XRN1 -> HBS1L | D_used=1 | target_role=unresolved | target_sites=HBS1L@859
+
+Path #285 [source #285]: EGFR -> EPS15 -> UBC -> RABGEF1 -> RAB5A -> SCAMP1  | total_cost=0.181933
+    0min-5min: EGFR -> EPS15 -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y949, UBC@Y769
+    5min-10min: UBC -> RABGEF1 | D_used=0 | target_role=unresolved | target_sites=RABGEF1@Y486
+    10min-30min: RABGEF1 -> RAB5A -> SCAMP1 | D_used=1 | target_role=unresolved | target_sites=SCAMP1@Y1331
+
+Path #286 [source #286]: EGFR -> PTK2 -> ITGB1 -> FLNA -> FLNB -> AHNAK -> PLEC  | total_cost=0.191765
+    0min-5min: EGFR -> PTK2 -> ITGB1 | D_used=1 | target_role=unresolved | target_sites=ITGB1@Y282
+    5min-10min: ITGB1 -> FLNA -> FLNB | D_used=1 | target_role=unresolved | target_sites=FLNB@Y88
+    10min-30min: FLNB -> AHNAK -> PLEC | D_used=1 | target_role=unresolved | target_sites=PLEC@Y18, PLEC@Y64
+
+Path #287 [source #287]: EGFR -> CBL -> UBC -> ITCH -> SCAMP3  | total_cost=0.199805
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> ITCH -> SCAMP3 | D_used=1 | target_role=unresolved | target_sites=SCAMP3@Y402
+
+Path #288 [source #288]: EGFR -> GRB2 -> PTK2 -> TP53 -> TRIM28 -> LARP7 -> SRP68  | total_cost=0.201932
+    0min-5min: EGFR -> GRB2 -> PTK2 | D_used=1 | target_role=unresolved | target_sites=PTK2@1099
+    5min-10min: PTK2 -> TP53 -> TRIM28 | D_used=1 | target_role=unresolved | target_sites=TRIM28@Y276
+    10min-30min: TRIM28 -> LARP7 -> SRP68 | D_used=1 | target_role=unresolved | target_sites=SRP68@Y159, SRP68@Y293
+
+Path #289 [source #289]: EGFR -> CBL -> EPHA2 -> FASN -> AASDH  | total_cost=0.207310
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> EPHA2 | D_used=1 | target_role=unresolved | target_sites=EPHA2@S1238, EPHA2@1084
+    10min-30min: EPHA2 -> FASN -> AASDH | D_used=1 | target_role=unresolved | target_sites=Unknown@Y796, Unknown@Y864
+
+Path #290 [source #290]: EGFR -> GAB1 -> PTPN11 -> JAK1 -> STAT6 -> TSTA3 -> GMDS  | total_cost=0.225163
+    0min-5min: EGFR -> GAB1 -> PTPN11 | D_used=1 | target_role=unresolved | target_sites=PTPN11@Y762
+    5min-10min: PTPN11 -> JAK1 -> STAT6 | D_used=1 | target_role=unresolved | target_sites=STAT6@322
+    10min-30min: STAT6 -> TSTA3 -> GMDS | D_used=1 | target_role=unresolved | target_sites=GMDS@Y30
+
+Path #291 [source #291]: EGFR -> HSP90AA1 -> NR3C1 -> IRF2BP2  | total_cost=0.231414
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> HSP90AA1 | D_used=0 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    10min-30min: HSP90AA1 -> NR3C1 -> IRF2BP2 | D_used=1 | target_role=unresolved | target_sites=IRF2BP2@Y256
+
+Path #292 [source #292]: EGFR -> ERRFI1 -> GRB2 -> ABL1 -> RIN1 -> RRAS -> RASA3  | total_cost=0.306189
+    0min-5min: EGFR -> ERRFI1 -> GRB2 | D_used=1 | target_role=mixed | target_sites=GRB2@Y759, GRB2@Y1245, GRB2@S763, GRB2@Y818, GRB2@Y1217
+    5min-10min: GRB2 -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+    10min-30min: RIN1 -> RRAS -> RASA3 | D_used=1 | target_role=unresolved | target_sites=RASA3@Y422
+
+Path #293 [source #293]: EGFR -> CBL -> UBC -> TSG101 -> BROX  | total_cost=0.316343
+    0min-5min: EGFR | D_used=0 | target_role=mixed | target_sites=EGFR@Y998, EGFR@Y1092, EGFR@Y1138, EGFR@Y1172, EGFR@Y1197, EGFR@Y1069, EGFR@S1081, EGFR@Y869
+    5min-10min: EGFR -> CBL -> UBC | D_used=1 | target_role=unresolved | target_sites=UBC@Y582
+    10min-30min: UBC -> TSG101 -> BROX | D_used=1 | target_role=unresolved | target_sites=BROX@Y764
+
+Path #294 [source #294]: EGFR -> CTNNB1 -> LMNB1 -> SYNE2 -> CLMN  | total_cost=0.327010
+    0min-5min: EGFR -> CTNNB1 -> LMNB1 | D_used=1 | target_role=unresolved | target_sites=LMNB1@S7, LMNB1@Y146
+    5min-10min: LMNB1 -> SYNE2 -> CLMN | D_used=1 | target_role=unresolved | target_sites=CLMN@Y387
+    10min-30min: CLMN | D_used=0 | target_role=unresolved | target_sites=CLMN@Y193
+
+Path #295 [source #295]: EGFR -> PTPN11 -> MAPK3 -> BCL2L11 -> DYNLL1 -> PAFAH1B1 -> NUDCD2  | total_cost=0.337406
+    0min-5min: EGFR -> PTPN11 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y53, MAPK3@Y218
+    5min-10min: MAPK3 -> BCL2L11 -> DYNLL1 | D_used=1 | target_role=unresolved | target_sites=DYNLL1@Y59
+    10min-30min: DYNLL1 -> PAFAH1B1 -> NUDCD2 | D_used=1 | target_role=unresolved | target_sites=NUDCD2@Y53
+
+Path #296 [source #296]: EGFR -> GAPDH -> PKM -> NME1 -> SET -> ASPM -> RCN2  | total_cost=0.367239
+    0min-5min: EGFR -> GAPDH -> PKM | D_used=1 | target_role=supporting | target_sites=PKM@Y204
+    5min-10min: PKM -> NME1 -> SET | D_used=1 | target_role=unresolved | target_sites=SET@Y333
+    10min-30min: SET -> ASPM -> RCN2 | D_used=1 | target_role=unresolved | target_sites=RCN2@Y15
+
+Path #297 [source #297]: EGFR -> PTPN11 -> MAPK3 -> MAPK1 -> SLC9A1 -> RDX -> C6orf132  | total_cost=0.377565
+    0min-5min: EGFR -> PTPN11 -> MAPK3 | D_used=1 | target_role=unresolved | target_sites=MAPK3@Y53, MAPK3@Y218
+    5min-10min: MAPK3 -> MAPK1 -> SLC9A1 | D_used=1 | target_role=unresolved | target_sites=SLC9A1@S156
+    10min-30min: SLC9A1 -> RDX -> C6orf132 | D_used=1 | target_role=unresolved | target_sites=C6orf132@Y820
+
+Path #298 [source #298]: EGFR -> SRC -> HSP90AA1 -> PRKACA -> PALM2AKAP2 -> PALM -> SNX16  | total_cost=0.406869
+    0min-5min: EGFR -> SRC -> HSP90AA1 | D_used=1 | target_role=unresolved | target_sites=HSP90AA1@Y468
+    5min-10min: HSP90AA1 -> PRKACA -> PALM2AKAP2 | D_used=1 | target_role=unresolved | target_sites=AKAP2@Y186
+    10min-30min: PALM2AKAP2 -> PALM -> SNX16 | D_used=1 | target_role=unresolved | target_sites=SNX16@Y635
+
+Path #299 [source #299]: EGFR -> YBX1 -> SF3B1 -> RBM17 -> CIC  | total_cost=0.468644
+    0min-5min: EGFR -> YBX1 -> SF3B1 | D_used=1 | target_role=supporting | target_sites=SF3B1@Y187
+    5min-10min: SF3B1 -> RBM17 -> CIC | D_used=1 | target_role=unresolved | target_sites=CIC@Y226, CIC@Y855, CIC@Y230
+    10min-30min: CIC | D_used=0 | target_role=unresolved | target_sites=CIC@Y226
+
+Path #300 [source #300]: EGFR -> ABL1 -> RIN1 -> RAB5A -> GDI2 -> AGFG1 -> NPDC1  | total_cost=0.554616
+    0min-5min: EGFR -> ABL1 -> RIN1 | D_used=1 | target_role=unresolved | target_sites=RIN1@Y1058
+    5min-10min: RIN1 -> RAB5A -> GDI2 | D_used=1 | target_role=unresolved | target_sites=GDI2@Y166
+    10min-30min: GDI2 -> AGFG1 -> NPDC1 | D_used=1 | target_role=unresolved | target_sites=NPDC1@Y117, NPDC1@Y128

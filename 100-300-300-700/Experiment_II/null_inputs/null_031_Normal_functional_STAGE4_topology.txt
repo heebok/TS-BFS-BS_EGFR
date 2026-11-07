@@ -1,0 +1,1503 @@
+*** Stage 4 Unique Interval-Aware Topologies ***
+Distinct bridge routes remain distinct topologies; site tokens/costs are annotations.
+Unique topologies: 300
+
+Topology #1: EGFR -> LYN | supporting records=1 | best_cost=0.001001
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN
+
+Topology #2: EGFR -> SHC1 | supporting records=1 | best_cost=0.001001
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1
+
+Topology #3: EGFR -> CBL -> LYN | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> LYN
+    10min-30min: LYN
+
+Topology #4: EGFR -> CBL -> SHC1 | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1
+
+Topology #5: EGFR -> CBL -> SYK | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SYK
+    10min-30min: SYK
+
+Topology #6: EGFR -> CBL -> UBC | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC
+
+Topology #7: EGFR -> EPS15 -> UBC | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC
+
+Topology #8: EGFR -> GRB2 -> WASL | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL
+
+Topology #9: EGFR -> HGS -> UBC | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC
+
+Topology #10: EGFR -> NCK1 -> WASL | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL
+
+Topology #11: EGFR -> SRC -> LYN | supporting records=1 | best_cost=0.002001
+    0min-5min: EGFR -> SRC -> LYN
+    5min-10min: LYN
+    10min-30min: LYN
+
+Topology #12: EGFR -> CBLB -> GRB2 -> ERRFI1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> GRB2 -> ERRFI1
+
+Topology #13: EGFR -> CBLB -> GRB2 -> GAB1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> GRB2 -> GAB1
+
+Topology #14: EGFR -> CBLB -> GRB2 -> PTPN11 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> GRB2 -> PTPN11
+
+Topology #15: EGFR -> CBLB -> SH3KBP1 -> CD2AP | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> SH3KBP1 -> CD2AP
+
+Topology #16: EGFR -> CTNND1 -> CTNNB1 -> USP9X | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNND1
+    10min-30min: CTNND1 -> CTNNB1 -> USP9X
+
+Topology #17: EGFR -> LYN -> CBL -> CD2AP | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN -> CBL -> CD2AP
+
+Topology #18: EGFR -> LYN -> CBL -> SYK | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN -> CBL -> SYK
+
+Topology #19: EGFR -> LYN -> SRC -> PXN | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN -> SRC -> PXN
+
+Topology #20: EGFR -> PIK3R2 -> CBL -> CD2AP | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> PIK3R2
+    10min-30min: PIK3R2 -> CBL -> CD2AP
+
+Topology #21: EGFR -> PIK3R2 -> ERBB2 -> PTPN11 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> PIK3R2
+    10min-30min: PIK3R2 -> ERBB2 -> PTPN11
+
+Topology #22: EGFR -> PIK3R2 -> PIK3R1 -> GAB1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> PIK3R2
+    10min-30min: PIK3R2 -> PIK3R1 -> GAB1
+
+Topology #23: EGFR -> SHC1 -> ABL1 -> RIN1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> ABL1 -> RIN1
+
+Topology #24: EGFR -> SHC1 -> ERBB2 -> PTPN11 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> ERBB2 -> PTPN11
+
+Topology #25: EGFR -> SHC1 -> GRB2 -> ERRFI1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> GRB2 -> ERRFI1
+
+Topology #26: EGFR -> SHC1 -> GRB2 -> GAB1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> GRB2 -> GAB1
+
+Topology #27: EGFR -> SHC1 -> PTPN12 -> PXN | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> PTPN12 -> PXN
+
+Topology #28: EGFR -> SHC1 -> SRC -> PXN | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> SRC -> PXN
+
+Topology #29: EGFR -> CBL -> NCK1 -> WASL | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL
+
+Topology #30: EGFR -> CBL -> SRC -> SHC1 | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR -> CBL -> SRC
+    5min-10min: SRC -> SHC1
+    10min-30min: SHC1
+
+Topology #31: EGFR -> NCK1 -> CBL -> SYK | supporting records=1 | best_cost=0.003002
+    0min-5min: EGFR -> NCK1 -> CBL
+    5min-10min: CBL -> SYK
+    10min-30min: SYK
+
+Topology #32: EGFR -> CBL -> SHC1 -> ABL1 -> RIN1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1 -> ABL1 -> RIN1
+
+Topology #33: EGFR -> CBL -> SHC1 -> GRB2 -> ERRFI1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1 -> GRB2 -> ERRFI1
+
+Topology #34: EGFR -> CBL -> UBC -> IKBKG -> TAB1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> IKBKG -> TAB1
+
+Topology #35: EGFR -> CBL -> UBC -> PSMD14 -> PSMA2 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> PSMD14 -> PSMA2
+
+Topology #36: EGFR -> CBL -> UBC -> PSMD4 -> PSMA2 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> PSMD4 -> PSMA2
+
+Topology #37: EGFR -> CBL -> UBC -> RNF168 -> TP53BP1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> RNF168 -> TP53BP1
+
+Topology #38: EGFR -> CBL -> UBC -> RPS27A -> RPS10 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> RPS27A -> RPS10
+
+Topology #39: EGFR -> CBL -> UBC -> SQSTM1 -> PRKCI | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> SQSTM1 -> PRKCI
+
+Topology #40: EGFR -> CBL -> UBC -> TAB2 -> TAB1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> TAB2 -> TAB1
+
+Topology #41: EGFR -> CBL -> UBC -> TAB3 -> TAB1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> TAB3 -> TAB1
+
+Topology #42: EGFR -> CBL -> UBC -> UBA52 -> RPS10 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> UBA52 -> RPS10
+
+Topology #43: EGFR -> CDH1 -> CTNND1 -> CTNNB1 -> USP9X | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> CDH1 -> CTNND1
+    10min-30min: CTNND1 -> CTNNB1 -> USP9X
+
+Topology #44: EGFR -> EPS15 -> UBC -> PSMD14 -> PSMA2 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> PSMD14 -> PSMA2
+
+Topology #45: EGFR -> EPS15 -> UBC -> RNF168 -> TP53BP1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> RNF168 -> TP53BP1
+
+Topology #46: EGFR -> EPS15 -> UBC -> RPS27A -> RPS10 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> RPS27A -> RPS10
+
+Topology #47: EGFR -> EPS15 -> UBC -> SQSTM1 -> PRKCI | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> SQSTM1 -> PRKCI
+
+Topology #48: EGFR -> HGS -> UBC -> RNF168 -> TP53BP1 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC -> RNF168 -> TP53BP1
+
+Topology #49: EGFR -> HGS -> UBC -> SQSTM1 -> PRKCI | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC -> SQSTM1 -> PRKCI
+
+Topology #50: EGFR -> YWHAZ -> HDAC4 -> YWHAG -> KIF23 | supporting records=1 | best_cost=0.004002
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> YWHAG -> KIF23
+    10min-30min: KIF23
+
+Topology #51: EGFR -> CBL -> SRC -> SHC1 -> ABL1 -> RIN1 | supporting records=1 | best_cost=0.005003
+    0min-5min: EGFR -> CBL -> SRC
+    5min-10min: SRC -> SHC1
+    10min-30min: SHC1 -> ABL1 -> RIN1
+
+Topology #52: EGFR -> CBL -> SYK -> STAT3 -> JAK2 | supporting records=1 | best_cost=0.005004
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SYK
+    10min-30min: SYK -> STAT3 -> JAK2
+
+Topology #53: EGFR -> SRC -> STAT3 -> JAK1 -> IFNAR1 | supporting records=1 | best_cost=0.005004
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> JAK1 -> IFNAR1
+    10min-30min: IFNAR1
+
+Topology #54: EGFR -> EPS15 -> EPS15L1 -> ITSN2 | supporting records=1 | best_cost=0.005006
+    0min-5min: EGFR -> EPS15 -> EPS15L1
+    5min-10min: EPS15L1 -> ITSN2
+    10min-30min: ITSN2
+
+Topology #55: EGFR -> HSPA8 -> PABPC1 | supporting records=1 | best_cost=0.005009
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1
+
+Topology #56: EGFR -> LYN -> CBL -> SYK -> STAT3 -> JAK2 | supporting records=1 | best_cost=0.006004
+    0min-5min: EGFR -> LYN -> CBL
+    5min-10min: CBL -> SYK
+    10min-30min: SYK -> STAT3 -> JAK2
+
+Topology #57: EGFR -> NCK1 -> CBL -> SYK -> STAT3 -> JAK2 | supporting records=1 | best_cost=0.006004
+    0min-5min: EGFR -> NCK1 -> CBL
+    5min-10min: CBL -> SYK
+    10min-30min: SYK -> STAT3 -> JAK2
+
+Topology #58: EGFR -> SRC -> STAT3 -> JAK1 -> IFNAR1 -> TYK2 | supporting records=1 | best_cost=0.006004
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> JAK1 -> IFNAR1
+    10min-30min: IFNAR1 -> TYK2
+
+Topology #59: EGFR -> LYN -> CBL -> SORBS1 -> FLOT1 | supporting records=1 | best_cost=0.006006
+    0min-5min: EGFR -> LYN -> CBL
+    5min-10min: CBL -> SORBS1 -> FLOT1
+    10min-30min: FLOT1
+
+Topology #60: EGFR -> NCK1 -> CBL -> SORBS1 -> FLOT1 | supporting records=1 | best_cost=0.006006
+    0min-5min: EGFR -> NCK1 -> CBL
+    5min-10min: CBL -> SORBS1 -> FLOT1
+    10min-30min: FLOT1
+
+Topology #61: EGFR -> PIK3R2 -> CBL -> SORBS1 -> FLOT1 | supporting records=1 | best_cost=0.006006
+    0min-5min: EGFR -> PIK3R2 -> CBL
+    5min-10min: CBL -> SORBS1 -> FLOT1
+    10min-30min: FLOT1
+
+Topology #62: EGFR -> SRC -> STAT3 -> JAK2 -> SH2B1 | supporting records=1 | best_cost=0.006006
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> JAK2 -> SH2B1
+    10min-30min: SH2B1
+
+Topology #63: EGFR -> GRB2 -> WASL -> FNBP1L | supporting records=1 | best_cost=0.006009
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL -> FNBP1L
+
+Topology #64: EGFR -> JAK2 -> SH2B1 | supporting records=1 | best_cost=0.006009
+    0min-5min: EGFR
+    5min-10min: EGFR -> JAK2 -> SH2B1
+    10min-30min: SH2B1
+
+Topology #65: EGFR -> NCK1 -> WASL -> FNBP1L | supporting records=1 | best_cost=0.006009
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL -> FNBP1L
+
+Topology #66: EGFR -> STAT1 -> IFNAR1 | supporting records=1 | best_cost=0.006013
+    0min-5min: EGFR
+    5min-10min: EGFR -> STAT1 -> IFNAR1
+    10min-30min: IFNAR1
+
+Topology #67: EGFR -> CBL -> UBC -> OTUB1 -> SLC7A11 | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> OTUB1 -> SLC7A11
+
+Topology #68: EGFR -> EPS15 -> UBC -> OTUB1 -> SLC7A11 | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> OTUB1 -> SLC7A11
+
+Topology #69: EGFR -> HGS -> UBC -> OTUB1 -> SLC7A11 | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC -> OTUB1 -> SLC7A11
+
+Topology #70: EGFR -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF4B | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> EIF4A1 -> EIF4B
+
+Topology #71: EGFR -> HSPA8 -> PABPC1 -> EIF4G1 -> EIF4B | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> EIF4G1 -> EIF4B
+
+Topology #72: EGFR -> HSPA8 -> PABPC1 -> RBM8A -> UPF3B | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> RBM8A -> UPF3B
+
+Topology #73: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> UPF3B | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> UPF1 -> UPF3B
+
+Topology #74: EGFR -> CBL -> NCK1 -> WASL -> FNBP1L | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL -> FNBP1L
+
+Topology #75: EGFR -> HSP90AA1 -> HSP90B1 -> HSPA8 -> PABPC1 | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR -> HSP90AA1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1
+
+Topology #76: EGFR -> HSP90AB1 -> HSP90B1 -> HSPA8 -> PABPC1 | supporting records=1 | best_cost=0.007010
+    0min-5min: EGFR -> HSP90AB1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1
+
+Topology #77: EGFR -> CBLB -> GRB2 -> GAREM1 | supporting records=1 | best_cost=0.007014
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> GRB2 -> GAREM1
+
+Topology #78: EGFR -> SHC1 -> GRB2 -> GAREM1 | supporting records=1 | best_cost=0.007014
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> GRB2 -> GAREM1
+
+Topology #79: EGFR -> SHC1 -> KDR -> NRP1 | supporting records=1 | best_cost=0.007014
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> KDR -> NRP1
+
+Topology #80: EGFR -> STAT1 -> IFNAR1 -> TYK2 | supporting records=1 | best_cost=0.007014
+    0min-5min: EGFR
+    5min-10min: EGFR -> STAT1 -> IFNAR1
+    10min-30min: IFNAR1 -> TYK2
+
+Topology #81: EGFR -> STAT3 -> TYK2 -> IFNAR1 | supporting records=1 | best_cost=0.007014
+    0min-5min: EGFR -> STAT3 -> TYK2
+    5min-10min: TYK2 -> IFNAR1
+    10min-30min: IFNAR1
+
+Topology #82: EGFR -> SRC -> STAT3 -> JAK1 -> IFNAR1 -> IFNAR2 -> TYK2 | supporting records=1 | best_cost=0.008006
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> JAK1 -> IFNAR1
+    10min-30min: IFNAR1 -> IFNAR2 -> TYK2
+
+Topology #83: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> NXF1 -> NUP62 | supporting records=1 | best_cost=0.008010
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> NXF1 -> NUP62
+
+Topology #84: EGFR -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF4G1 -> EIF4B | supporting records=1 | best_cost=0.008010
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> EIF4A1 -> EIF4G1
+    10min-30min: EIF4G1 -> EIF4B
+
+Topology #85: EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> UPF3B | supporting records=1 | best_cost=0.008010
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> GSPT1 -> UPF1
+    10min-30min: UPF1 -> UPF3B
+
+Topology #86: EGFR -> SRC -> STAT3 -> MTOR -> TUBA1B -> TUBA1C | supporting records=1 | best_cost=0.008010
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> MTOR -> TUBA1B
+    10min-30min: TUBA1B -> TUBA1C
+
+Topology #87: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 | supporting records=1 | best_cost=0.008011
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPA2B1
+
+Topology #88: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU | supporting records=1 | best_cost=0.008011
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPU
+
+Topology #89: EGFR -> CBL -> SHC1 -> GRB2 -> GAREM1 | supporting records=1 | best_cost=0.008014
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1 -> GRB2 -> GAREM1
+
+Topology #90: EGFR -> CBL -> SHC1 -> KDR -> NRP1 | supporting records=1 | best_cost=0.008014
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1 -> KDR -> NRP1
+
+Topology #91: EGFR -> CBL -> UBC -> HIF1A -> MAPK1 | supporting records=1 | best_cost=0.008014
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> HIF1A -> MAPK1
+
+Topology #92: EGFR -> EPS15 -> UBC -> HIF1A -> MAPK1 | supporting records=1 | best_cost=0.008014
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> HIF1A -> MAPK1
+
+Topology #93: EGFR -> HGS -> UBC -> HIF1A -> MAPK1 | supporting records=1 | best_cost=0.008014
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC -> HIF1A -> MAPK1
+
+Topology #94: EGFR -> TUBA1A -> TUBA1B -> TUBA1C | supporting records=1 | best_cost=0.008019
+    0min-5min: EGFR
+    5min-10min: EGFR -> TUBA1A -> TUBA1B
+    10min-30min: TUBA1B -> TUBA1C
+
+Topology #95: EGFR -> TUBA1A -> TUBA1C | supporting records=1 | best_cost=0.008020
+    0min-5min: EGFR
+    5min-10min: EGFR -> TUBA1A -> TUBA1C
+    10min-30min: TUBA1C
+
+Topology #96: EGFR -> YWHAZ -> HDAC4 -> NCOR1 -> SIN3A -> OGT -> HCFC1 | supporting records=1 | best_cost=0.009009
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> NCOR1 -> SIN3A
+    10min-30min: SIN3A -> OGT -> HCFC1
+
+Topology #97: EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> NXF1 -> NUP62 | supporting records=1 | best_cost=0.009011
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> GSPT1 -> UPF1
+    10min-30min: UPF1 -> NXF1 -> NUP62
+
+Topology #98: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU -> DHX9 | supporting records=1 | best_cost=0.009012
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPU
+    10min-30min: HNRNPU -> DHX9
+
+Topology #99: EGFR -> CBL -> SRC -> SHC1 -> KDR -> NRP1 | supporting records=1 | best_cost=0.009015
+    0min-5min: EGFR -> CBL -> SRC
+    5min-10min: SRC -> SHC1
+    10min-30min: SHC1 -> KDR -> NRP1
+
+Topology #100: EGFR -> STAT3 -> MAPK1 -> JUN -> MAPK9 | supporting records=1 | best_cost=0.009020
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> JUN -> MAPK9
+    10min-30min: MAPK9
+
+Topology #101: EGFR -> HSP90AA1 -> HSP90B1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 | supporting records=1 | best_cost=0.010012
+    0min-5min: EGFR -> HSP90AA1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPA2B1
+
+Topology #102: EGFR -> HSP90AA1 -> HSP90B1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU | supporting records=1 | best_cost=0.010012
+    0min-5min: EGFR -> HSP90AA1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPU
+
+Topology #103: EGFR -> HSP90AB1 -> HSP90B1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 | supporting records=1 | best_cost=0.010012
+    0min-5min: EGFR -> HSP90AB1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPA2B1
+
+Topology #104: EGFR -> HSP90AB1 -> HSP90B1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU | supporting records=1 | best_cost=0.010012
+    0min-5min: EGFR -> HSP90AB1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPD -> HNRNPU
+
+Topology #105: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU -> HNRNPK -> PCBP1 | supporting records=1 | best_cost=0.010012
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPU
+    10min-30min: HNRNPU -> HNRNPK -> PCBP1
+
+Topology #106: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> PCBP1 | supporting records=1 | best_cost=0.010017
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPK -> PCBP1
+
+Topology #107: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU -> HNRNPA1 -> DHX9 | supporting records=1 | best_cost=0.011014
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPU
+    10min-30min: HNRNPU -> HNRNPA1 -> DHX9
+
+Topology #108: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> RNPS1 -> SRSF11 | supporting records=1 | best_cost=0.011018
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> RNPS1 -> SRSF11
+
+Topology #109: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPU -> DHX9 | supporting records=1 | best_cost=0.011018
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPK -> HNRNPU
+    10min-30min: HNRNPU -> DHX9
+
+Topology #110: EGFR -> STAT3 -> MAPK1 -> JUN -> MAPK9 -> ATF2 -> MAPK11 | supporting records=1 | best_cost=0.011021
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> JUN -> MAPK9
+    10min-30min: MAPK9 -> ATF2 -> MAPK11
+
+Topology #111: EGFR -> GRB2 -> SH2B1 | supporting records=1 | best_cost=0.011051
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> SH2B1
+    10min-30min: SH2B1
+
+Topology #112: EGFR -> HSP90AA1 -> HSP90B1 -> HSPA8 -> PABPC1 -> HNRNPK -> PCBP1 | supporting records=1 | best_cost=0.012018
+    0min-5min: EGFR -> HSP90AA1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> PABPC1
+    10min-30min: PABPC1 -> HNRNPK -> PCBP1
+
+Topology #113: EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> RNPS1 -> SRSF11 | supporting records=1 | best_cost=0.012018
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> GSPT1 -> UPF1
+    10min-30min: UPF1 -> RNPS1 -> SRSF11
+
+Topology #114: EGFR -> SRC -> STAT3 -> HDAC1 -> SIN3A -> OGT -> HCFC1 | supporting records=1 | best_cost=0.012022
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> HDAC1 -> SIN3A
+    10min-30min: SIN3A -> OGT -> HCFC1
+
+Topology #115: EGFR -> YWHAZ -> HDAC4 -> NCOR2 -> SIN3A -> OGT -> HCFC1 | supporting records=1 | best_cost=0.013020
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> NCOR2 -> SIN3A
+    10min-30min: SIN3A -> OGT -> HCFC1
+
+Topology #116: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> RNPS1 -> SNRNP70 | supporting records=1 | best_cost=0.013028
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> RNPS1 -> SNRNP70
+
+Topology #117: EGFR -> YWHAZ -> KIF23 | supporting records=1 | best_cost=0.013073
+    0min-5min: EGFR
+    5min-10min: EGFR -> YWHAZ -> KIF23
+    10min-30min: KIF23
+
+Topology #118: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPM -> RBMX -> SRSF9 | supporting records=1 | best_cost=0.014022
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPK -> HNRNPM
+    10min-30min: HNRNPM -> RBMX -> SRSF9
+
+Topology #119: EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> RNPS1 -> SNRNP70 | supporting records=1 | best_cost=0.014028
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> GSPT1 -> UPF1
+    10min-30min: UPF1 -> RNPS1 -> SNRNP70
+
+Topology #120: EGFR -> GRB2 -> WASL -> CDC42 -> VASP | supporting records=1 | best_cost=0.014062
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL -> CDC42 -> VASP
+
+Topology #121: EGFR -> NCK1 -> WASL -> CDC42 -> VASP | supporting records=1 | best_cost=0.014062
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL -> CDC42 -> VASP
+
+Topology #122: EGFR -> CALM1 -> IQGAP1 -> ACTB -> ACTN4 | supporting records=1 | best_cost=0.015050
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> ACTB -> ACTN4
+    10min-30min: ACTN4
+
+Topology #123: EGFR -> CBL -> NCK1 -> WASL -> CDC42 -> VASP | supporting records=1 | best_cost=0.015063
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL -> CDC42 -> VASP
+
+Topology #124: EGFR -> GAPDH -> PGK1 -> PGAM1 -> PGAM4 -> ENO1 -> ENO3 | supporting records=1 | best_cost=0.016036
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> PGAM1 -> PGAM4
+    10min-30min: PGAM4 -> ENO1 -> ENO3
+
+Topology #125: EGFR -> GAPDH -> PGK1 -> PGAM1 -> PGAM4 -> PGAM2 -> ENO3 | supporting records=1 | best_cost=0.016036
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> PGAM1 -> PGAM4
+    10min-30min: PGAM4 -> PGAM2 -> ENO3
+
+Topology #126: EGFR -> EPS15 -> EPN2 | supporting records=1 | best_cost=0.016114
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> EPN2
+    10min-30min: EPN2
+
+Topology #127: EGFR -> GRB2 -> WASL -> ACTG1 -> ACTA2 | supporting records=1 | best_cost=0.017060
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL -> ACTG1 -> ACTA2
+
+Topology #128: EGFR -> NCK1 -> WASL -> ACTG1 -> ACTA2 | supporting records=1 | best_cost=0.017060
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL -> ACTG1 -> ACTA2
+
+Topology #129: EGFR -> STAT3 -> MAPK1 -> ELK1 -> MAPK9 | supporting records=1 | best_cost=0.017060
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> ELK1 -> MAPK9
+    10min-30min: MAPK9
+
+Topology #130: EGFR -> PDCD6IP -> CEP55 -> KIF11 -> KIF23 | supporting records=1 | best_cost=0.017100
+    0min-5min: EGFR -> PDCD6IP -> CEP55
+    5min-10min: CEP55 -> KIF11 -> KIF23
+    10min-30min: KIF23
+
+Topology #131: EGFR -> HGS -> EPS15 -> EPN2 | supporting records=1 | best_cost=0.017115
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> EPS15 -> EPN2
+    10min-30min: EPN2
+
+Topology #132: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPR -> RBMX -> SRSF9 | supporting records=1 | best_cost=0.018037
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPR
+    10min-30min: HNRNPR -> RBMX -> SRSF9
+
+Topology #133: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPM -> RBMX -> SRSF9 | supporting records=1 | best_cost=0.018040
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPM
+    10min-30min: HNRNPM -> RBMX -> SRSF9
+
+Topology #134: EGFR -> GAPDH -> PGK1 -> PGAM4 -> ENO1 -> ENO3 | supporting records=1 | best_cost=0.018046
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> PGAM4
+    10min-30min: PGAM4 -> ENO1 -> ENO3
+
+Topology #135: EGFR -> CBL -> NCK1 -> WASL -> ACTG1 -> ACTA2 | supporting records=1 | best_cost=0.018060
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL -> ACTG1 -> ACTA2
+
+Topology #136: EGFR -> CBL -> UBC -> EPS15 -> EPN2 | supporting records=1 | best_cost=0.018115
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> EPS15 -> EPN2
+
+Topology #137: EGFR -> STAT3 -> MAPK1 -> ELK1 -> MAPK9 -> ATF2 -> MAPK11 | supporting records=1 | best_cost=0.019061
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> ELK1 -> MAPK9
+    10min-30min: MAPK9 -> ATF2 -> MAPK11
+
+Topology #138: EGFR -> GAPDH -> ACTB -> ACTN4 | supporting records=1 | best_cost=0.019067
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ACTN4
+    10min-30min: ACTN4
+
+Topology #139: EGFR -> SRC -> STAT3 -> FOS -> MAPK9 | supporting records=1 | best_cost=0.019094
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> FOS -> MAPK9
+    10min-30min: MAPK9
+
+Topology #140: EGFR -> SRC -> STAT3 -> FOS -> MAPK9 -> ATF2 -> MAPK11 | supporting records=1 | best_cost=0.021095
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> FOS -> MAPK9
+    10min-30min: MAPK9 -> ATF2 -> MAPK11
+
+Topology #141: EGFR -> SRC -> CTTN -> ACTB -> ACTN4 | supporting records=1 | best_cost=0.022081
+    0min-5min: EGFR -> SRC -> CTTN
+    5min-10min: CTTN -> ACTB -> ACTN4
+    10min-30min: ACTN4
+
+Topology #142: EGFR -> GAPDH -> ACTB -> VASP -> ZYX | supporting records=1 | best_cost=0.023099
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> VASP -> ZYX
+    10min-30min: ZYX
+
+Topology #143: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> SRRM1 -> SRSF11 | supporting records=1 | best_cost=0.024156
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> SRRM1 -> SRSF11
+
+Topology #144: EGFR -> CALM1 -> IQGAP1 -> ACTB -> ACTN4 -> ACTN1 -> ZYX | supporting records=1 | best_cost=0.025091
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> ACTB -> ACTN4
+    10min-30min: ACTN4 -> ACTN1 -> ZYX
+
+Topology #145: EGFR -> GAPDH -> ACTB -> ENAH -> ZYX | supporting records=1 | best_cost=0.025126
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ENAH -> ZYX
+    10min-30min: ZYX
+
+Topology #146: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> EFTUD2 -> SRRM2 | supporting records=1 | best_cost=0.025187
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> EFTUD2 -> SRRM2
+
+Topology #147: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> PRPF8 -> SRRM2 | supporting records=1 | best_cost=0.025187
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> PRPF8 -> SRRM2
+
+Topology #148: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> ALYREF -> RBM15 | supporting records=1 | best_cost=0.026192
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> ALYREF -> RBM15
+
+Topology #149: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SNRNP70 | supporting records=1 | best_cost=0.026196
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SNRNP70
+    10min-30min: SNRNP70
+
+Topology #150: EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> ALYREF -> RBM15 | supporting records=1 | best_cost=0.027193
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> GSPT1 -> UPF1
+    10min-30min: UPF1 -> ALYREF -> RBM15
+
+Topology #151: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPR -> LARP7 -> MEPCE | supporting records=1 | best_cost=0.028148
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPR
+    10min-30min: HNRNPR -> LARP7 -> MEPCE
+
+Topology #152: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SRRM2 | supporting records=1 | best_cost=0.028208
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SRRM2
+    10min-30min: SRRM2
+
+Topology #153: EGFR -> GRB2 -> WASL -> NCK2 -> KIAA1522 | supporting records=1 | best_cost=0.029197
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL -> NCK2 -> KIAA1522
+
+Topology #154: EGFR -> NCK1 -> WASL -> NCK2 -> KIAA1522 | supporting records=1 | best_cost=0.029197
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL -> NCK2 -> KIAA1522
+
+Topology #155: EGFR -> YWHAZ -> HDAC4 -> NCOR1 -> SIN3A -> HDAC2 -> TRPS1 | supporting records=1 | best_cost=0.029252
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> NCOR1 -> SIN3A
+    10min-30min: SIN3A -> HDAC2 -> TRPS1
+
+Topology #156: EGFR -> LYN -> CDK1 -> CDK3 | supporting records=1 | best_cost=0.029372
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN -> CDK1 -> CDK3
+
+Topology #157: EGFR -> CBL -> NCK1 -> WASL -> NCK2 -> KIAA1522 | supporting records=1 | best_cost=0.030198
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL -> NCK2 -> KIAA1522
+
+Topology #158: EGFR -> TUBA1A -> TUBA1C -> TUBA3D -> SLC25A6 | supporting records=1 | best_cost=0.030207
+    0min-5min: EGFR
+    5min-10min: EGFR -> TUBA1A -> TUBA1C
+    10min-30min: TUBA1C -> TUBA3D -> SLC25A6
+
+Topology #159: EGFR -> CBL -> LYN -> CDK1 -> CDK3 | supporting records=1 | best_cost=0.030373
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> LYN
+    10min-30min: LYN -> CDK1 -> CDK3
+
+Topology #160: EGFR -> SRC -> LYN -> CDK1 -> CDK3 | supporting records=1 | best_cost=0.030373
+    0min-5min: EGFR -> SRC -> LYN
+    5min-10min: LYN
+    10min-30min: LYN -> CDK1 -> CDK3
+
+Topology #161: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> PRPF6 -> PRPF4B | supporting records=1 | best_cost=0.032213
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> PRPF6 -> PRPF4B
+
+Topology #162: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SRRM2 -> PRPF6 -> PRPF4B | supporting records=1 | best_cost=0.032213
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SRRM2
+    10min-30min: SRRM2 -> PRPF6 -> PRPF4B
+
+Topology #163: EGFR -> SRC -> STAT3 -> HDAC1 -> SIN3A -> HDAC2 -> TRPS1 | supporting records=1 | best_cost=0.032266
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> HDAC1 -> SIN3A
+    10min-30min: SIN3A -> HDAC2 -> TRPS1
+
+Topology #164: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> DHX15 -> TRA2A | supporting records=1 | best_cost=0.033235
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> DHX15 -> TRA2A
+
+Topology #165: EGFR -> YWHAZ -> HDAC4 -> MEF2C -> MAPK11 -> MAPKAPK2 -> ZFP36L1 | supporting records=1 | best_cost=0.033235
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> MEF2C -> MAPK11
+    10min-30min: MAPK11 -> MAPKAPK2 -> ZFP36L1
+
+Topology #166: EGFR -> YWHAZ -> HDAC4 -> NCOR2 -> SIN3A -> HDAC2 -> TRPS1 | supporting records=1 | best_cost=0.033263
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> NCOR2 -> SIN3A
+    10min-30min: SIN3A -> HDAC2 -> TRPS1
+
+Topology #167: EGFR -> GAPDH -> ACTB -> TJP1 -> CLDN4 | supporting records=1 | best_cost=0.034175
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> TJP1 -> CLDN4
+    10min-30min: CLDN4
+
+Topology #168: EGFR -> SRC -> STAT3 -> MTOR -> TUBA1B -> TUBB -> SLC25A6 | supporting records=1 | best_cost=0.034354
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> MTOR -> TUBA1B
+    10min-30min: TUBA1B -> TUBB -> SLC25A6
+
+Topology #169: EGFR -> TUBA1A -> TUBA1B -> TUBB -> SLC25A6 | supporting records=1 | best_cost=0.034363
+    0min-5min: EGFR
+    5min-10min: EGFR -> TUBA1A -> TUBA1B
+    10min-30min: TUBA1B -> TUBB -> SLC25A6
+
+Topology #170: EGFR -> HSPA8 -> EIF4G1 -> PABPC1 -> UPF1 -> NXF1 -> NUP62 | supporting records=1 | best_cost=0.034431
+    0min-5min: EGFR -> HSPA8 -> EIF4G1
+    5min-10min: EIF4G1 -> PABPC1 -> UPF1
+    10min-30min: UPF1 -> NXF1 -> NUP62
+
+Topology #171: EGFR -> EPS15 -> ITSN2 | supporting records=1 | best_cost=0.036628
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> ITSN2
+    10min-30min: ITSN2
+
+Topology #172: EGFR -> STAT3 -> MAPK1 -> MAPKAPK2 -> ZFP36L1 | supporting records=1 | best_cost=0.037272
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> MAPKAPK2 -> ZFP36L1
+    10min-30min: ZFP36L1
+
+Topology #173: EGFR -> HGS -> EPS15 -> ITSN2 | supporting records=1 | best_cost=0.037628
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> EPS15 -> ITSN2
+    10min-30min: ITSN2
+
+Topology #174: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SNRNP70 -> SNRPF -> MEPCE | supporting records=1 | best_cost=0.039269
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SNRNP70
+    10min-30min: SNRNP70 -> SNRPF -> MEPCE
+
+Topology #175: EGFR -> GAPDH -> ACTB -> ANXA2 -> AHNAK | supporting records=1 | best_cost=0.039375
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ANXA2 -> AHNAK
+    10min-30min: AHNAK
+
+Topology #176: EGFR -> GAPDH -> ACTB -> ANXA2 -> ANXA1 | supporting records=1 | best_cost=0.039375
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ANXA2 -> ANXA1
+    10min-30min: ANXA1
+
+Topology #177: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> PNN -> PRPF4B | supporting records=1 | best_cost=0.039502
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> PNN -> PRPF4B
+
+Topology #178: EGFR -> CALM1 -> IQGAP1 -> ACTB -> ANXA1 | supporting records=1 | best_cost=0.040600
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> ACTB -> ANXA1
+    10min-30min: ANXA1
+
+Topology #179: EGFR -> PTEN -> DLG1 -> MAPK11 -> MAPKAPK2 -> ZFP36L1 | supporting records=1 | best_cost=0.042247
+    0min-5min: EGFR -> PTEN -> DLG1
+    5min-10min: DLG1 -> MAPK11
+    10min-30min: MAPK11 -> MAPKAPK2 -> ZFP36L1
+
+Topology #180: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> SNRPF -> MEPCE | supporting records=1 | best_cost=0.042289
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> SNRPF -> MEPCE
+
+Topology #181: EGFR -> EPS15 -> AGFG1 -> VAMP7 -> VTI1B | supporting records=1 | best_cost=0.042341
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> AGFG1
+    10min-30min: AGFG1 -> VAMP7 -> VTI1B
+
+Topology #182: EGFR -> GRB2 -> WASL -> ABI1 -> EPS8L1 | supporting records=1 | best_cost=0.042444
+    0min-5min: EGFR
+    5min-10min: EGFR -> GRB2 -> WASL
+    10min-30min: WASL -> ABI1 -> EPS8L1
+
+Topology #183: EGFR -> NCK1 -> WASL -> ABI1 -> EPS8L1 | supporting records=1 | best_cost=0.042444
+    0min-5min: EGFR
+    5min-10min: EGFR -> NCK1 -> WASL
+    10min-30min: WASL -> ABI1 -> EPS8L1
+
+Topology #184: EGFR -> HSPA8 -> PABPC1 -> EIF4G1 -> EIF4E2 -> GIGYF2 | supporting records=1 | best_cost=0.042637
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> EIF4G1
+    10min-30min: EIF4G1 -> EIF4E2 -> GIGYF2
+
+Topology #185: EGFR -> HGS -> NF2 -> WWC1 | supporting records=1 | best_cost=0.042823
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> NF2 -> WWC1
+    10min-30min: WWC1
+
+Topology #186: EGFR -> HGS -> EPS15 -> AGFG1 -> VAMP7 -> VTI1B | supporting records=1 | best_cost=0.043341
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> EPS15 -> AGFG1
+    10min-30min: AGFG1 -> VAMP7 -> VTI1B
+
+Topology #187: EGFR -> CBL -> NCK1 -> WASL -> ABI1 -> EPS8L1 | supporting records=1 | best_cost=0.043444
+    0min-5min: EGFR -> CBL -> NCK1
+    5min-10min: NCK1 -> WASL
+    10min-30min: WASL -> ABI1 -> EPS8L1
+
+Topology #188: EGFR -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF4G1 -> EIF4E2 -> GIGYF2 | supporting records=1 | best_cost=0.043637
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> EIF4A1 -> EIF4G1
+    10min-30min: EIF4G1 -> EIF4E2 -> GIGYF2
+
+Topology #189: EGFR -> CBL -> PIK3R2 -> PIK3R1 -> INSR -> GRB10 -> GIGYF2 | supporting records=1 | best_cost=0.043743
+    0min-5min: EGFR -> CBL -> PIK3R2
+    5min-10min: PIK3R2 -> PIK3R1 -> INSR
+    10min-30min: INSR -> GRB10 -> GIGYF2
+
+Topology #190: EGFR -> EPS15 -> HGS -> NF2 -> WWC1 | supporting records=1 | best_cost=0.043823
+    0min-5min: EGFR -> EPS15 -> HGS
+    5min-10min: HGS -> NF2 -> WWC1
+    10min-30min: WWC1
+
+Topology #191: EGFR -> YWHAZ -> HDAC4 -> YWHAG -> KIF23 -> PLK1 -> BICD2 | supporting records=1 | best_cost=0.044445
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> YWHAG -> KIF23
+    10min-30min: KIF23 -> PLK1 -> BICD2
+
+Topology #192: EGFR -> GAPDH -> ACTB -> ANXA1 | supporting records=1 | best_cost=0.044618
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ANXA1
+    10min-30min: ANXA1
+
+Topology #193: EGFR -> CALM1 -> IQGAP1 -> RAD54L2 -> DYRK1A | supporting records=1 | best_cost=0.044786
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> RAD54L2 -> DYRK1A
+    10min-30min: DYRK1A
+
+Topology #194: EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT -> ALYREF -> RBM15 | supporting records=1 | best_cost=0.045309
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> NCBP1 -> SRRT
+    10min-30min: SRRT -> ALYREF -> RBM15
+
+Topology #195: EGFR -> SRC -> STAT3 -> MTOR -> TUBA1B -> HSPA8 -> HSP90B1 | supporting records=1 | best_cost=0.045712
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> MTOR -> TUBA1B
+    10min-30min: TUBA1B -> HSPA8 -> HSP90B1
+
+Topology #196: EGFR -> TUBA1A -> TUBA1B -> HSPA8 -> HSP90B1 | supporting records=1 | best_cost=0.045721
+    0min-5min: EGFR
+    5min-10min: EGFR -> TUBA1A -> TUBA1B
+    10min-30min: TUBA1B -> HSPA8 -> HSP90B1
+
+Topology #197: EGFR -> CALM1 -> IQGAP1 -> ACTB -> ANXA1 -> ANXA2 -> AHNAK | supporting records=1 | best_cost=0.046609
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> ACTB -> ANXA1
+    10min-30min: ANXA1 -> ANXA2 -> AHNAK
+
+Topology #198: EGFR -> CTNNB1 -> PARD3 -> PATJ | supporting records=1 | best_cost=0.047623
+    0min-5min: EGFR -> CTNNB1 -> PARD3
+    5min-10min: PARD3 -> PATJ
+    10min-30min: PATJ
+
+Topology #199: EGFR -> TUBA1A -> TUBA1C -> TUBA1B -> HSPA8 -> HSP90B1 | supporting records=1 | best_cost=0.047723
+    0min-5min: EGFR -> TUBA1A -> TUBA1C
+    5min-10min: TUBA1C -> TUBA1B
+    10min-30min: TUBA1B -> HSPA8 -> HSP90B1
+
+Topology #200: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP214 -> NUP107 -> AHCTF1 | supporting records=1 | best_cost=0.049914
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> RANBP2 -> NUP214
+    10min-30min: NUP214 -> NUP107 -> AHCTF1
+
+Topology #201: EGFR -> GAPDH -> ACTB -> ANXA1 -> ANXA2 -> AHNAK | supporting records=1 | best_cost=0.050627
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> ANXA1
+    10min-30min: ANXA1 -> ANXA2 -> AHNAK
+
+Topology #202: EGFR -> SRC -> CTTN -> TJP1 -> CLDN4 | supporting records=1 | best_cost=0.050686
+    0min-5min: EGFR -> SRC -> CTTN
+    5min-10min: CTTN -> TJP1 -> CLDN4
+    10min-30min: CLDN4
+
+Topology #203: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP214 -> NUP133 -> AHCTF1 | supporting records=1 | best_cost=0.050916
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> RANBP2 -> NUP214
+    10min-30min: NUP214 -> NUP133 -> AHCTF1
+
+Topology #204: EGFR -> STAT3 -> MAPK1 -> TP53 -> TP53BP1 -> PLK1 -> BICD2 | supporting records=1 | best_cost=0.051493
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> TP53BP1
+    10min-30min: TP53BP1 -> PLK1 -> BICD2
+
+Topology #205: EGFR -> SRC -> STAT3 -> CREBBP -> DYRK1A | supporting records=1 | best_cost=0.052843
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> CREBBP -> DYRK1A
+    10min-30min: DYRK1A
+
+Topology #206: EGFR -> CBL -> SRC -> TJP1 -> CLDN4 | supporting records=1 | best_cost=0.052873
+    0min-5min: EGFR -> CBL -> SRC
+    5min-10min: SRC -> TJP1 -> CLDN4
+    10min-30min: CLDN4
+
+Topology #207: EGFR -> HGS -> NF2 -> SPTBN1 | supporting records=1 | best_cost=0.053294
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> NF2 -> SPTBN1
+    10min-30min: SPTBN1
+
+Topology #208: EGFR -> YWHAZ -> KIF23 -> PLK1 -> BICD2 | supporting records=1 | best_cost=0.053516
+    0min-5min: EGFR
+    5min-10min: EGFR -> YWHAZ -> KIF23
+    10min-30min: KIF23 -> PLK1 -> BICD2
+
+Topology #209: EGFR -> JAK2 -> STAT6 -> CREBBP -> DYRK1A | supporting records=1 | best_cost=0.053828
+    0min-5min: EGFR -> JAK2 -> STAT6
+    5min-10min: STAT6 -> CREBBP -> DYRK1A
+    10min-30min: DYRK1A
+
+Topology #210: EGFR -> EPS15 -> HGS -> NF2 -> SPTBN1 | supporting records=1 | best_cost=0.054295
+    0min-5min: EGFR -> EPS15 -> HGS
+    5min-10min: HGS -> NF2 -> SPTBN1
+    10min-30min: SPTBN1
+
+Topology #211: EGFR -> STAT3 -> MAPK1 -> TP53 -> TP53BP1 -> BLM -> RFC1 | supporting records=1 | best_cost=0.054892
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> TP53BP1
+    10min-30min: TP53BP1 -> BLM -> RFC1
+
+Topology #212: EGFR -> HGS -> NF2 -> SPTBN1 -> SPTAN1 -> SPTBN2 | supporting records=1 | best_cost=0.055295
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> NF2 -> SPTBN1
+    10min-30min: SPTBN1 -> SPTAN1 -> SPTBN2
+
+Topology #213: EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT -> PHAX -> NUCKS1 | supporting records=1 | best_cost=0.055449
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> NCBP1 -> SRRT
+    10min-30min: SRRT -> PHAX -> NUCKS1
+
+Topology #214: EGFR -> CTNNB1 -> PARD3 -> PRKCZ -> WWC1 | supporting records=1 | best_cost=0.055711
+    0min-5min: EGFR -> CTNNB1 -> PARD3
+    5min-10min: PARD3 -> PRKCZ -> WWC1
+    10min-30min: WWC1
+
+Topology #215: EGFR -> EPS15 -> HGS -> NF2 -> SPTBN1 -> SPTAN1 -> SPTBN2 | supporting records=1 | best_cost=0.056296
+    0min-5min: EGFR -> EPS15 -> HGS
+    5min-10min: HGS -> NF2 -> SPTBN1
+    10min-30min: SPTBN1 -> SPTAN1 -> SPTBN2
+
+Topology #216: EGFR -> STAT3 -> MAPK1 -> TP53 -> TP53BP1 -> MRE11 -> RFC1 | supporting records=1 | best_cost=0.058990
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> TP53BP1
+    10min-30min: TP53BP1 -> MRE11 -> RFC1
+
+Topology #217: EGFR -> STAT3 -> MAPK1 -> TP53 -> TP53BP1 -> RPA1 -> RFC1 | supporting records=1 | best_cost=0.059656
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> TP53BP1
+    10min-30min: TP53BP1 -> RPA1 -> RFC1
+
+Topology #218: EGFR -> CALM1 -> SCN5A -> SNTA1 -> DMD -> SNTB1 | supporting records=1 | best_cost=0.059839
+    0min-5min: EGFR -> CALM1
+    5min-10min: CALM1 -> SCN5A -> SNTA1
+    10min-30min: SNTA1 -> DMD -> SNTB1
+
+Topology #219: EGFR -> SRC -> STAT3 -> BRD4 -> NUMA1 -> GPSM1 -> GNAI3 | supporting records=1 | best_cost=0.060357
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> BRD4 -> NUMA1
+    10min-30min: NUMA1 -> GPSM1 -> GNAI3
+
+Topology #220: EGFR -> HSPA8 -> SRRT -> PHAX -> NUCKS1 | supporting records=1 | best_cost=0.060634
+    0min-5min: EGFR
+    5min-10min: EGFR -> HSPA8 -> SRRT
+    10min-30min: SRRT -> PHAX -> NUCKS1
+
+Topology #221: EGFR -> CALM1 -> SCN5A -> SNTA1 -> SNTG2 -> SNTB1 | supporting records=1 | best_cost=0.060840
+    0min-5min: EGFR -> CALM1
+    5min-10min: CALM1 -> SCN5A -> SNTA1
+    10min-30min: SNTA1 -> SNTG2 -> SNTB1
+
+Topology #222: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU -> POLR2A -> GTF2E2 | supporting records=1 | best_cost=0.061842
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPU
+    10min-30min: HNRNPU -> POLR2A -> GTF2E2
+
+Topology #223: EGFR -> CTNNB1 -> MAGI1 -> PARD3 -> PATJ | supporting records=1 | best_cost=0.061872
+    0min-5min: EGFR -> CTNNB1 -> MAGI1
+    5min-10min: MAGI1 -> PARD3 -> PATJ
+    10min-30min: PATJ
+
+Topology #224: EGFR -> HSP90AA1 -> HSP90B1 -> HSPA8 -> SRRT -> PHAX -> NUCKS1 | supporting records=1 | best_cost=0.062635
+    0min-5min: EGFR -> HSP90AA1 -> HSP90B1
+    5min-10min: HSP90B1 -> HSPA8 -> SRRT
+    10min-30min: SRRT -> PHAX -> NUCKS1
+
+Topology #225: EGFR -> STAT3 -> MAPK1 -> RPS6KA1 -> CSNK2B -> CTNNB1 -> USP9X | supporting records=1 | best_cost=0.062737
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> RPS6KA1 -> CSNK2B
+    10min-30min: CSNK2B -> CTNNB1 -> USP9X
+
+Topology #226: EGFR -> CTNNB1 -> USP9X -> AMOT -> PATJ | supporting records=1 | best_cost=0.063814
+    0min-5min: EGFR -> CTNNB1 -> USP9X
+    5min-10min: USP9X -> AMOT -> PATJ
+    10min-30min: PATJ
+
+Topology #227: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPU -> POLR2A -> GTF2E2 | supporting records=1 | best_cost=0.063848
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPK -> HNRNPU
+    10min-30min: HNRNPU -> POLR2A -> GTF2E2
+
+Topology #228: EGFR -> CALM1 -> SCN5A -> SNTA1 -> DTNA -> SNTB1 | supporting records=1 | best_cost=0.064856
+    0min-5min: EGFR -> CALM1
+    5min-10min: CALM1 -> SCN5A -> SNTA1
+    10min-30min: SNTA1 -> DTNA -> SNTB1
+
+Topology #229: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SRRM2 -> CLK3 -> TRA2A | supporting records=1 | best_cost=0.065599
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SRRM2
+    10min-30min: SRRM2 -> CLK3 -> TRA2A
+
+Topology #230: EGFR -> CBL -> UBC -> HGS -> RAB10 | supporting records=1 | best_cost=0.065941
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> HGS -> RAB10
+
+Topology #231: EGFR -> EPS15 -> UBC -> HGS -> RAB10 | supporting records=1 | best_cost=0.065941
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> HGS -> RAB10
+
+Topology #232: EGFR -> GAPDH -> PKM -> NME1 -> SET | supporting records=1 | best_cost=0.066944
+    0min-5min: EGFR -> GAPDH -> PKM
+    5min-10min: PKM -> NME1 -> SET
+    10min-30min: SET
+
+Topology #233: EGFR -> YWHAZ -> HDAC4 -> YWHAG -> KIF23 -> YWHAB -> PTPN3 | supporting records=1 | best_cost=0.067000
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> YWHAG -> KIF23
+    10min-30min: KIF23 -> YWHAB -> PTPN3
+
+Topology #234: EGFR -> HGS -> NF2 -> SPTBN1 -> SPTBN2 | supporting records=1 | best_cost=0.067393
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> NF2 -> SPTBN1
+    10min-30min: SPTBN1 -> SPTBN2
+
+Topology #235: EGFR -> CTNND1 -> RHOA -> ARHGEF5 | supporting records=1 | best_cost=0.069316
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> ARHGEF5
+
+Topology #236: EGFR -> CDH1 -> CTNND1 -> RHOA -> ARHGEF5 | supporting records=1 | best_cost=0.070316
+    0min-5min: EGFR
+    5min-10min: EGFR -> CDH1 -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> ARHGEF5
+
+Topology #237: EGFR -> CTNNB1 -> CTNND1 -> RHOA -> ARHGEF5 | supporting records=1 | best_cost=0.070316
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNNB1 -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> ARHGEF5
+
+Topology #238: EGFR -> ERBB4 -> ANK3 -> SPTBN1 | supporting records=1 | best_cost=0.070493
+    0min-5min: EGFR -> ERBB4 -> ANK3
+    5min-10min: ANK3 -> SPTBN1
+    10min-30min: SPTBN1
+
+Topology #239: EGFR -> HSPA1B -> DNAJB1 -> HSPA1L -> EPB41L2 | supporting records=1 | best_cost=0.071909
+    0min-5min: EGFR -> HSPA1B -> DNAJB1
+    5min-10min: DNAJB1 -> HSPA1L -> EPB41L2
+    10min-30min: EPB41L2
+
+Topology #240: EGFR -> CBL -> UBC -> STAM -> RAB10 | supporting records=1 | best_cost=0.074498
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> STAM -> RAB10
+
+Topology #241: EGFR -> PDCD6IP -> CEP55 -> KIF11 -> KIF23 -> YWHAZ -> PTPN3 | supporting records=1 | best_cost=0.075217
+    0min-5min: EGFR -> PDCD6IP -> CEP55
+    5min-10min: CEP55 -> KIF11 -> KIF23
+    10min-30min: KIF23 -> YWHAZ -> PTPN3
+
+Topology #242: EGFR -> PLCG1 -> EPB41L2 | supporting records=1 | best_cost=0.075724
+    0min-5min: EGFR
+    5min-10min: EGFR -> PLCG1 -> EPB41L2
+    10min-30min: EPB41L2
+
+Topology #243: EGFR -> YWHAZ -> KIF23 -> YWHAB -> PTPN3 | supporting records=1 | best_cost=0.076071
+    0min-5min: EGFR
+    5min-10min: EGFR -> YWHAZ -> KIF23
+    10min-30min: KIF23 -> YWHAB -> PTPN3
+
+Topology #244: EGFR -> GAPDH -> PGK1 -> PGAM1 -> PGAM4 -> GPI -> PGM2 | supporting records=1 | best_cost=0.076326
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> PGAM1 -> PGAM4
+    10min-30min: PGAM4 -> GPI -> PGM2
+
+Topology #245: EGFR -> LYN -> CBL -> PLCG1 -> EPB41L2 | supporting records=1 | best_cost=0.077725
+    0min-5min: EGFR -> LYN -> CBL
+    5min-10min: CBL -> PLCG1 -> EPB41L2
+    10min-30min: EPB41L2
+
+Topology #246: EGFR -> GAPDH -> PGK1 -> PGAM4 -> GPI -> PGM2 | supporting records=1 | best_cost=0.078336
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> PGAM4
+    10min-30min: PGAM4 -> GPI -> PGM2
+
+Topology #247: EGFR -> YWHAZ -> HDAC4 -> RANBP2 -> NUP214 -> NUP62 -> AHCTF1 | supporting records=1 | best_cost=0.078342
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> RANBP2 -> NUP214
+    10min-30min: NUP214 -> NUP62 -> AHCTF1
+
+Topology #248: EGFR -> EPS15 -> EPN3 -> CLINT1 -> VTI1B | supporting records=1 | best_cost=0.080075
+    0min-5min: EGFR -> EPS15 -> EPN3
+    5min-10min: EPN3 -> CLINT1 -> VTI1B
+    10min-30min: VTI1B
+
+Topology #249: EGFR -> SHC1 -> MAPK1 -> GNAI3 | supporting records=1 | best_cost=0.081186
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> MAPK1 -> GNAI3
+
+Topology #250: EGFR -> GAPDH -> PGK1 -> ENO1 -> PGAM4 -> GPI -> PGM2 | supporting records=1 | best_cost=0.081349
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> ENO1 -> PGAM4
+    10min-30min: PGAM4 -> GPI -> PGM2
+
+Topology #251: EGFR -> CBL -> SHC1 -> MAPK1 -> GNAI3 | supporting records=1 | best_cost=0.082187
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SHC1
+    10min-30min: SHC1 -> MAPK1 -> GNAI3
+
+Topology #252: EGFR -> CTNND1 -> RHOA -> RAP2C | supporting records=1 | best_cost=0.085164
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> RAP2C
+
+Topology #253: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPU -> YBX1 -> SRP14 | supporting records=1 | best_cost=0.085594
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPU
+    10min-30min: HNRNPU -> YBX1 -> SRP14
+
+Topology #254: EGFR -> CDH1 -> CTNND1 -> RHOA -> RAP2C | supporting records=1 | best_cost=0.086164
+    0min-5min: EGFR
+    5min-10min: EGFR -> CDH1 -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> RAP2C
+
+Topology #255: EGFR -> CTNNB1 -> CTNND1 -> RHOA -> RAP2C | supporting records=1 | best_cost=0.086164
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNNB1 -> CTNND1
+    10min-30min: CTNND1 -> RHOA -> RAP2C
+
+Topology #256: EGFR -> CBL -> UBC -> SQSTM1 -> SPRED2 | supporting records=1 | best_cost=0.086383
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> SQSTM1 -> SPRED2
+
+Topology #257: EGFR -> EPS15 -> UBC -> SQSTM1 -> SPRED2 | supporting records=1 | best_cost=0.086383
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> UBC
+    10min-30min: UBC -> SQSTM1 -> SPRED2
+
+Topology #258: EGFR -> HGS -> UBC -> SQSTM1 -> SPRED2 | supporting records=1 | best_cost=0.086383
+    0min-5min: EGFR
+    5min-10min: EGFR -> HGS -> UBC
+    10min-30min: UBC -> SQSTM1 -> SPRED2
+
+Topology #259: EGFR -> STAT3 -> MAPK1 -> TP53 -> PIN1 -> POLR2D -> GTF2E2 | supporting records=1 | best_cost=0.087222
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> PIN1
+    10min-30min: PIN1 -> POLR2D -> GTF2E2
+
+Topology #260: EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPU -> YBX1 -> SRP14 | supporting records=1 | best_cost=0.087600
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPK -> HNRNPU
+    10min-30min: HNRNPU -> YBX1 -> SRP14
+
+Topology #261: EGFR -> HSPA8 -> PABPC1 -> EIF4G1 -> EIF4E2 -> HBS1L | supporting records=1 | best_cost=0.099265
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> EIF4G1
+    10min-30min: EIF4G1 -> EIF4E2 -> HBS1L
+
+Topology #262: EGFR -> GAPDH -> ACTB -> CASP3 -> ANXA5 | supporting records=1 | best_cost=0.100060
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> CASP3 -> ANXA5
+    10min-30min: ANXA5
+
+Topology #263: EGFR -> LYN -> PTK2 -> TNS3 | supporting records=1 | best_cost=0.101904
+    0min-5min: EGFR
+    5min-10min: EGFR -> LYN
+    10min-30min: LYN -> PTK2 -> TNS3
+
+Topology #264: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SRRM2 -> ACIN1 -> API5 | supporting records=1 | best_cost=0.103275
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SRRM2
+    10min-30min: SRRM2 -> ACIN1 -> API5
+
+Topology #265: EGFR -> YWHAZ -> CDK16 | supporting records=1 | best_cost=0.111932
+    0min-5min: EGFR
+    5min-10min: EGFR -> YWHAZ -> CDK16
+    10min-30min: CDK16
+
+Topology #266: EGFR -> SHC1 -> CRK -> PPFIBP2 | supporting records=1 | best_cost=0.112074
+    0min-5min: EGFR
+    5min-10min: EGFR -> SHC1
+    10min-30min: SHC1 -> CRK -> PPFIBP2
+
+Topology #267: EGFR -> SRC -> STAT3 -> MTOR -> TUBA1B -> TUBA1A -> MARVELD2 | supporting records=1 | best_cost=0.112260
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> MTOR -> TUBA1B
+    10min-30min: TUBA1B -> TUBA1A -> MARVELD2
+
+Topology #268: EGFR -> CALM1 -> SPTAN1 -> SPTB -> EPB41 | supporting records=1 | best_cost=0.115449
+    0min-5min: EGFR -> CALM1 -> SPTAN1
+    5min-10min: SPTAN1 -> SPTB -> EPB41
+    10min-30min: EPB41
+
+Topology #269: EGFR -> CTNND1 -> CDH8 -> PKP4 | supporting records=1 | best_cost=0.118535
+    0min-5min: EGFR
+    5min-10min: EGFR -> CTNND1
+    10min-30min: CTNND1 -> CDH8 -> PKP4
+
+Topology #270: EGFR -> STAT3 -> MAPK1 -> TP53 -> TP53BP1 -> H3C13 -> HMGA1 | supporting records=1 | best_cost=0.119292
+    0min-5min: EGFR -> STAT3 -> MAPK1
+    5min-10min: MAPK1 -> TP53 -> TP53BP1
+    10min-30min: TP53BP1 -> H3C13 -> HMGA1
+
+Topology #271: EGFR -> YWHAZ -> CDK16 -> CCNYL1 | supporting records=1 | best_cost=0.130096
+    0min-5min: EGFR
+    5min-10min: EGFR -> YWHAZ -> CDK16
+    10min-30min: CDK16 -> CCNYL1
+
+Topology #272: EGFR -> YWHAZ -> HDAC4 -> SIRT1 -> PNP | supporting records=1 | best_cost=0.130513
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> SIRT1 -> PNP
+    10min-30min: PNP
+
+Topology #273: EGFR -> GAPDH -> PGK1 -> TPI1 -> PRDX6 | supporting records=1 | best_cost=0.142975
+    0min-5min: EGFR -> GAPDH -> PGK1
+    5min-10min: PGK1 -> TPI1 -> PRDX6
+    10min-30min: PRDX6
+
+Topology #274: EGFR -> CALM1 -> IQGAP1 -> ACTB -> ACTN4 -> PIP4K2B -> ZRANB2 | supporting records=1 | best_cost=0.145644
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> ACTB -> ACTN4
+    10min-30min: ACTN4 -> PIP4K2B -> ZRANB2
+
+Topology #275: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> MFAP1 -> MFAP3 | supporting records=1 | best_cost=0.150903
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> MFAP1 -> MFAP3
+
+Topology #276: EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPR -> LARP7 -> SRP68 | supporting records=1 | best_cost=0.151578
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> HNRNPD -> HNRNPR
+    10min-30min: HNRNPR -> LARP7 -> SRP68
+
+Topology #277: EGFR -> HGS -> UBC -> RABGEF1 -> MON1A -> RMC1 | supporting records=1 | best_cost=0.168183
+    0min-5min: EGFR -> HGS
+    5min-10min: HGS -> UBC -> RABGEF1
+    10min-30min: RABGEF1 -> MON1A -> RMC1
+
+Topology #278: EGFR -> HSPA8 -> PABPC1 -> UPF1 -> ADAR -> HDLBP | supporting records=1 | best_cost=0.171704
+    0min-5min: EGFR -> HSPA8 -> PABPC1
+    5min-10min: PABPC1 -> UPF1
+    10min-30min: UPF1 -> ADAR -> HDLBP
+
+Topology #279: EGFR -> GAPDH -> ACTB -> TJP1 -> CLDN4 -> OCLN -> CLDN10 | supporting records=1 | best_cost=0.191096
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> TJP1 -> CLDN4
+    10min-30min: CLDN4 -> OCLN -> CLDN10
+
+Topology #280: EGFR -> CALM1 -> IQGAP1 -> RAD54L2 -> DYRK1A -> FNTB -> CAST | supporting records=1 | best_cost=0.193059
+    0min-5min: EGFR -> CALM1 -> IQGAP1
+    5min-10min: IQGAP1 -> RAD54L2 -> DYRK1A
+    10min-30min: DYRK1A -> FNTB -> CAST
+
+Topology #281: EGFR -> CBL -> SRC -> TLN1 -> TNS1 | supporting records=1 | best_cost=0.198775
+    0min-5min: EGFR -> CBL -> SRC
+    5min-10min: SRC -> TLN1 -> TNS1
+    10min-30min: TNS1
+
+Topology #282: EGFR -> CBL -> UBC -> ITCH -> SCAMP3 | supporting records=1 | best_cost=0.199805
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> ITCH -> SCAMP3
+
+Topology #283: EGFR -> CBL -> SYK -> CR1L -> CD46 | supporting records=1 | best_cost=0.200574
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> SYK
+    10min-30min: SYK -> CR1L -> CD46
+
+Topology #284: EGFR -> SRC -> ITGB1 -> SPP1 -> MGP | supporting records=1 | best_cost=0.212298
+    0min-5min: EGFR -> SRC -> ITGB1
+    5min-10min: ITGB1 -> SPP1 -> MGP
+    10min-30min: MGP
+
+Topology #285: EGFR -> PRKCE -> SLC25A5 -> UQCRC2 -> BCS1L | supporting records=1 | best_cost=0.222280
+    0min-5min: EGFR -> PRKCE -> SLC25A5
+    5min-10min: SLC25A5 -> UQCRC2 -> BCS1L
+    10min-30min: BCS1L
+
+Topology #286: EGFR -> HSP90AB1 -> HSPD1 -> SF3A2 -> SF3B4 -> RBM17 -> CIC | supporting records=1 | best_cost=0.240838
+    0min-5min: EGFR -> HSP90AB1 -> HSPD1
+    5min-10min: HSPD1 -> SF3A2 -> SF3B4
+    10min-30min: SF3B4 -> RBM17 -> CIC
+
+Topology #287: EGFR -> SRC -> STAT3 -> MTOR -> TUBA1B -> SNCA -> ENSA | supporting records=1 | best_cost=0.260986
+    0min-5min: EGFR -> SRC -> STAT3
+    5min-10min: STAT3 -> MTOR -> TUBA1B
+    10min-30min: TUBA1B -> SNCA -> ENSA
+
+Topology #288: EGFR -> CBLB -> SH3KBP1 -> IRF2BP2 | supporting records=1 | best_cost=0.268574
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBLB
+    10min-30min: CBLB -> SH3KBP1 -> IRF2BP2
+
+Topology #289: EGFR -> LYN -> CBL -> SORBS1 -> FLOT1 -> NCKIPSD -> PALLD | supporting records=1 | best_cost=0.270628
+    0min-5min: EGFR -> LYN -> CBL
+    5min-10min: CBL -> SORBS1 -> FLOT1
+    10min-30min: FLOT1 -> NCKIPSD -> PALLD
+
+Topology #290: EGFR -> SRC -> ITGB4 -> PLEC -> SYNE3 -> CLMN | supporting records=1 | best_cost=0.273711
+    0min-5min: EGFR -> SRC -> ITGB4
+    5min-10min: ITGB4 -> PLEC
+    10min-30min: PLEC -> SYNE3 -> CLMN
+
+Topology #291: EGFR -> CALM1 -> IQGAP1 -> ZDHHC5 | supporting records=1 | best_cost=0.283039
+    0min-5min: EGFR -> CALM1
+    5min-10min: CALM1 -> IQGAP1 -> ZDHHC5
+    10min-30min: ZDHHC5
+
+Topology #292: EGFR -> YWHAZ -> HDAC4 -> YWHAG -> KIF23 -> KIF6 -> SNX16 | supporting records=1 | best_cost=0.304956
+    0min-5min: EGFR -> YWHAZ -> HDAC4
+    5min-10min: HDAC4 -> YWHAG -> KIF23
+    10min-30min: KIF23 -> KIF6 -> SNX16
+
+Topology #293: EGFR -> CBL -> UBC -> TSG101 -> BROX | supporting records=1 | best_cost=0.316343
+    0min-5min: EGFR
+    5min-10min: EGFR -> CBL -> UBC
+    10min-30min: UBC -> TSG101 -> BROX
+
+Topology #294: EGFR -> GAPDH -> ACTB -> RDX -> C6orf132 | supporting records=1 | best_cost=0.329636
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> RDX -> C6orf132
+    10min-30min: C6orf132
+
+Topology #295: EGFR -> CALM1 -> SPTAN1 -> SPTB -> EPB41 -> SLC4A1 -> SLC4A2 | supporting records=1 | best_cost=0.398901
+    0min-5min: EGFR -> CALM1 -> SPTAN1
+    5min-10min: SPTAN1 -> SPTB -> EPB41
+    10min-30min: EPB41 -> SLC4A1 -> SLC4A2
+
+Topology #296: EGFR -> GAPDH -> ACTB -> TJP1 -> CLDN4 -> OCLN -> CXADR | supporting records=1 | best_cost=0.407398
+    0min-5min: EGFR -> GAPDH -> ACTB
+    5min-10min: ACTB -> TJP1 -> CLDN4
+    10min-30min: CLDN4 -> OCLN -> CXADR
+
+Topology #297: EGFR -> PRKCE -> SLC25A5 -> UQCRC2 -> BCS1L -> COX15 -> CLCC1 | supporting records=1 | best_cost=0.461023
+    0min-5min: EGFR -> PRKCE -> SLC25A5
+    5min-10min: SLC25A5 -> UQCRC2 -> BCS1L
+    10min-30min: BCS1L -> COX15 -> CLCC1
+
+Topology #298: EGFR -> HGS -> RAB10 -> EXOC6 -> EXOC4 -> RAB13 -> ARAP2 | supporting records=1 | best_cost=0.614642
+    0min-5min: EGFR -> HGS -> RAB10
+    5min-10min: RAB10 -> EXOC6 -> EXOC4
+    10min-30min: EXOC4 -> RAB13 -> ARAP2
+
+Topology #299: EGFR -> TUBA1A -> MARVELD2 -> SLC30A5 -> SLC39A10 | supporting records=1 | best_cost=0.643421
+    0min-5min: EGFR -> TUBA1A -> MARVELD2
+    5min-10min: MARVELD2 -> SLC30A5 -> SLC39A10
+    10min-30min: SLC39A10
+
+Topology #300: EGFR -> EPS15 -> AGFG1 -> RAB9B -> PHACTR4 | supporting records=1 | best_cost=0.654126
+    0min-5min: EGFR
+    5min-10min: EGFR -> EPS15 -> AGFG1
+    10min-30min: AGFG1 -> RAB9B -> PHACTR4

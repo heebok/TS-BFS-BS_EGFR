@@ -1,0 +1,616 @@
+*** All Path Results (Complete + Intermediate) - STRING API v12.5 (functional) ***
+======================================================================
+  RUN CONFIGURATION
+======================================================================
+  Run Date/Time        : 2026-11-04 10:28:49
+  Input File           : C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5/null_002_Normal_functional.json
+  Network Type         : functional
+  STRING API Base      : https://version-12-5.string-db.org/api
+  Bridge Depth D       : 1 (intermediate nodes; max edges/interval=2)
+  Species ID           : 9606
+  Min STRING Score     : 700
+  Degree Cap H         : 100
+  Segment Beam K       : 300 BFS frontier
+  Max Paths/Target N   : 300 (legacy/non-temporal)
+  Temporal Seg Routes  : 5 per source-target pair
+  Temporal Base K      : 300
+  Temporal Adaptive K  : max(Base K, reached target genes)
+  Target Preservation  : >=1 route per reached target
+  Temporal Routes/Tgt  : 3
+  Temporal Full Dedupe : True
+  Regulatory Wt Bonus  : 0.0
+  Hub Blacklist        : (none)
+  Collapse by Gene     : True
+  No Backtracking      : True
+  Dedupe Genes in Path : True
+  Verbose Logging      : False
+  Cell Context Filter  : True
+  Cell Context Mode    : conservative_union
+  Cell Line            : MDA-MB-468
+  RNA Bulk File        : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_rnaseq.csv.zip
+  Proteomics Bulk File : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_proteomics.csv.zip
+  RNA Threshold        : 1.0
+  Start Proteins       : EGFR
+  Input Schema         : Temporal v2 interval model
+  Temporal Target Mode : measured
+  Time Points/Intervals: 3
+  Inhibitor Drugs      : (none)
+  Total Elapsed Time   : 2464.3 sec
+======================================================================
+
+(Total elapsed time: 2464.3 sec)
+
+=== Complete Paths (300 items) ===
+(Paths that reached the end through all time points)
+
+Complete Path #1 (Length 5): EGFR -> CDK1 -> CDK3 -> CCNA2 -> MKI67
+Complete Path #2 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> ALYREF -> NXF1
+Complete Path #3 (Length 2): EGFR -> PLCG1
+Complete Path #4 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> SORBS1 -> FLOT1
+Complete Path #5 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> CTNNB1 -> IQGAP1
+Complete Path #6 (Length 4): EGFR -> GAPDH -> ENO1 -> PGAM4
+Complete Path #7 (Length 5): EGFR -> CBL -> PIK3R1 -> PTPN11 -> MPZL1
+Complete Path #8 (Length 5): EGFR -> GAPDH -> PGK1 -> GPI -> PGM2
+Complete Path #9 (Length 4): EGFR -> LYN -> SRC -> HSP90AA1
+Complete Path #10 (Length 5): EGFR -> HSPA8 -> SRRT -> SNRPF -> MEPCE
+Complete Path #11 (Length 5): EGFR -> EPS15 -> UBC -> PRKN -> DNM1L
+Complete Path #12 (Length 6): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> ACTN4
+Complete Path #13 (Length 4): EGFR -> CALM1 -> IQGAP1 -> ACTB
+Complete Path #14 (Length 7): EGFR -> EPS15 -> AGFG1 -> VAMP7 -> STX4 -> SNAP25 -> EXOC4
+Complete Path #15 (Length 3): EGFR -> PTPN11 -> MPZL1
+Complete Path #16 (Length 5): EGFR -> CBL -> UBC -> PRKN -> DNM1L
+Complete Path #17 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> CTNNA1 -> TJP1
+Complete Path #18 (Length 7): EGFR -> GRB2 -> MYH9 -> SPTAN1 -> SPTBN2 -> SYNGAP1 -> ANKS1A
+Complete Path #19 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> SORBS1 -> FLOT1
+Complete Path #20 (Length 2): EGFR -> VAV2
+Complete Path #21 (Length 6): EGFR -> CBL -> SRC -> STAT3 -> RELA -> CEBPB
+Complete Path #22 (Length 5): EGFR -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF4B
+Complete Path #23 (Length 5): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> FUS
+Complete Path #24 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> PIP5K1C -> PI4KA
+Complete Path #25 (Length 4): EGFR -> VAV2 -> RHOA -> RAP2C
+Complete Path #26 (Length 3): EGFR -> CSK -> TNS2
+Complete Path #27 (Length 6): EGFR -> GRB2 -> WASL -> ACTR3 -> CTTN -> SHANK2
+Complete Path #28 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> SORBS1 -> FLOT1
+Complete Path #29 (Length 7): EGFR -> AP2M1 -> AP2B1 -> LDLRAP1 -> LDLR -> APOB -> LSR
+Complete Path #30 (Length 5): EGFR -> CBL -> NCK1 -> PAK1 -> PAK2
+Complete Path #31 (Length 5): EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> G3BP2
+Complete Path #32 (Length 5): EGFR -> GAPDH -> PGK1 -> ENO1 -> ENO3
+Complete Path #33 (Length 5): EGFR -> AP2A1 -> AP2B1 -> LDLRAP1 -> LDLR
+Complete Path #34 (Length 6): EGFR -> HSPA1B -> YBX1 -> C1QBP -> LBR -> ZNF579
+Complete Path #35 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPA2B1 -> HNRNPC -> ANXA2
+Complete Path #36 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> SORBS3 -> DLG5
+Complete Path #37 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> FUS -> TARDBP -> TMEM106B
+Complete Path #38 (Length 5): EGFR -> GAPDH -> PKM -> GPI -> PGM2
+Complete Path #39 (Length 6): EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> G3BP2 -> CAPRIN1
+Complete Path #40 (Length 4): EGFR -> PLCG1 -> GRB2 -> PTPRA
+Complete Path #41 (Length 4): EGFR -> CAV1 -> RAC1 -> IQGAP1
+Complete Path #42 (Length 5): EGFR -> HSPA8 -> PABPC1 -> TARDBP -> TMEM106B
+Complete Path #43 (Length 5): EGFR -> SRC -> STAT3 -> MYC -> HCFC1
+Complete Path #44 (Length 5): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> UPF3B
+Complete Path #45 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> CASC3 -> UPF3B
+Complete Path #46 (Length 5): EGFR -> EPS15 -> AGFG1 -> RAB2A -> GORASP2
+Complete Path #47 (Length 4): EGFR -> GRB2 -> CBL -> EPHA2
+Complete Path #48 (Length 7): EGFR -> SRC -> HSP90AA1 -> NOS3 -> CAV1 -> CAV3 -> SNTA1
+Complete Path #49 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> ALYREF -> SRRT
+Complete Path #50 (Length 7): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB -> TJP1 -> OCLN
+Complete Path #51 (Length 7): EGFR -> CALM1 -> IQGAP1 -> CDC42 -> PAK4 -> RAF1 -> PEBP1
+Complete Path #52 (Length 4): EGFR -> GAPDH -> EEF1A1 -> ACTB
+Complete Path #53 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> TJP1 -> OCLN
+Complete Path #54 (Length 3): EGFR -> CBL -> UBC
+Complete Path #55 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> HNRNPA1 -> HNRNPU
+Complete Path #56 (Length 5): EGFR -> ERBB2 -> ERBIN -> PPP1CC -> MKI67
+Complete Path #57 (Length 4): EGFR -> CBL -> SYK -> VAV2
+Complete Path #58 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> DNAH2 -> HNRNPA2B1
+Complete Path #59 (Length 6): EGFR -> CBL -> GRB2 -> GAB2 -> PIK3R1 -> PIK3R3
+Complete Path #60 (Length 7): EGFR -> HSPA8 -> SRRT -> NCBP2 -> UPF1 -> GSPT1 -> PABPC1
+Complete Path #61 (Length 4): EGFR -> CBLB -> GRB2 -> ERRFI1
+Complete Path #62 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> HNRNPC -> ANXA2
+Complete Path #63 (Length 7): EGFR -> GRB2 -> DYNLL1 -> DYNC1H1 -> BICD2 -> RANBP2 -> NUP155
+Complete Path #64 (Length 6): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> CASKIN2
+Complete Path #65 (Length 5): EGFR -> CRKL -> CBL -> SYK -> VAV2
+Complete Path #66 (Length 5): EGFR -> GAPDH -> ALDOA -> TPI1 -> TKT
+Complete Path #67 (Length 7): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Complete Path #68 (Length 7): EGFR -> NCK1 -> NCK2 -> PAK1 -> ARHGEF6 -> CDC42 -> ARHGAP32
+Complete Path #69 (Length 5): EGFR -> CBL -> SRC -> CSK -> PAG1
+Complete Path #70 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> ACTN1 -> ZYX
+Complete Path #71 (Length 7): EGFR -> HSPA1B -> DNAJB1 -> HSPA8 -> SRRT -> PHAX -> NUCKS1
+Complete Path #72 (Length 7): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> RNPS1 -> SRSF11
+Complete Path #73 (Length 4): EGFR -> PLCG1 -> HSPA5 -> SEC61A1
+Complete Path #74 (Length 2): EGFR -> CBLB
+Complete Path #75 (Length 4): EGFR -> PLCG1 -> CBL -> CRKL
+Complete Path #76 (Length 7): EGFR -> HSPA8 -> PABPC1 -> RBM8A -> THRAP3 -> MED14 -> POLR2G
+Complete Path #77 (Length 7): EGFR -> CRKL -> CBL -> UBC -> RABGEF1 -> MON1A -> RMC1
+Complete Path #78 (Length 4): EGFR -> LYN -> CBL -> CRKL
+Complete Path #79 (Length 4): EGFR -> HGS -> UBC -> RABGEF1
+Complete Path #80 (Length 4): EGFR -> STAT3 -> HSP90AA1 -> HSP90B1
+Complete Path #81 (Length 5): EGFR -> NCK2 -> NCK1 -> PAK1 -> PAK2
+Complete Path #82 (Length 6): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> UPF3B
+Complete Path #83 (Length 5): EGFR -> CBL -> PLCG1 -> GRB2 -> PTPRA
+Complete Path #84 (Length 6): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> FUS
+Complete Path #85 (Length 7): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> ABI1 -> BAIAP2
+Complete Path #86 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> PIP5K1C -> PI4KA
+Complete Path #87 (Length 5): EGFR -> EPS15 -> UBC -> TOM1 -> TOLLIP
+Complete Path #88 (Length 7): EGFR -> YWHAZ -> KIF23 -> PLK1 -> BICD2 -> RANBP2 -> NUP155
+Complete Path #89 (Length 4): EGFR -> PLCG1 -> PTEN -> FRK
+Complete Path #90 (Length 5): EGFR -> YWHAZ -> KIF23 -> ARF6 -> IQSEC1
+Complete Path #91 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> PPIA -> TAGLN2
+Complete Path #92 (Length 7): EGFR -> GRB2 -> MYH9 -> SPTAN1 -> SPTBN2 -> SPTB -> EPB41
+Complete Path #93 (Length 7): EGFR -> SRC -> HSP90AA1 -> LRRK2 -> EMD -> LMNA -> LMNB1
+Complete Path #94 (Length 7): EGFR -> PRKCE -> SLC25A5 -> UQCRC2 -> BCS1L -> COX15 -> CLCC1
+Complete Path #95 (Length 5): EGFR -> CBL -> UBC -> TOM1 -> TOLLIP
+Complete Path #96 (Length 4): EGFR -> STAT3 -> SRC -> CDCP1
+Complete Path #97 (Length 7): EGFR -> KRAS -> SLC1A5 -> SLC6A19 -> SLC15A1 -> SLC5A1 -> PDZK1IP1
+Complete Path #98 (Length 3): EGFR -> SRC -> STAT3
+Complete Path #99 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> SORBS3 -> DLG5
+Complete Path #100 (Length 7): EGFR -> HSPA8 -> PABPC1 -> TARDBP -> FUS -> SFPQ -> TOP1
+Complete Path #101 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> PTMA -> SET
+Complete Path #102 (Length 4): EGFR -> CBL -> SRC -> STAT3
+Complete Path #103 (Length 7): EGFR -> TRAF2 -> RIPK1 -> TAB1 -> MAPK12 -> MAPK11 -> MAPKAPK3
+Complete Path #104 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> NCBP2 -> SRRT
+Complete Path #105 (Length 5): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB
+Complete Path #106 (Length 6): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> CASKIN2
+Complete Path #107 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> HNRNPA1 -> HNRNPU
+Complete Path #108 (Length 4): EGFR -> GAPDH -> PGK1 -> PGAM4
+Complete Path #109 (Length 5): EGFR -> GRB2 -> WASL -> ACTR3 -> CTTN
+Complete Path #110 (Length 5): EGFR -> HSPA8 -> SRRT -> PHAX -> NUCKS1
+Complete Path #111 (Length 7): EGFR -> NCK2 -> NCK1 -> PAK1 -> ARHGEF6 -> CDC42 -> ARHGAP32
+Complete Path #112 (Length 2): EGFR -> STAT3
+Complete Path #113 (Length 7): EGFR -> HSPA8 -> SRRT -> NCBP2 -> UPF1 -> PABPC1 -> LARP4B
+Complete Path #114 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> ACTN4 -> PDLIM1
+Complete Path #115 (Length 4): EGFR -> NCK1 -> PAK1 -> PAK2
+Complete Path #116 (Length 5): EGFR -> CBL -> PLCG1 -> DCAF1 -> DYRK2
+Complete Path #117 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> DNAH2 -> HNRNPA3
+Complete Path #118 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> FUS -> SFPQ -> TOP1
+Complete Path #119 (Length 7): EGFR -> EPS15 -> AGFG1 -> VAMP7 -> STX4 -> SNAP29 -> VPS50
+Complete Path #120 (Length 3): EGFR -> SRC -> CAV1
+Complete Path #121 (Length 6): EGFR -> HSPA8 -> PABPC1 -> USP10 -> G3BP2 -> CAPRIN1
+Complete Path #122 (Length 7): EGFR -> CRKL -> CBL -> SYK -> VAV2 -> RHOA -> ARHGEF2
+Complete Path #123 (Length 6): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> HNRNPA3
+Complete Path #124 (Length 5): EGFR -> HSPA8 -> PABPC1 -> USP10 -> G3BP2
+Complete Path #125 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> ACTN4 -> PDLIM1
+Complete Path #126 (Length 5): EGFR -> CBL -> UBC -> VCP -> NSFL1C
+Complete Path #127 (Length 6): EGFR -> HSPA8 -> SRRT -> NCBP2 -> UPF1 -> PABPC1
+Complete Path #128 (Length 7): EGFR -> ABL1 -> RIN1 -> RAB5A -> VPS45 -> STX16 -> STX4
+Complete Path #129 (Length 4): EGFR -> CBL -> GRB2 -> CBLB
+Complete Path #130 (Length 7): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK4 -> RAF1 -> PEBP1
+Complete Path #131 (Length 3): EGFR -> LYN -> SRC
+Complete Path #132 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> CTNNA1 -> TJP1
+Complete Path #133 (Length 5): EGFR -> CBL -> GRB2 -> PTPN11 -> MPZL1
+Complete Path #134 (Length 7): EGFR -> AP2M1 -> AP2B1 -> AP1B1 -> CLINT1 -> VAMP7 -> SPRY3
+Complete Path #135 (Length 5): EGFR -> PTPN1 -> INSR -> PIK3R1 -> PIK3R3
+Complete Path #136 (Length 5): EGFR -> CBL -> NCK1 -> WASL -> FNBP1L
+Complete Path #137 (Length 4): EGFR -> CBL -> LYN -> SRC
+Complete Path #138 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> ACTN4 -> PDLIM1
+Complete Path #139 (Length 5): EGFR -> SRC -> HSP90AA1 -> NOS3 -> ASS1
+Complete Path #140 (Length 7): EGFR -> GRB2 -> TNK2 -> SNX9 -> ADAM9 -> MAD2L2 -> POGZ
+Complete Path #141 (Length 4): EGFR -> STAT3 -> SRC -> HSP90AA1
+Complete Path #142 (Length 6): EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1 -> G3BP2
+Complete Path #143 (Length 7): EGFR -> GRB2 -> DYNLL1 -> DYNC1I1 -> BICD2 -> NUP153 -> TMEM209
+Complete Path #144 (Length 4): EGFR -> CRKL -> CBL -> EPHA2
+Complete Path #145 (Length 4): EGFR -> STAT3 -> CDKN1A -> SET
+Complete Path #146 (Length 4): EGFR -> GAPDH -> GPI -> PGM2
+Complete Path #147 (Length 6): EGFR -> CBL -> SRC -> PXN -> VCL -> ACTN4
+Complete Path #148 (Length 5): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> NXF1
+Complete Path #149 (Length 5): EGFR -> HGS -> UBC -> TOM1 -> TOLLIP
+Complete Path #150 (Length 7): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Complete Path #151 (Length 5): EGFR -> HGS -> UBC -> PRKN -> DNM1L
+Complete Path #152 (Length 7): EGFR -> CALM1 -> IQGAP1 -> ACTB -> GAPDH -> HSPA8 -> HSP90B1
+Complete Path #153 (Length 4): EGFR -> CAV1 -> NOS3 -> ASS1
+Complete Path #154 (Length 4): EGFR -> PLCG1 -> DCAF1 -> DYRK2
+Complete Path #155 (Length 4): EGFR -> HSPA8 -> PABPC1 -> UPF1
+Complete Path #156 (Length 3): EGFR -> YWHAZ -> KIF23
+Complete Path #157 (Length 4): EGFR -> NCK1 -> WASL -> FNBP1L
+Complete Path #158 (Length 5): EGFR -> PTK2 -> TLN1 -> VCL -> ACTN4
+Complete Path #159 (Length 5): EGFR -> NCK1 -> WASL -> ACTR3 -> CTTN
+Complete Path #160 (Length 4): EGFR -> GAPDH -> PARP1 -> TOP1
+Complete Path #161 (Length 7): EGFR -> GRB2 -> TNK2 -> CDC42 -> PRKCI -> PRKCZ -> MAPK7
+Complete Path #162 (Length 4): EGFR -> GAPDH -> APP -> APLP2
+Complete Path #163 (Length 7): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> DCP1A -> LSM14A
+Complete Path #164 (Length 7): EGFR -> GAPDH -> ACTB -> TJP1 -> TJP2 -> OCLN -> CLDN10
+Complete Path #165 (Length 5): EGFR -> HSPA1B -> YBX1 -> SRP14 -> SRP68
+Complete Path #166 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> ACTG1 -> PFN1
+Complete Path #167 (Length 4): EGFR -> NCK1 -> CBL -> CRKL
+Complete Path #168 (Length 7): EGFR -> GRB2 -> DYNLL1 -> DYNC1I1 -> BICD2 -> RANBP2 -> NUP155
+Complete Path #169 (Length 5): EGFR -> GRB2 -> CBL -> YWHAB -> KIF23
+Complete Path #170 (Length 7): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> TJP1 -> TJP2
+Complete Path #171 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> RNPS1 -> SRSF11
+Complete Path #172 (Length 7): EGFR -> PTK2 -> ITGB1 -> ITGA3 -> ITGB4 -> JUP -> DSG2
+Complete Path #173 (Length 7): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> ABI1 -> BAIAP2
+Complete Path #174 (Length 5): EGFR -> GRB2 -> PTPRA -> PTPRS -> SLITRK6
+Complete Path #175 (Length 4): EGFR -> GAPDH -> ENO1 -> ENO3
+Complete Path #176 (Length 5): EGFR -> EPS15 -> UBC -> RABGEF1 -> RABEP2
+Complete Path #177 (Length 5): EGFR -> CALM1 -> IQGAP1 -> ACTB -> GAPDH
+Complete Path #178 (Length 5): EGFR -> GAPDH -> PKM -> NME1 -> SET
+Complete Path #179 (Length 5): EGFR -> CALM1 -> IQGAP1 -> ACTB -> PFN1
+Complete Path #180 (Length 3): EGFR -> CBL -> EPHA2
+Complete Path #181 (Length 5): EGFR -> HSP90AA1 -> SRC -> CSK -> PAG1
+Complete Path #182 (Length 5): EGFR -> GAPDH -> APP -> APBB1 -> APLP2
+Complete Path #183 (Length 6): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB -> GAPDH
+Complete Path #184 (Length 5): EGFR -> CBL -> UBC -> RABGEF1 -> RABEP2
+Complete Path #185 (Length 6): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB -> PFN1
+Complete Path #186 (Length 7): EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT -> NCBP2 -> UPF1
+Complete Path #187 (Length 6): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> NXF1
+Complete Path #188 (Length 5): EGFR -> SRC -> CAV1 -> NOS3 -> ASS1
+Complete Path #189 (Length 3): EGFR -> APP -> APLP2
+Complete Path #190 (Length 5): EGFR -> PTK2 -> TLN1 -> ZYX -> LASP1
+Complete Path #191 (Length 4): EGFR -> EPS15 -> UBC -> RABGEF1
+Complete Path #192 (Length 4): EGFR -> CBLB -> GRB2 -> PTPRA
+Complete Path #193 (Length 5): EGFR -> NCK2 -> NCK1 -> WASL -> FNBP1L
+Complete Path #194 (Length 4): EGFR -> GAPDH -> TPI1 -> TKT
+Complete Path #195 (Length 4): EGFR -> GAPDH -> HSPA8 -> HSP90B1
+Complete Path #196 (Length 6): EGFR -> CBL -> SYK -> VAV2 -> RHOA -> ARHGEF2
+Complete Path #197 (Length 5): EGFR -> CBL -> PLCG1 -> HSPA5 -> SEC61A1
+Complete Path #198 (Length 7): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> TJP1 -> OCLN
+Complete Path #199 (Length 7): EGFR -> CRKL -> CBL -> SYK -> VAV2 -> RHOA -> RAP2C
+Complete Path #200 (Length 3): EGFR -> CBL -> PLCG1
+Complete Path #201 (Length 5): EGFR -> STAT3 -> SIN3A -> MECP2 -> CDKL5
+Complete Path #202 (Length 5): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1
+Complete Path #203 (Length 5): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3
+Complete Path #204 (Length 5): EGFR -> EPS15 -> AGFG1 -> VAMP7 -> STX4
+Complete Path #205 (Length 3): EGFR -> CSK -> PAG1
+Complete Path #206 (Length 5): EGFR -> AP2M1 -> AP2B1 -> LDLRAP1 -> LDLR
+Complete Path #207 (Length 4): EGFR -> STAT3 -> RELA -> CEBPB
+Complete Path #208 (Length 6): EGFR -> CRKL -> CBL -> ABL1 -> ABI2 -> CASKIN2
+Complete Path #209 (Length 7): EGFR -> HSPA8 -> SRRT -> ZC3H18 -> SRRM2 -> SNRPA1 -> SLC4A1AP
+Complete Path #210 (Length 7): EGFR -> HSPA8 -> SRRT -> RBM39 -> SRSF11 -> PUF60 -> FUBP1
+Complete Path #211 (Length 5): EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1
+Complete Path #212 (Length 5): EGFR -> HSPA1B -> YBX1 -> C1QBP -> LBR
+Complete Path #213 (Length 7): EGFR -> TRAF2 -> RIPK1 -> SQSTM1 -> PRKCI -> PRKCZ -> MAPK7
+Complete Path #214 (Length 7): EGFR -> GAPDH -> PGK1 -> ENO1 -> ENO3 -> PGAM2 -> PGAM4
+Complete Path #215 (Length 2): EGFR -> CAV1
+Complete Path #216 (Length 5): EGFR -> SRC -> CAV1 -> CAV3 -> SNTA1
+Complete Path #217 (Length 3): EGFR -> PTPN1 -> INSR
+Complete Path #218 (Length 7): EGFR -> HSPA8 -> PABPC1 -> TARDBP -> FUS -> ILF3 -> SF3B4
+Complete Path #219 (Length 7): EGFR -> CALM1 -> IQGAP1 -> CDC42 -> PRKCI -> PRKCZ -> MAPK7
+Complete Path #220 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> EZR -> SLC12A2
+Complete Path #221 (Length 3): EGFR -> HGS -> UBC
+Complete Path #222 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> SORBS3 -> DLG5
+Complete Path #223 (Length 7): EGFR -> ABL1 -> RIN1 -> RAB5A -> VPS45 -> STX6 -> STX4
+Complete Path #224 (Length 7): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1 -> NCBP2 -> SRRT
+Complete Path #225 (Length 4): EGFR -> CBL -> UBC -> RABGEF1
+Complete Path #226 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> ACTN4 -> SYNPO
+Complete Path #227 (Length 5): EGFR -> GRB2 -> GAB2 -> PIK3R1 -> PIK3R3
+Complete Path #228 (Length 5): EGFR -> EPS15 -> UBC -> FAF1 -> NSFL1C
+Complete Path #229 (Length 7): EGFR -> CBL -> NCK1 -> PAK1 -> ARHGEF6 -> CDC42 -> ARHGAP32
+Complete Path #230 (Length 3): EGFR -> CDK1 -> MKI67
+Complete Path #231 (Length 7): EGFR -> HSPA1B -> YBX1 -> C1QBP -> LBR -> KPNB1 -> KPNA6
+Complete Path #232 (Length 4): EGFR -> STAT3 -> FOXP3 -> CBFB
+Complete Path #233 (Length 7): EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> G3BP2 -> DDX6 -> LSM14A
+Complete Path #234 (Length 5): EGFR -> CBL -> UBC -> FAF1 -> NSFL1C
+Complete Path #235 (Length 5): EGFR -> HGS -> UBC -> RABGEF1 -> RABEP2
+Complete Path #236 (Length 6): EGFR -> CBL -> SRC -> STAT3 -> MYC -> HCFC1
+Complete Path #237 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> CTNNA1 -> TJP1
+Complete Path #238 (Length 5): EGFR -> HSPA8 -> PABPC1 -> TARDBP -> FUS
+Complete Path #239 (Length 7): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB -> TJP1 -> TJP2
+Complete Path #240 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> FUS -> ILF3 -> SF3B4
+Complete Path #241 (Length 5): EGFR -> CRKL -> CBL -> YWHAB -> KIF23
+Complete Path #242 (Length 5): EGFR -> CBL -> LYN -> SRC -> CDCP1
+Complete Path #243 (Length 5): EGFR -> CALM1 -> IQGAP1 -> ACTB -> TUBA1C
+Complete Path #244 (Length 5): EGFR -> CDK1 -> CKS2 -> CCNA2 -> MELK
+Complete Path #245 (Length 5): EGFR -> HSPA8 -> PABPC1 -> EIF4G1 -> EIF4B
+Complete Path #246 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> ACTN4 -> SYNPO
+Complete Path #247 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> TJP1 -> TJP2
+Complete Path #248 (Length 7): EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT -> SNRPF -> MEPCE
+Complete Path #249 (Length 6): EGFR -> CALM1 -> IQGAP1 -> MYL6 -> ACTB -> TUBA1C
+Complete Path #250 (Length 3): EGFR -> STAT3 -> SRC
+Complete Path #251 (Length 6): EGFR -> CALM1 -> IQGAP1 -> ACTB -> CASP3 -> ANXA5
+Complete Path #252 (Length 6): EGFR -> PTK2 -> TLN1 -> VCL -> ACTN4 -> SYNPO
+Complete Path #253 (Length 5): EGFR -> CBL -> PLCG1 -> GRB2 -> ERRFI1
+Complete Path #254 (Length 4): EGFR -> VAV2 -> RHOA -> ARHGEF2
+Complete Path #255 (Length 4): EGFR -> HSPA8 -> PABPC1 -> EIF4B
+Complete Path #256 (Length 7): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> SRRM1 -> RNPS1 -> SRSF11
+Complete Path #257 (Length 5): EGFR -> GRB2 -> PLCG1 -> DCAF1 -> DYRK2
+Complete Path #258 (Length 3): EGFR -> EPS15 -> UBC
+Complete Path #259 (Length 4): EGFR -> ERRFI1 -> GRB2 -> CBLB
+Complete Path #260 (Length 6): EGFR -> HSPA8 -> PABPC1 -> UPF1 -> DCP1A -> LSM14A
+Complete Path #261 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> ACTN1 -> ZYX
+Complete Path #262 (Length 4): EGFR -> LYN -> SRC -> CDCP1
+Complete Path #263 (Length 4): EGFR -> STAT3 -> MYC -> HCFC1
+Complete Path #264 (Length 4): EGFR -> CAV1 -> CAV3 -> SNTA1
+Complete Path #265 (Length 7): EGFR -> HSPA1B -> DNAJB1 -> HSPA8 -> SRRT -> SNRPF -> MEPCE
+Complete Path #266 (Length 6): EGFR -> CBL -> SYK -> VAV2 -> RHOA -> RAP2C
+Complete Path #267 (Length 5): EGFR -> CBL -> SYK -> TRAT1 -> TRIM29
+Complete Path #268 (Length 4): EGFR -> CAV1 -> CAV3 -> SNTB1
+Complete Path #269 (Length 7): EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT -> PHAX -> NUCKS1
+Complete Path #270 (Length 6): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> HNRNPA2B1
+Complete Path #271 (Length 7): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> CYFIP1 -> BAIAP2
+Complete Path #272 (Length 7): EGFR -> CRKL -> CBL -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Complete Path #273 (Length 7): EGFR -> CBL -> SRC -> PXN -> VCL -> ACTN1 -> ZYX
+Complete Path #274 (Length 5): EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1
+Complete Path #275 (Length 6): EGFR -> CDK1 -> CDK3 -> CKS2 -> CCNA2 -> MELK
+Complete Path #276 (Length 3): EGFR -> PIK3R1 -> INSR
+Complete Path #277 (Length 3): EGFR -> GRB2 -> PLCG1
+Complete Path #278 (Length 7): EGFR -> GAPDH -> PGK1 -> ENO1 -> ALDOA -> TPI1 -> TKT
+Complete Path #279 (Length 5): EGFR -> EPS15 -> AP2B1 -> LDLRAP1 -> LDLR
+Complete Path #280 (Length 4): EGFR -> GAPDH -> SYNCRIP -> PABPC1
+Complete Path #281 (Length 5): EGFR -> YWHAZ -> KIF23 -> KIF11 -> MELK
+Complete Path #282 (Length 4): EGFR -> PLCG1 -> GRB2 -> ERRFI1
+Complete Path #283 (Length 4): EGFR -> CBL -> PIK3R1 -> INSR
+Complete Path #284 (Length 5): EGFR -> SRC -> STAT3 -> RELA -> CEBPB
+Complete Path #285 (Length 2): EGFR -> GAPDH
+Complete Path #286 (Length 5): EGFR -> GAPDH -> ALDOA -> ENO1 -> ENO3
+Complete Path #287 (Length 6): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> TUBA1C
+Complete Path #288 (Length 5): EGFR -> CBL -> LYN -> SRC -> HSP90AA1
+Complete Path #289 (Length 5): EGFR -> SRC -> HSP90AA1 -> NOS3 -> CAV1
+Complete Path #290 (Length 6): EGFR -> PTEN -> DLG1 -> MAPK12 -> MAPK11 -> MAPKAPK3
+Complete Path #291 (Length 7): EGFR -> GRB2 -> WASL -> CDC42 -> PAK4 -> RAF1 -> PEBP1
+Complete Path #292 (Length 5): EGFR -> SRC -> CAV1 -> RAC1 -> IQGAP1
+Complete Path #293 (Length 4): EGFR -> STAT3 -> NR3C1 -> IRF2BP2
+Complete Path #294 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> HNRNPA0 -> HNRNPU
+Complete Path #295 (Length 7): EGFR -> CBL -> SRC -> BCAR1 -> VCL -> PIP5K1C -> PI4KA
+Complete Path #296 (Length 6): EGFR -> AP2M1 -> AP2B1 -> AP1B1 -> CLINT1 -> SEC16A
+Complete Path #297 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3 -> HNRNPC -> ANXA2
+Complete Path #298 (Length 7): EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1 -> ILF3 -> SF3B4
+Complete Path #299 (Length 5): EGFR -> TAB1 -> MAPK12 -> MAPK11 -> MAPKAPK3
+Complete Path #300 (Length 3): EGFR -> SRC -> CTTN
+
+
+=== Intermediate Paths (995 items) ===
+
+--- Length 5 (204 items) ---
+  1. EGFR -> HSPA8 -> PABPC1 -> EIF4A3 -> THRAP3
+  2. EGFR -> SRC -> CTTN -> ACTR3 -> ACTB
+  3. EGFR -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF4B
+  4. EGFR -> STAT3 -> HSP90AA1 -> PRKACA -> PALM2AKAP2
+  5. EGFR -> GAPDH -> PGK1 -> ENO1 -> ENO3
+  6. EGFR -> GAB1 -> GRB2 -> FGFR3 -> ICK
+  7. EGFR -> CRKL -> GAB1 -> PTPN11 -> JAK2
+  8. EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK4
+  9. EGFR -> PTK2 -> TLN1 -> ITGB1 -> FLNA
+  10. EGFR -> HSPA8 -> PABPC1 -> TARDBP -> TMEM106B
+  11. EGFR -> SRC -> CTTN -> TJP1 -> TJP2
+  12. EGFR -> ERBB2 -> ERBIN -> PPP1CC -> MKI67
+  13. EGFR -> HSPA8 -> SRRT -> ALYREF -> SRRM1
+  14. EGFR -> CBL -> SRC -> CSK -> PAG1
+  15. EGFR -> SRC -> HSP90AA1 -> VCP -> NSFL1C
+  16. EGFR -> GRB2 -> CBL -> UBC -> RABGEF1
+  17. EGFR -> ABL1 -> RIN1 -> RAB5A -> VPS45
+  18. EGFR -> HSPA8 -> SRRT -> DDX39B -> API5
+  19. EGFR -> SRC -> CTTN -> ACTB -> GAPDH
+  20. EGFR -> CBL -> GRB2 -> PTPN11 -> MPZL1
+  21. EGFR -> HSPA8 -> PABPC1 -> RBM8A -> THRAP3
+  22. EGFR -> HSPA8 -> SRRT -> RBM39 -> SRSF11
+  23. EGFR -> GRB2 -> DYNLL1 -> NOS1 -> SNTB1
+  24. EGFR -> GRB2 -> TNK2 -> SNX9 -> ADAM9
+  25. EGFR -> CALM1 -> IQGAP1 -> ACTB -> GAPDH
+  26. EGFR -> GAPDH -> PKM -> NME1 -> SET
+  27. EGFR -> GAPDH -> ACTB -> H3C13 -> HMGA1
+  28. EGFR -> PTK2 -> TLN1 -> ZYX -> LASP1
+  29. EGFR -> HSPA8 -> SRRT -> ALYREF -> SRSF11
+  30. EGFR -> CBL -> CRKL -> ABL1 -> ABI2
+  31. EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1
+  32. EGFR -> EPS15 -> AGFG1 -> VAMP7 -> STX4
+  33. EGFR -> PTEN -> DLG1 -> LIN7C -> MPP5
+  34. EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1
+  35. EGFR -> PRKCE -> SLC25A5 -> UQCRC2 -> BCS1L
+  36. EGFR -> LYN -> SRC -> GJA1 -> MAPK7
+  37. EGFR -> GAPDH -> ACTB -> TJP1 -> TJP2
+  38. EGFR -> CALM1 -> IQGAP1 -> CDC42 -> PRKCI
+  39. EGFR -> AP2M1 -> AP2B1 -> AP1B1 -> CLINT1
+  40. EGFR -> SRC -> HSP90AA1 -> AKT1 -> PFKFB2
+  41. EGFR -> HSPA8 -> PABPC1 -> TARDBP -> FUS
+  42. EGFR -> ANKS1A -> RIN1 -> RAB5A -> VPS45
+  43. EGFR -> GAPDH -> ACTB -> PPARG -> HMGA1
+  44. EGFR -> HSPA8 -> PABPC1 -> EIF4G1 -> EIF4B
+  45. EGFR -> TRAF2 -> RIPK1 -> TAB1 -> MAPK12
+  46. EGFR -> SRC -> LYN -> NEDD4 -> LAPTM4A
+  47. EGFR -> STAT3 -> HSP90AA1 -> NOS3 -> ASS1
+  48. EGFR -> HSPA8 -> PABPC1 -> GSPT1 -> UPF1
+  49. EGFR -> GAPDH -> ACTB -> ACTN4 -> PDLIM1
+  50. EGFR -> CDK1 -> CDK3 -> CCNA2 -> CKS2
+  51. EGFR -> PTPN11 -> MPZL1 -> RNMT -> KPNA6
+  52. EGFR -> TUBA1A -> TUBA1B -> KIF5A -> KLC2
+  53. EGFR -> HSPA8 -> PABPC1 -> HNRNPK -> HNRNPA3
+  54. EGFR -> GRB2 -> PTK2 -> ITGB1 -> FLNA
+  55. EGFR -> HSPA8 -> PABPC1 -> HNRNPD -> FUS
+  56. EGFR -> HSPA8 -> PABPC1 -> G3BP1 -> G3BP2
+  57. EGFR -> YWHAZ -> KIF23 -> PLK1 -> BICD2
+  58. EGFR -> TRAF2 -> RIPK1 -> OPTN -> MYO6
+  59. EGFR -> GRB2 -> DYNLL1 -> DYNC1H1 -> BICD2
+  60. EGFR -> SRC -> PTK2 -> STAT1 -> PRKCD
+  61. EGFR -> CBL -> SRC -> KDR -> SHB
+  62. EGFR -> NCK1 -> NCK2 -> EFNB2 -> EFNB1
+  63. EGFR -> TRAF2 -> RIPK1 -> SQSTM1 -> PRKCI
+  64. EGFR -> YWHAZ -> KIF23 -> ANLN -> MYO1E
+  65. EGFR -> PTK2 -> CTTN -> TJP1 -> TJP2
+  66. EGFR -> STAT3 -> HSP90AA1 -> VCP -> NSFL1C
+  67. EGFR -> STAT3 -> HSP90AA1 -> LRRK2 -> EMD
+  68. EGFR -> CTTN -> ACTB -> ENAH -> TES
+  69. EGFR -> TRAF2 -> RIPK1 -> CASP3 -> ANXA5
+  70. EGFR -> LYN -> SRC -> KDR -> NRP1
+  71. EGFR -> GRB2 -> WASL -> ACTR3 -> CTTN
+  72. EGFR -> HSPA8 -> EIF4G1 -> EIF4A3 -> SRRM2
+  73. EGFR -> YWHAQ -> PFKFB2 -> PFKM -> PFKP
+  74. EGFR -> HSPA8 -> PABPC1 -> SYNCRIP -> HNRNPA2B1
+  75. EGFR -> JUP -> DSG2 -> CD46 -> CXADR
+  76. EGFR -> GAPDH -> PKM -> ENO1 -> ENO3
+  77. EGFR -> JUP -> DSG2 -> DSP -> DSC2
+  78. EGFR -> CRKL -> CBL -> UBC -> RABGEF1
+  79. EGFR -> PTEN -> DLG1 -> CASK -> EPS8L2
+  80. EGFR -> GRB2 -> CBL -> YWHAB -> KIF23
+  81. EGFR -> JUP -> DSG2 -> PKP2 -> DSC2
+  82. EGFR -> GRB2 -> CBL -> UBC -> MYO6
+  83. EGFR -> HSP90AA1 -> SRC -> CSK -> PAG1
+  84. EGFR -> CBL -> SRC -> GJA1 -> MAPK7
+  85. EGFR -> SRC -> HSP90AA1 -> PRKACA -> PALM2AKAP2
+  86. EGFR -> AP2M1 -> AP2B1 -> AP2S1 -> ITSN2
+  87. EGFR -> GAPDH -> PGK1 -> ENO1 -> ALDOA
+  88. EGFR -> NCK1 -> NCK2 -> EFNB2 -> EPHA4
+  89. EGFR -> CBL -> GRB2 -> ABL1 -> ABI2
+  90. EGFR -> CTTN -> ACTB -> ACTC1 -> PHACTR2
+  91. EGFR -> TRAF2 -> RIPK1 -> TRAF6 -> TOLLIP
+  92. EGFR -> HSPA1B -> YBX1 -> C1QBP -> LBR
+  93. EGFR -> HSPA8 -> PABPC1 -> NCBP1 -> SRRT
+  94. EGFR -> HSPA8 -> EIF4G1 -> EIF4A3 -> SRRM1
+  95. EGFR -> HSPA8 -> SRRT -> ZC3H18 -> SRRM2
+  96. EGFR -> SRC -> STAT3 -> CDKN1A -> SET
+  97. EGFR -> GAPDH -> ACTB -> ANXA1 -> S100A11
+  98. EGFR -> HSPA8 -> EIF4G1 -> EIF4A3 -> THRAP3
+  99. EGFR -> SH3GL2 -> ADAM9 -> MAD2L2 -> POGZ
+  100. EGFR -> CBL -> NCK1 -> PAK1 -> ARHGEF6
+  ... additional 104 more
+
+--- Length 4 (38 items) ---
+  1. EGFR -> CBL -> SRC -> CSK
+  2. EGFR -> EPS8 -> BAIAP2 -> KIAA1522
+  3. EGFR -> CBL -> GRB2 -> CBLB
+  4. EGFR -> CRKL -> CBL -> SYK
+  5. EGFR -> CRKL -> CBL -> SPRY1
+  6. EGFR -> TUBA1A -> TBCB -> PPP1R14B
+  7. EGFR -> CBL -> SYK -> VAV2
+  8. EGFR -> UBC -> TOM1 -> TOLLIP
+  9. EGFR -> CRKL -> CBL -> EPHA2
+  10. EGFR -> HSP90AA1 -> SRC -> CSK
+  11. EGFR -> CTNNB1 -> USP9X -> USP24
+  12. EGFR -> CBL -> GRB2 -> GAB2
+  13. EGFR -> MUC1 -> CTNNB1 -> USP9X
+  14. EGFR -> ERRFI1 -> GRB2 -> CBLB
+  15. EGFR -> CALM1 -> IQGAP1 -> ACTB
+  16. EGFR -> PTEN -> DLG1 -> MAPK12
+  17. EGFR -> GRB2 -> CBL -> SYK
+  18. EGFR -> GRB2 -> CBL -> SPRY1
+  19. EGFR -> CDK1 -> CDK3 -> CKS2
+  20. EGFR -> CBL -> SRC -> STAT3
+  21. EGFR -> TUBA1A -> MARVELD2 -> LSR
+  22. EGFR -> SRC -> STAT3 -> JAK2
+  23. EGFR -> CBL -> GRB2 -> GAREM1
+  24. EGFR -> HSPA8 -> PABPC1 -> UPF1
+  25. EGFR -> PTK2 -> TLN1 -> VCL
+  26. EGFR -> GAPDH -> APP -> APLP2
+  27. EGFR -> NCK1 -> NCK2 -> EFNB1
+  28. EGFR -> GRB2 -> CBL -> EPHA2
+  29. EGFR -> HSPA8 -> PABPC1 -> G3BP2
+  30. EGFR -> GAPDH -> PKM -> ENO3
+  31. EGFR -> PTK2 -> ITGB1 -> FLNA
+  32. EGFR -> NCK1 -> NCK2 -> KIAA1522
+  33. EGFR -> JUP -> DSG2 -> DSC2
+  34. EGFR -> HSPA8 -> PABPC1 -> EIF4B
+  35. EGFR -> GRB2 -> PTK2 -> ITGB4
+  36. EGFR -> ERRFI1 -> GRB2 -> GAREM1
+  37. EGFR -> CBL -> PIK3R1 -> INSR
+  38. EGFR -> CTNND1 -> CTNNB1 -> USP9X
+
+--- Length 3 (740 items) ---
+  1. EGFR -> AGFG1 -> PLIN3
+  2. EGFR -> PKM -> GAPDH
+  3. EGFR -> EPN3 -> EPN1
+  4. EGFR -> GRB2 -> MYH9
+  5. EGFR -> CTTN -> WASL
+  6. EGFR -> ACTB -> PKM
+  7. EGFR -> CTNNB1 -> USP9X
+  8. EGFR -> GAB1 -> PIK3R1
+  9. EGFR -> STAT3 -> MUC1
+  10. EGFR -> SEC61A1 -> SRP68
+  11. EGFR -> SYK -> PTK2
+  12. EGFR -> ACTB -> CALD1
+  13. EGFR -> GRB2 -> ANXA2
+  14. EGFR -> PTK2 -> LYN
+  15. EGFR -> CBL -> INSR
+  16. EGFR -> CRK -> PPFIBP2
+  17. EGFR -> LYN -> ITGB1
+  18. EGFR -> CFL1 -> FLNB
+  19. EGFR -> BAIAP2 -> BAIAP2L1
+  20. EGFR -> ACTB -> FLNB
+  21. EGFR -> YBX1 -> RBMX
+  22. EGFR -> ACTB -> ANXA2
+  23. EGFR -> IQGAP1 -> MYH9
+  24. EGFR -> SRC -> MPZL1
+  25. EGFR -> ITGB1 -> CRKL
+  26. EGFR -> LYN -> PLCG1
+  27. EGFR -> PIK3R1 -> SYK
+  28. EGFR -> CTTN -> SYK
+  29. EGFR -> PIK3R1 -> PTK2
+  30. EGFR -> IQGAP1 -> ACTB
+  31. EGFR -> CTTN -> PTK2
+  32. EGFR -> YBX1 -> SF3B1
+  33. EGFR -> SYK -> LYN
+  34. EGFR -> GAB2 -> CRKL
+  35. EGFR -> CTTN -> PAK2
+  36. EGFR -> PRKCE -> SLC25A5
+  37. EGFR -> HSP90AA1 -> DNAJB1
+  38. EGFR -> NCK2 -> EFNB1
+  39. EGFR -> SRC -> PIK3R1
+  40. EGFR -> INSR -> PTPN1
+  41. EGFR -> KRAS -> MAPKAP1
+  42. EGFR -> HSP90AA1 -> EIF5B
+  43. EGFR -> UBC -> RPS2
+  44. EGFR -> ACTB -> LMNB1
+  45. EGFR -> MAPK1 -> PEBP1
+  46. EGFR -> CFL1 -> VASP
+  47. EGFR -> YBX1 -> RPS16
+  48. EGFR -> AGFG1 -> NPDC1
+  49. EGFR -> GNAI3 -> SRC
+  50. EGFR -> SRC -> TLN1
+  51. EGFR -> CDK1 -> CDK3
+  52. EGFR -> PTK2 -> PLCG1
+  53. EGFR -> ACTB -> VASP
+  54. EGFR -> ERBB2 -> NRP1
+  55. EGFR -> MAPK3 -> STMN1
+  56. EGFR -> ACTN4 -> PDLIM1
+  57. EGFR -> YWHAQ -> PFKFB2
+  58. EGFR -> MAPK3 -> ACTB
+  59. EGFR -> CTNND1 -> VAV2
+  60. EGFR -> UBC -> OTUD4
+  61. EGFR -> PIK3R1 -> LYN
+  62. EGFR -> NCK1 -> NCK2
+  63. EGFR -> YWHAQ -> MPRIP
+  64. EGFR -> CRKL -> LYN
+  65. EGFR -> CTTN -> CTNND1
+  66. EGFR -> NCK2 -> CBL
+  67. EGFR -> CLTC -> RAB35
+  68. EGFR -> YBX1 -> SNW1
+  69. EGFR -> SHC2 -> GRB2
+  70. EGFR -> PAG1 -> GRB2
+  71. EGFR -> MAPK3 -> IQGAP1
+  72. EGFR -> ANXA5 -> ANXA2
+  73. EGFR -> ANXA2 -> ANXA5
+  74. EGFR -> CTTN -> FLNB
+  75. EGFR -> ANXA2 -> ACTB
+  76. EGFR -> TNK2 -> HSP90AA1
+  77. EGFR -> GAPDH -> RPS2
+  78. EGFR -> NCK1 -> TNK2
+  79. EGFR -> STAT3 -> GRB2
+  80. EGFR -> STAM2 -> RIN1
+  81. EGFR -> PIK3R1 -> ITGB1
+  82. EGFR -> GAPDH -> CFL1
+  83. EGFR -> ACTA2 -> DYNLL1
+  84. EGFR -> INSR -> INPPL1
+  85. EGFR -> CBL -> STAP2
+  86. EGFR -> GRB2 -> PIK3R1
+  87. EGFR -> INSR -> PLCG1
+  88. EGFR -> PIK3R1 -> INPPL1
+  89. EGFR -> NCK2 -> BAIAP2
+  90. EGFR -> LYN -> GNAI3
+  91. EGFR -> CRKL -> ITGB1
+  92. EGFR -> STAT3 -> GAPDH
+  93. EGFR -> PIK3R1 -> PLCG1
+  94. EGFR -> JAK2 -> SOCS4
+  95. EGFR -> GRB2 -> TLN1
+  96. EGFR -> ITGB1 -> STAT3
+  97. EGFR -> AP2A1 -> CLINT1
+  98. EGFR -> CTNND1 -> SRC
+  99. EGFR -> CTNND1 -> CTTN
+  100. EGFR -> DCN -> MGP
+  ... additional 640 more
+
+--- Length 2 (13 items) ---
+  1. EGFR -> PLCG1
+  2. EGFR -> JAK2
+  3. EGFR -> CSK
+  4. EGFR -> CBLB
+  5. EGFR -> MUC1
+  6. EGFR -> NCK1
+  7. EGFR -> ERRFI1
+  8. EGFR -> CAV1
+  9. EGFR -> GAPDH
+  10. EGFR -> VAV2
+  11. EGFR -> STAT3
+  12. EGFR -> LYN
+  13. EGFR -> CTNND1
+
+
+*** Path Statistics Summary ***
+Network type: functional
+Complete path count: 300
+Intermediate path count: 995
+Total path count: 1295

@@ -1,0 +1,294 @@
+=== Protein Pathway Simulator (STRING API v12.5) Run Log ===
+Input file: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5/null_004_Normal_functional.json
+Network type: functional
+Start time: 2026-11-04 11:12:04
+============================================================
+
+[11:12:09] [STRING] Official v12.5 pinned: https://version-12-5.string-db.org/api | functional
+[11:12:09] [PhosphoSite] Loading site information from JSON...
+[11:12:09] [PhosphoSite] Input schema: Temporal v2 interval model
+[11:12:09] [PhosphoSite] 591 proteins, 953 sites loaded
+[11:12:09] [PhosphoSite] 953 site combinations tracked
+[11:12:09] [Cell Context] Cell line requested: MDA-MB-468
+[11:12:09] [Cell Context] Identity aliases resolved from metadata: MDAMB468, SIDM00628
+[11:12:09] [Cell Context] Official model-specific data: SIDM00628. The RNA/proteomics file is already scoped to one SIDM; a cell-line-name column inside the table is therefore not required.
+[11:12:09] [Cell Context] RNA parser columns: gene=gene_symbol, value=rsem_tpm, cell/model=model_name
+[11:12:09] [Cell Context] RNA loaded: expressed=13762, below-threshold=22676; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_name', 'gene_column': 'gene_symbol', 'value_column': 'rsem_tpm', 'matched_rows': 36439}
+[11:12:09] [Cell Context] Proteomics loaded: detected=5475, explicit-negative=0; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_id', 'gene_column': 'symbol', 'value_column': 'protein_intensity', 'matched_rows': 5475}
+[11:12:09] [Cell Context] Mode=conservative_union; RNA threshold=1; UNKNOWN bridge candidates are retained in conservative mode.
+[11:12:10] [Start] Start proteins loaded from JSON: 1 loaded
+[11:12:10] [Input Schema] Temporal v2 interval model
+[11:12:10] === Start TEMPORAL interval pathway tracing ===
+[11:12:10]   [Temporal] Target mode: measured
+[11:12:10]   [Temporal] Bridge Depth D=1 means intermediate bridge nodes; max edges/interval=2
+[11:12:10]   [Temporal] Baseline availability is NOT treated as activation.
+[11:12:10]   [Temporal] D resets independently for every interval.
+[11:12:10]   [FINAL] No drug-name hard blocking; target-preserving adaptive temporal beam enabled.
+[11:12:11] [Cell Context] Experimental-anchor protection list: 591 genes.
+[11:12:11]   [Baseline Bridge Pool] 591 baseline-available genes loaded; used only as first-interval bridge candidates (not activation targets).
+[11:12:11]   [Q-Pool] No pretreatment baseline contrast; no condition-specific Q exclusion applied.
+[11:12:11] --- Temporal Start 1/1: EGFR ---
+[11:12:11] --- Interval 1/3: 0min-5min ---
+[11:12:11]   Measured=374, supporting=30, opposing=32, unresolved=343, mixed=6
+[11:12:11]   Q-low opposing-only this interval=26; condition-pool excluded=0
+[11:12:11]   Eligible targets (measured)=348, incoming source paths=1
+[11:12:11]   [Estimate] 1 source paths x 348 target genes = 348 pairs
+[11:12:23]   [Adaptive Temporal Beam] Base K=300 expanded to K_eff=689 because 214 target genes were reached and 689 protected target/baseline histories were required.
+[11:12:23]   [Target-Preserving Temporal Beam] 807 unique routes -> 689 propagated states; targets preserved=214/214; K_base=300, K_eff=689, protected_union=689, routes/target quota=3, segment routes/pair=5.
+[11:12:23]   [Interval Done] reached genes=214, endpoint candidates=807, unique propagating routes=689
+[11:12:23]   [Speed Cache] ranked-neighbor hit/miss=31976/99, direct-lookup hit/miss=33512/97, segment hit/miss=0/347
+[11:12:23] --- Interval 2/3: 5min-10min ---
+[11:12:23]   Measured=140, supporting=7, opposing=12, unresolved=122, mixed=0
+[11:12:23]   Q-low opposing-only this interval=12; condition-pool excluded=0
+[11:12:23]   Eligible targets (measured)=128, incoming source paths=689
+[11:12:23]   [Estimate] 689 source paths x 128 target genes = 88192 pairs
+[11:13:24] [STRING Neighborhood] CLPX: 28 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:24] [STRING Neighborhood] GFM1: 119 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:24] [STRING Neighborhood] TRIL: 4 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:24] [STRING Neighborhood] LONP1: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:25] [STRING Neighborhood] DARS2: 37 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:25] [STRING Neighborhood] ETFBKMT: 6 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:26] [STRING Neighborhood] SAMD3: 1 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:27] [STRING Neighborhood] SSBP1: 80 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:27] [STRING Neighborhood] PYCR2: 22 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:27] [STRING Neighborhood] TMCC2: 4 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:27] [STRING Neighborhood] PMPCB: 84 partners at score >= 700 (requested limit=10000, network=functional)
+[11:13:28]     [BFS Done] HSPD1 → HCFC1: 1 paths, expanded=100 (4.14 sec)
+[11:14:29] [STRING Neighborhood] CAMK4: 45 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:29] [STRING Neighborhood] ANKRA2: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:29] [STRING Neighborhood] RFXANK: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] NACC1: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] SENP1: 30 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] NR2C1: 8 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] H2AC18: 278 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] H2AC20: 296 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:30] [STRING Neighborhood] BCORL1: 21 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] SUV39H1: 54 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] H2BU1: 107 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] H2BE1: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] H2BC1: 138 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] SIK3: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] H2BC5: 229 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:31] [STRING Neighborhood] H2BC9: 218 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:32] [STRING Neighborhood] H2BC11: 227 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:32] [STRING Neighborhood] H2BC12: 214 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:32] [STRING Neighborhood] H2BC15: 219 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:32] [STRING Neighborhood] H2BS1: 197 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:32] [STRING Neighborhood] H2BW1: 57 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:33] [STRING Neighborhood] H2BW2: 57 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:33] [STRING Neighborhood] H2BC3: 269 partners at score >= 700 (requested limit=10000, network=functional)
+[11:14:33]     [BFS Done] HDAC4 → HCFC1: 3 paths, expanded=78 (3.92 sec)
+[11:18:01] [STRING Neighborhood] CSNK2B: 112 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:01] [STRING Neighborhood] PCGF3: 55 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:01] [STRING Neighborhood] PCGF5: 52 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:02] [STRING Neighborhood] RYBP: 71 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:02] [STRING Neighborhood] CSNK2A3: 16 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:02] [STRING Neighborhood] RING1: 116 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:02] [STRING Neighborhood] CBX2: 99 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:02] [STRING Neighborhood] YAF2: 40 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] CBX4: 105 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] CBX8: 90 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] FBRS: 14 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] CBX7: 65 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] PCGF1: 57 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] PCGF2: 84 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:03] [STRING Neighborhood] PCGF6: 87 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:04] [STRING Neighborhood] CRY1: 46 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:04] [STRING Neighborhood] KDM2B: 53 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:04] [STRING Neighborhood] LY6G5B: 2 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:04] [STRING Neighborhood] NOL6: 157 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:04] [STRING Neighborhood] EED: 87 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:05] [STRING Neighborhood] PHC3: 87 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:05] [STRING Neighborhood] CBX6: 81 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:05] [STRING Neighborhood] PHC1: 86 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:05] [STRING Neighborhood] SCML2: 66 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:06] [STRING Neighborhood] YY2: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:06] [STRING Neighborhood] ZFP42: 44 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:06] [STRING Neighborhood] FBRSL1: 9 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:06] [STRING Neighborhood] RRP7A: 133 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] WDR36: 196 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] CCNL1: 26 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] UTP15: 132 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] GPATCH2: 17 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] ZMYND8: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:07] [STRING Neighborhood] KAT6A: 56 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:08] [STRING Neighborhood] HEATR1: 187 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:08] [STRING Neighborhood] VSX1: 9 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:08] [STRING Neighborhood] GPATCH2L: 16 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:08] [STRING Neighborhood] CRY2: 45 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:08] [STRING Neighborhood] PHF1: 67 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:09] [STRING Neighborhood] PHF19: 48 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:09] [STRING Neighborhood] SUZ12: 153 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:09]     [BFS Done] CSNK2B → HCFC1: 4 paths, expanded=100 (8.23 sec)
+[11:18:35] [STRING Neighborhood] CHURC1: 6 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:35] [STRING Neighborhood] ARPC4-TTLL3: 9 partners at score >= 700 (requested limit=10000, network=functional)
+[11:18:35] [STRING Neighborhood] AVIL: 2 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:37] [STRING Neighborhood] STRN3: 38 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:37] [STRING Neighborhood] STRIP1: 27 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:37] [STRING Neighborhood] IER5: 22 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] CHRNE: 23 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] NANOS2: 23 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] CTTNBP2NL: 25 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] ENSA: 10 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] FANCD2OS: 16 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] ARPP19: 12 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:38] [STRING Neighborhood] PPP2R3A: 35 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:39] [STRING Neighborhood] PPP2R3B: 35 partners at score >= 700 (requested limit=10000, network=functional)
+[11:21:39]     [BFS Done] MINK1 → HCFC1: 0 paths, expanded=24 (2.00 sec)
+[11:24:24] [STRING Neighborhood] OST4: 76 partners at score >= 700 (requested limit=10000, network=functional)
+[11:24:24] [STRING Neighborhood] SERP1: 70 partners at score >= 700 (requested limit=10000, network=functional)
+[11:24:24] [STRING Neighborhood] TMEM258: 76 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:31] [STRING Neighborhood] BEAN1: 2 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:31] [STRING Neighborhood] NDUFS6: 124 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32] [STRING Neighborhood] NDUFA6: 118 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32] [STRING Neighborhood] NDUFB7: 135 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32] [STRING Neighborhood] NDUFA2: 117 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32] [STRING Neighborhood] NDUFB9: 130 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32] [STRING Neighborhood] NDUFA12: 137 partners at score >= 700 (requested limit=10000, network=functional)
+[11:31:32]     [BFS Done] SRSF9 → HCFC1: 0 paths, expanded=96 (1.80 sec)
+[11:38:36] [STRING Neighborhood] SART3: 66 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:36] [STRING Neighborhood] HEXIM2: 9 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:37] [STRING Neighborhood] BIN3: 8 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:37] [STRING Neighborhood] MRPL9: 191 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:37] [STRING Neighborhood] CTSA: 19 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:38] [STRING Neighborhood] PPM1G: 28 partners at score >= 700 (requested limit=10000, network=functional)
+[11:38:38]     [BFS Done] MEPCE → HCFC1: 1 paths, expanded=70 (3.08 sec)
+[11:40:00]   [Exact Dedupe] 49328 candidate paths -> 49272 unique gene chains.
+[11:40:00]   [Target-Preserving Temporal Beam] 49272 unique routes -> 300 propagated states; targets preserved=121/121; K_base=300, K_eff=300, protected_union=121, routes/target quota=3, segment routes/pair=5.
+[11:40:00]   [Interval Done] reached genes=121, endpoint candidates=49328, unique propagating routes=300
+[11:40:01]   [Speed Cache] ranked-neighbor hit/miss=6135309/4480, direct-lookup hit/miss=33512/97, segment hit/miss=0/88383
+[11:40:01] --- Interval 3/3: 10min-30min ---
+[11:40:01]   Measured=144, supporting=8, opposing=9, unresolved=132, mixed=1
+[11:40:01]   Q-low opposing-only this interval=8; condition-pool excluded=0
+[11:40:01]   Eligible targets (measured)=136, incoming source paths=300
+[11:40:01]   [Estimate] 300 source paths x 136 target genes = 40800 pairs
+[11:43:45] [STRING Neighborhood] MPP6: 14 partners at score >= 700 (requested limit=10000, network=functional)
+[11:43:45] [STRING Neighborhood] ABLIM1: 14 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:12] [STRING Neighborhood] RIBC1: 147 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:12] [STRING Neighborhood] CPEB3: 22 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:13] [STRING Neighborhood] PABPN1L: 14 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:13] [STRING Neighborhood] NANOS1: 16 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:13] [STRING Neighborhood] POLA1: 101 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:13] [STRING Neighborhood] CTR9: 117 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:13] [STRING Neighborhood] IWS1: 28 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:14] [STRING Neighborhood] GINS4: 53 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:14] [STRING Neighborhood] TERF1: 86 partners at score >= 700 (requested limit=10000, network=functional)
+[11:45:14]     [BFS Done] TNKS1BP1 → FAM83B: 0 paths, expanded=48 (3.81 sec)
+[11:46:30] [STRING Neighborhood] GPN1: 37 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:30] [STRING Neighborhood] GPN3: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] INTS3: 51 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] INTS5: 88 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] MYZAP: 28 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] RPAP2: 66 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] RPRD1A: 32 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] RPRD1B: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:31] [STRING Neighborhood] ELOF1: 32 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:32] [STRING Neighborhood] LMO2: 46 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:32] [STRING Neighborhood] PAF1: 39 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:32] [STRING Neighborhood] SCAF1: 8 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:32] [STRING Neighborhood] CUL4A: 135 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:33] [STRING Neighborhood] H2AC14: 191 partners at score >= 700 (requested limit=10000, network=functional)
+[11:46:33]     [BFS Done] POLR2G → FAM83B: 0 paths, expanded=100 (2.45 sec)
+[11:47:45] [STRING Neighborhood] RFC2: 75 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:45] [STRING Neighborhood] RFC3: 75 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] RFC4: 96 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] RFC5: 60 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] POLA2: 73 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] ATAD5: 66 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] SMC1A: 76 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:46] [STRING Neighborhood] PDS5A: 37 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:47] [STRING Neighborhood] DSCC1: 32 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:47] [STRING Neighborhood] PRIM2: 83 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:47] [STRING Neighborhood] POLD3: 48 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:47] [STRING Neighborhood] PRIM1: 77 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:47] [STRING Neighborhood] WDHD1: 85 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:48] [STRING Neighborhood] POLE2: 64 partners at score >= 700 (requested limit=10000, network=functional)
+[11:47:48]     [BFS Done] RFC1 → FAM83B: 0 paths, expanded=57 (2.88 sec)
+[11:48:10] [STRING Neighborhood] RRM1: 71 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:11] [STRING Neighborhood] AK5: 32 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] HBS1L: 39 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] PELO: 5 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] SKIV2L: 98 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] TTC37: 49 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] HBG2: 19 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:22] [STRING Neighborhood] WDR61: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:23] [STRING Neighborhood] HBG1: 22 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:23] [STRING Neighborhood] PAPSS1: 19 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:23] [STRING Neighborhood] MIPEP: 11 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] PAPSS2: 18 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] LTN1: 72 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] NEMF: 65 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] DIS3: 52 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] TFAP4: 16 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24] [STRING Neighborhood] ZNF346: 22 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:24]     [BFS Done] HBS1L → FAM83B: 0 paths, expanded=39 (3.00 sec)
+[11:48:38] [STRING Neighborhood] MTDH: 10 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:38] [STRING Neighborhood] PIWIL1: 18 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:38] [STRING Neighborhood] AKAP4: 59 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:39] [STRING Neighborhood] C8orf88: 1 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:40] [STRING Neighborhood] UMODL1: 1 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:40] [STRING Neighborhood] OR5AR1: 3 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:40]     [BFS Done] SND1 → FAM83B: 0 paths, expanded=34 (2.31 sec)
+[11:48:46] [STRING Neighborhood] ZMIZ2: 3 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:46] [STRING Neighborhood] ZMIZ1: 6 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:46] [STRING Neighborhood] FRG1: 39 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:50] [STRING Neighborhood] CC2D1A: 10 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:50] [STRING Neighborhood] PRSS12: 4 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:50] [STRING Neighborhood] VPS4B: 36 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:51] [STRING Neighborhood] PLA2G7: 58 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:51] [STRING Neighborhood] SELENOS: 62 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:52] [STRING Neighborhood] SLC20A2: 8 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:52] [STRING Neighborhood] SP6: 7 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:52] [STRING Neighborhood] LAMTOR4: 67 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] EIF2B1: 41 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] EIF2B2: 38 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] EIF2B4: 35 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] EIF2B5: 33 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] SMCR8: 39 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:53] [STRING Neighborhood] LAMTOR5: 60 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:54] [STRING Neighborhood] SLC38A9: 46 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:54] [STRING Neighborhood] PDE3B: 58 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:54]     [BFS Done] RMC1 → FAM83B: 0 paths, expanded=30 (2.33 sec)
+[11:48:56] [STRING Neighborhood] SLC4A2: 6 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:56] [STRING Neighborhood] AHCYL1: 36 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:56] [STRING Neighborhood] SLC4A1: 35 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:56] [STRING Neighborhood] GPRC5B: 1 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:56] [STRING Neighborhood] GPR141: 2 partners at score >= 700 (requested limit=10000, network=functional)
+[11:48:57]   [Exact Dedupe] 15042 candidate paths -> 14955 unique gene chains.
+[11:48:57]   [Target-Preserving Temporal Beam] 14955 unique routes -> 300 propagated states; targets preserved=128/128; K_base=300, K_eff=300, protected_union=128, routes/target quota=3, segment routes/pair=5.
+[11:48:57]   [Interval Done] reached genes=128, endpoint candidates=15042, unique propagating routes=300
+[11:48:57]   [Speed Cache] ranked-neighbor hit/miss=8143366/5249, direct-lookup hit/miss=33512/97, segment hit/miss=271/128766
+[11:48:57] === Temporal tracing completed: 300 unique complete paths, 963 intermediate paths ===
+[11:48:57]   - Temporal structured results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_temporal_results.json
+[11:48:57]   - Interval summary: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_interval_summary.csv
+[11:48:57]   - Node roles: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_node_roles.csv
+[11:48:58]   - Edges: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_edges.csv
+[11:48:58]   - Cell-context bridge audit: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_cell_context_audit.csv
+[11:48:58] [Cell Context Summary] checked=527497589, allowed=527497589, blocked=0, unknown-retained=113072514
+[11:49:05] [Snapshot] C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_5_snapshot_functional_20261104_114858_149823800: 5251 queries, 342249 neighbor records
+[11:49:46] [Cache] STRING cache saved.
+[11:49:46] 
+============================================================
+STRING API v12.5 Statistics (Network Type: functional):
+  API Base URL: https://version-12-5.string-db.org/api
+  Total API calls: 259
+  Cache hits: 19519
+  Cache misses: 259
+  Cache hit rate: 98.7%
+  Total API time: 45.33 sec
+  Retrieved edges: 11549
+  Average Combined Score: 877.9/1000
+============================================================
+[11:49:46] 
+[Phospho] Generating phosphorylation-site path results...
+[11:49:46] [Phospho FINAL] Temporal endpoint annotation mode; Cartesian site expansion disabled.
+[11:49:46] [Phospho] Complete path variants: 300, Intermediate path variants: 0 generated
+[11:49:46] Simulation complete.
+[11:49:46]   - Complete path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_results.txt
+[11:49:46]   - All path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_all_results.txt
+[11:49:46]   - Phospho path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_all_Phospho_results.txt
+[11:49:46]   - Run log: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700/Experiment_II/null_inputs_v12.5\null_004_Normal_functional_STRING_v12_log.txt
+
+============================================================
+End time: 2026-11-04 11:49:47
+=== End of log ===
